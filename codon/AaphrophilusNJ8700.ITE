@@ -1,0 +1,83 @@
+#Aggregatibacter aphrophilus_NJ8700
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Aggregatibacter aphrophilus NJ8700(NC_012913.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_32HEGs	CF_LEGs
+*	UGA	1	275
+*	UAG	2	363
+*	UAA	29	1549
+A	GCU	184	9944
+A	GCG	82	13800
+A	GCC	46	16405
+A	GCA	230	14504
+C	UGU	16	3914
+C	UGC	4	2927
+D	GAU	131	23445
+D	GAC	63	9698
+E	GAG	62	7913
+E	GAA	256	32415
+F	UUU	57	18984
+F	UUC	74	10756
+G	GGU	296	17346
+G	GGG	11	4491
+G	GGC	84	16217
+G	GGA	17	5267
+H	CAC	51	5655
+H	CAU	47	8715
+I	AUU	137	28877
+I	AUA	2	2961
+I	AUC	142	12755
+K	AAA	365	34244
+K	AAG	70	5742
+L	CUA	36	4525
+L	CUC	7	4629
+L	CUG	9	6220
+L	CUU	56	8597
+L	UUA	183	26984
+L	UUG	62	18745
+M	AUG	130	15670
+N	AAC	98	12017
+N	AAU	76	19201
+P	CCA	74	6160
+P	CCC	1	2154
+P	CCU	44	5576
+P	CCG	44	11558
+Q	CAA	158	24520
+Q	CAG	19	7193
+R	AGA	12	2062
+R	AGG	0	362
+R	CGA	5	2382
+R	CGC	76	8767
+R	CGG	0	2087
+R	CGU	297	13485
+S	AGC	32	7454
+S	AGU	35	7014
+S	UCA	50	4636
+S	UCC	22	7539
+S	UCG	2	3142
+S	UCU	93	7469
+T	ACC	54	13910
+T	ACA	44	6853
+T	ACG	7	6604
+T	ACU	128	6893
+V	GUU	227	10167
+V	GUG	71	17816
+V	GUC	15	6108
+V	GUA	142	9519
+W	UGG	25	7932
+Y	UAC	41	6093
+Y	UAU	56	15429

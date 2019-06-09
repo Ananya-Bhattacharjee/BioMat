@@ -1,0 +1,83 @@
+#Alteromonas macleodii_AltDE1
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Alteromonas macleodii AltDE1 (NC_019393.1) GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_20HEGs	CF_LEGs
+*	UGA	1	577
+*	UAG	3	998
+*	UAA	16	2444
+A	GCU	135	29028
+A	GCG	68	30864
+A	GCC	25	26620
+A	GCA	121	33115
+C	UGU	7	7044
+C	UGC	6	5673
+D	GAU	48	43190
+D	GAC	92	33845
+E	GAG	62	27921
+E	GAA	174	56532
+F	UUU	24	37708
+F	UUC	58	18540
+G	GGU	186	33852
+G	GGG	1	12556
+G	GGC	71	34491
+G	GGA	9	10025
+H	CAC	42	15506
+H	CAU	10	13673
+I	AUU	59	44424
+I	AUA	1	16091
+I	AUC	109	19985
+K	AAA	177	47030
+K	AAG	102	24444
+L	CUA	63	19356
+L	CUC	1	9105
+L	CUG	27	16804
+L	CUU	79	33189
+L	UUA	23	33472
+L	UUG	35	20401
+M	AUG	91	32346
+N	AAC	96	31007
+N	AAU	21	28563
+P	CCA	50	14676
+P	CCC	1	8934
+P	CCU	56	18226
+P	CCG	9	10550
+Q	CAA	70	32835
+Q	CAG	37	22268
+R	AGA	4	8064
+R	AGG	0	3622
+R	CGA	7	8039
+R	CGC	71	19767
+R	CGG	2	3834
+R	CGU	176	16787
+S	AGC	47	21415
+S	AGU	8	16961
+S	UCA	21	17389
+S	UCC	1	4910
+S	UCG	4	12224
+S	UCU	63	18469
+T	ACC	21	24000
+T	ACA	30	17109
+T	ACG	15	17493
+T	ACU	89	16481
+V	GUU	145	31705
+V	GUG	32	24997
+V	GUC	11	10216
+V	GUA	98	29004
+W	UGG	14	16164
+Y	UAC	50	19237
+Y	UAU	21	21457

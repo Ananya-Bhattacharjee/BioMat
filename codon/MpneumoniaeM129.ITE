@@ -1,0 +1,83 @@
+#Mycoplasma pneumoniae_M129
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Mycoplasma pneumoniae M129(NC_000912.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_39HEGs	CF_LEGs
+*	UGA	15	1340
+*	UAG	12	174
+*	UAA	27	436
+A	GCU	198	5629
+A	GCG	80	2469
+A	GCC	110	3693
+A	GCA	105	3070
+C	UGU	20	1236
+C	UGC	11	472
+D	GAU	134	6881
+D	GAC	113	4326
+E	GAG	74	3378
+E	GAA	286	9503
+F	UUU	147	9920
+F	UUC	56	2889
+G	GGU	248	6193
+G	GGG	58	1975
+G	GGC	80	2622
+G	GGA	50	1403
+H	CAC	110	2679
+H	CAU	26	1406
+I	AUU	322	10523
+I	AUA	15	1251
+I	AUC	98	3282
+K	AAA	366	10360
+K	AAG	387	8732
+L	CUA	52	2447
+L	CUC	89	2754
+L	CUG	34	2192
+L	CUU	48	2282
+L	UUA	219	8972
+L	UUG	111	4863
+M	AUG	145	3456
+N	AAC	277	8277
+N	AAU	92	5665
+P	CCA	76	2432
+P	CCC	47	2054
+P	CCU	58	1850
+P	CCG	50	1476
+Q	CAA	215	8586
+Q	CAG	49	3580
+R	AGA	30	894
+R	AGG	7	622
+R	CGA	20	538
+R	CGC	140	2381
+R	CGG	59	1088
+R	CGU	151	2134
+S	AGC	49	2392
+S	AGU	75	4732
+S	UCA	54	1891
+S	UCC	66	2108
+S	UCG	31	1419
+S	UCU	37	1775
+T	ACC	161	4858
+T	ACA	51	2336
+T	ACG	43	1776
+T	ACU	109	4292
+V	GUU	153	4750
+V	GUG	146	4221
+V	GUC	51	2511
+V	GUA	132	3089
+W	UGG	28	1269
+Y	UAC	97	4089
+Y	UAU	51	3264

@@ -1,0 +1,84 @@
+#Neisseria meningitidis_FAM18
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Neisseria meningitidis FAM18(NC_008767.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_9HEGs	CF_LEGs
+*	UGA	0	808
+*	UAG	0	236
+*	UAA	9	1062
+A	GCU	59	5299
+A	GCG	32	17318
+A	GCC	78	25136
+A	GCA	57	11967
+C	UGU	7	1773
+C	UGC	7	4448
+D	GAU	33	13508
+D	GAC	79	17937
+E	GAG	39	7392
+E	GAA	152	29294
+F	UUU	18	12301
+F	UUC	52	12456
+G	GGU	98	9703
+G	GGG	4	4416
+G	GGC	70	26468
+G	GGA	1	5054
+H	CAC	32	7860
+H	CAU	13	5269
+I	AUU	60	13003
+I	AUA	1	3255
+I	AUC	80	18353
+K	AAA	125	27259
+K	AAG	13	6257
+L	CUA	1	1181
+L	CUC	1	8144
+L	CUG	66	20952
+L	CUU	2	5971
+L	UUA	2	4371
+L	UUG	68	18283
+M	AUG	65	14504
+N	AAC	44	15305
+N	AAU	13	8886
+P	CCA	2	1423
+P	CCC	14	8523
+P	CCU	34	4299
+P	CCG	36	10778
+Q	CAA	61	13459
+Q	CAG	8	10275
+R	AGA	0	1566
+R	AGG	1	2148
+R	CGA	0	1477
+R	CGC	70	16755
+R	CGG	1	3864
+R	CGU	75	6703
+S	AGC	20	9826
+S	AGU	0	2796
+S	UCA	2	2525
+S	UCC	25	8373
+S	UCG	6	5761
+S	UCU	27	3581
+T	ACC	84	15499
+T	ACA	7	3817
+T	ACG	2	7920
+T	ACU	36	3405
+V	GUU	64	9742
+V	GUG	33	10742
+V	GUC	24	13881
+V	GUA	69	5910
+W	UGG	9	7157
+Y	UAC	48	9419
+Y	UAU	8	8539
+			

@@ -1,0 +1,216 @@
+LOCUS       MRTEF2       2263 bp    DNA             PLN       17-FEB-1997
+DEFINITION  Mucor racemosus TEF-2 gene for elongation factor 1-alpha
+            (EF-1-alpha).
+ACCESSION   X17476
+NID         g2962
+KEYWORDS    EF-1-alpha; elongation factor; elongation factor 1-alpha; TEF-2
+            gene.
+SOURCE      Rhizomucor racemosus.
+  ORGANISM  Rhizomucor racemosus
+            Eukaryotae; mitochondrial eukaryotes; Fungi; Zygomycota;
+            Zygomycetes; Mucorales; Mucoraceae; Rhizomucor.
+REFERENCE   1  (bases 1 to 2165)
+  AUTHORS   Sundstrom,P., Lira,L.M., Choi,D., Linz,J.E. and Sypherd,P.S.
+  TITLE     Sequence analysis of the EF-1 alpha gene family of Mucor racemosus
+  JOURNAL   Nucleic Acids Res. 15 (23), 9997-10006 (1987)
+  MEDLINE   88096553
+REFERENCE   2  (bases 2166 to 2263)
+  AUTHORS   Sundstrom,P.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (04-JAN-1990) Sundstrom P., Texas College of Osteopathic
+            Medicine, Microbiology and Immunology Department, 3500 Camp Bowie
+            Boulevard, Fort Worth, TX, USA
+COMMENT     See <J02605> and <X17475> for TEF1 and TEF3 genes encoding
+            elongation factor 1-alpha (EF-1-alpha).
+            See <M20232> and <M16353> for TEF2 5' and 3' ends.
+FEATURES             Location/Qualifiers
+     source          1..2263
+                     /organism="Rhizomucor racemosus"
+                     /strain="ATCC 1216B"
+                     /db_xref="taxon:4841"
+                     /clone="2.2-lambda, pMuEF1-14"
+                     /clone_lib="lambda-gtWES.lambda-B"
+     CDS             join(464..517,646..1735,1933..2165)
+                     /codon_start=1
+                     /product="EF-1-alpha"
+                     /db_xref="PID:g2963"
+                     /db_xref="SWISS-PROT:P14864"
+                     /translation="MGKEKTHVNVVVIGHVDSGKSTTTGHLIYKCGGIDKRTIEKFEK
+                     EAAELGKGSFKYAWVLDKLKAERERGITIDIALWKFETPKYNVTVIDAPGHRDFIKNM
+                     ITGTSQADCAILIIAGGTGEFEAGISKDGQTREHALLAFTLGFRQLIVAINKMDTTKW
+                     SQDRYNEIVKEVSGFIKKIGFNPKSVPFVPISGWHGDNMLDESTNMPWFKGWNKETKA
+                     GSKTGKTLLEAIDAIEPPVRPSDKPLRLPLQDVYKIGGIGTVPVGRVETGTIKAGMVV
+                     NFAPAAVTTEVKSVEMHHETLTEGLPGDNVGFNVKNVSVKDIRRGNVCSDSKNDPAKE
+                     SASFTAQVIILNHPGQISAGYAPVLDCHTAHIACKFSELIEKIDRRSGKKMEDSPKFV
+                     KSGDSAIVKMVPSKPMCVEAYTDYPPLGRFAVRDMRQTVAVGVIKAVEKVDKAGKVTK
+                     AAAKASKK"
+     exon            <464..517
+                     /number=1
+     intron          518..645
+                     /number=1
+     exon            646..1735
+                     /number=2
+     old_sequence    729
+                     /note="t was c in [1]"
+                     /citation=[1]
+                     /replace="c"
+     old_sequence    732
+                     /note="c was t in [1]"
+                     /citation=[1]
+                     /replace="t"
+     intron          1736..1932
+                     /number=2
+     exon            1933..>2165
+                     /number=3
+BASE COUNT      572 a    511 c    480 g    700 t
+ORIGIN      
+        1 tttttctcat tgggaatcca ttggaatgaa aggacaaatg cactctcgca atgagatgct
+       61 ttaaatgctg gcaaatttga aggatgtaca atcgaaactt tccaaatgtc ctcaaacaag
+      121 acgggctatc catatgaaaa ctagcaatgt atagagacta aagcaactga tcctttgtcc
+      181 aagaagcagt tagtgctgta tcataagcca ctaatggaag ttttgcagct ttcctttata
+      241 gtaaaacgtc caatcaatgc atgtaactgt gaccatcggg cacaagtggc tttgagctgc
+      301 gtaacaaaaa tttttttgta gtatttaaaa acatggatct aaaaaaactt tcttgttttt
+      361 tttttctcct tctatcaatt tacaagttta atcagtgcgt atactgctat gtttttgttc
+      421 tagtaataga tcttggttct aacatgtctt tttctctata gcaatgggta aagagaagac
+      481 tcacgttaac gtcgtcgtca ttggtcacgt cgattccgta agtaaaattt tttcaaatgt
+      541 cgatgctggc ctctttgcat ctcttcctct gaaggcaaga tgaaagatgg ctagtgacat
+      601 ctagttgcag ttcgtgttta ctaacctgat cttgtctgct cttagggtaa atctactact
+      661 actggtcact tgatttacaa gtgtggtggt attgataagc gtaccatcga gaagttcgag
+      721 aaggaagctg ccgaactcgg taagggttct ttcaagtacg cctgggtcct tgataaactt
+      781 aaggctgaac gtgagcgtgg tatcaccatt gatatcgctc tctggaagtt cgagaccccc
+      841 aagtacaacg ttactgttat tgatgctccc ggccatcgtg atttcatcaa gaacatgatt
+      901 actggtactt ctcaagctga ttgtgctatt cttatcattg ctggtggtac tggtgaattc
+      961 gaagctggta tctccaagga tggtcaaacc cgtgagcacg ctcttcttgc cttcaccttg
+     1021 ggtttccgtc aattgattgt tgctatcaac aagatggata ccaccaagtg gtctcaagat
+     1081 cgttacaacg aaatcgtcaa ggaagtttcc ggtttcatca agaagattgg tttcaacccc
+     1141 aagtctgttc ccttcgtccc catctctggc tggcacggtg ataacatgtt ggatgaatcc
+     1201 accaacatgc cctggttcaa gggatggaac aaggagacca aggctggttc caagaccggt
+     1261 aagactctcc tcgaagccat cgatgctatt gagccccctg tccgtccttc cgacaagcct
+     1321 ctccgtcttc ccctccaaga tgtctacaag attggtggta ttggtacagt tcccgttggt
+     1381 cgtgttgaga ctggtactat caaggctggt atggttgtca actttgctcc cgctgctgtc
+     1441 accaccgaag tcaagtccgt cgaaatgcat cacgaaaccc tcactgaagg tctccccggt
+     1501 gacaacgtcg gtttcaacgt caagaacgtc tccgtcaagg atatccgtcg tggtaacgtc
+     1561 tgttccgact ccaagaacga tcccgctaag gaatctgcct ctttcaccgc tcaagttatt
+     1621 atcttgaacc accccggtca aatctctgct ggttacgcac cagttctcga ttgtcacact
+     1681 gctcacatcg cctgtaagtt ctctgaactc attgagaaga ttgatcgtcg ttccggtaag
+     1741 tacctgcagc tgtcaaaatt gaaggtccgt tcgtcttttt tgtatactgg gtttgaattc
+     1801 atttaatatg gcttcaattt atttgattta ctacccctgg atcgaaaatg atgatatctc
+     1861 cttcaattct tgaccttttt tgatgattta aagtgggtta ttaacgtcgt aatcgtctct
+     1921 tttgtctcgc aggtaagaag atggaggatt ctcccaagtt cgtcaagtct ggtgattccg
+     1981 ctatcgtcaa gatggttccc tccaagccca tgtgtgtcga agcttacact gactatcctc
+     2041 ctcttggtcg tttcgctgtc cgtgatatgc gtcaaaccgt cgctgtcggt gtcatcaagg
+     2101 ctgtcgagaa ggttgacaag gctggtaagg tcaccaaggc cgctgccaag gcttccaaga
+     2161 aataaattgc tacatagtag ttttttcttt cccattgctg tcagtatata gtaaaagccc
+     2221 ttgtacagtg tgctttggat ttaaattatt caaaataaat caa
+//
+
+
+
+LOCUS       MRTEF3       1881 bp    DNA             PLN       10-APR-1993
+DEFINITION  Mucor racemosus TEF-3 gene for elongation factor 1-alpha
+            (EF-1-alpha).
+ACCESSION   X17475
+NID         g2964
+KEYWORDS    EF-1-alpha; elongation factor; elongation factor 1-alpha; TEF-3
+            gene.
+SOURCE      Rhizomucor racemosus.
+  ORGANISM  Rhizomucor racemosus
+            Eukaryotae; mitochondrial eukaryotes; Fungi; Zygomycota;
+            Zygomycetes; Mucorales; Mucoraceae; Rhizomucor.
+REFERENCE   1  (bases 1 to 1716)
+  AUTHORS   Sundstrom,P., Lira,L.M., Choi,D., Linz,J.E. and Sypherd,P.S.
+  TITLE     Sequence analysis of the EF-1 alpha gene family of Mucor racemosus
+  JOURNAL   Nucleic Acids Res. 15 (23), 9997-10006 (1987)
+  MEDLINE   88096553
+REFERENCE   2  (bases 1 to 1881)
+  AUTHORS   Sundstrom,P.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (04-JAN-1990) Sundstrom P., Texas College of Osteopathic
+            Medicine, Microbiology and Immunology Department, 3500 Camp Bowie
+            Boulevard, Fort Worth, TX, USA
+COMMENT     See <J02605> and <X17476> for TEF1 and TEF2 genes encoding
+            elongation factor 1-alpha (EF-1-alpha).
+            See <M20233> and <M16354> for TEF3 gene 5' and3' ends.
+FEATURES             Location/Qualifiers
+     source          1..1881
+                     /organism="Rhizomucor racemosus"
+                     /strain="ATCC 1216B"
+                     /db_xref="taxon:4841"
+                     /clone="1.6-lambda, pMuEF1-3"
+                     /clone_lib="lambda-gtWES.lambda-B"
+     repeat_region   2..11
+                     /rpt_type=DIRECT
+     repeat_region   38..48
+                     /rpt_type=DIRECT
+     CDS             join(88..141,200..1289,1490..1719)
+                     /codon_start=1
+                     /product="EF-1-alpha"
+                     /db_xref="PID:g2965"
+                     /db_xref="SWISS-PROT:P14865"
+                     /translation="MGKEKTHVNVVVIGHVDSGKSTTTGHLIYKCGGIDKRTIEKFEK
+                     EAAELGKGSFKYAWVLDKLKAERERGITIDIALWKFETPKYNVTVIDAPGHRDFIKNM
+                     ITGTSQADCAILIIAGGTGEFEAGISKDGQTREHALLAFTLGVRQLIVAINKMDTTKW
+                     SQDRYNEIVKEVSGFIKKIGFNPKSVPFVPISGWHGDNMLDESTNMPWFKGWNKETKA
+                     GSKTGKTLLEAIDAIEPPVRPSDKPLRLPLQDVYKIGGIGTVPVGRVETGTIKAGMVV
+                     NFAPAAVTTEVKSVEMHHETLTEGLPGDNVGFNVKNVSVKDIRRGNVCSDSKNDPAKE
+                     SASFTAQVIILNHPGQISAGYAPVLDCHTAHIACKFSELIEKIDRRSEKMEDSPKFVK
+                     SGDSAIVKMVPSKPMCVEAYTDYPPLGRFAVRDMRQTVAVGVIKAVEKVDKAGKVTKA
+                     AAKASKK"
+     exon            <88..141
+                     /number=1
+     intron          142..199
+                     /number=1
+     exon            200..1289
+                     /number=2
+     old_sequence    283
+                     /note="t was c in [1]"
+                     /citation=[1]
+     old_sequence    286
+                     /note="c was t in [1]"
+                     /citation=[1]
+     old_sequence    472
+                     /note="c was t in [1]"
+                     /citation=[1]
+     intron          1290..1489
+                     /number=2
+     old_sequence    1414
+                     /note="t was c in [1]"
+                     /citation=[1]
+     exon            1490..>1719
+                     /number=3
+BASE COUNT      459 a    436 c    413 g    573 t
+ORIGIN      
+        1 ggatccatcc atgccacaaa tcagcataaa tgctatccat ccatccatca aacatactta
+       61 catgtatcat ctttcattat agtcgcaatg ggtaaggaga agactcacgt taacgtcgtc
+      121 gtcattggtc acgtcgattc cgtaagtgtt tactacatga cgagagtgat gtgattgatt
+      181 aatcatatcg ttttcatagg gtaaatctac tactactggt cacttgattt acaagtgtgg
+      241 tggtattgat aagcgtacca tcgagaagtt cgagaaggaa gctgccgaac tcggtaaggg
+      301 ttctttcaag tacgcttggg tccttgataa acttaaggct gaacgtgagc gtggtatcac
+      361 cattgatatc gctctctgga agttcgagac ccccaagtac aacgtcaccg ttattgatgc
+      421 tcccggtcat cgtgatttca tcaagaacat gattactggt acttctcaag ccgattgtgc
+      481 cattcttatt attgctggtg gtactggtga attcgaagct ggtatctcca aggatggtca
+      541 aacccgtgag cacgctcttc ttgccttcac cttgggtgtc cgtcaattga ttgttgctat
+      601 caacaagatg gataccacca agtggtctca agatcgttac aacgaaatcg tcaaggaagt
+      661 ttccggtttc atcaagaaga ttggtttcaa ccccaagtct gttcccttcg tccccatctc
+      721 tggctggcac ggtgataaca tgttggatga atccaccaac atgccctggt tcaagggatg
+      781 gaacaaggag accaaggctg gttccaagac cggtaagact ctcctcgaag ccatcgatgc
+      841 tattgagccc cctgtccgtc cttccgacaa gcctctccgt cttcccctcc aagatgtcta
+      901 caagattggt ggtattggta cagttcccgt tggtcgtgtt gagactggta ctatcaaggc
+      961 tggtatggtt gtcaactttg ctcccgctgc tgtcaccacc gaagtcaagt ccgtcgaaat
+     1021 gcaccacgaa accctcactg aaggtctccc cggtgacaac gttggtttca acgtcaagaa
+     1081 cgtctccgtc aaggatatcc gtcgtggtaa cgtctgttcc gactccaaga acgatcccgc
+     1141 taaggaatct gcctctttca ccgctcaagt tatcatcttg aaccaccccg gtcaaatctc
+     1201 tgctggttac gcaccagttc tcgattgtca cactgctcac atcgcctgta agttctctga
+     1261 actcattgag aagattgatc gtcgttccgg taagtacctg cagctgtcaa aattgaaggt
+     1321 ccgttcgtct tttttctata ctgggtttga attcatttaa tatggcttca atttatttga
+     1381 tttactaccc ctggatcgaa aatgatgata tcttcttcaa ttcttgacct tttttgatga
+     1441 tttaaagtgg gttattaacg tcgtaatcgt ctcttttgtc tcgcaggtaa gaagatggag
+     1501 gattctccta agtttgtcaa gtctggtgat tccgctatcg tcaagatggt tccctccaag
+     1561 cccatgtgtg tcgaagctta cactgactat cctcctcttg gtcgtttcgc tgtccgtgat
+     1621 atgcgtcaaa ccgtcgctgt cggtgtcatc aaggccgtcg agaaggttga caaggctggt
+     1681 aaggtcacca aggccgctgc caaggcttcc aagaaataaa tcttttgatt tttgctcttt
+     1741 gactgtataa aagtttgtat aacttttgta attaaataaa aaattattag ttgacattct
+     1801 ataatctgta taagttgtgt tgtccatgac gtgatgtgag gtgtgtttat tgagtggtgc
+     1861 acatcagttc gtatattagg a
+//
+

@@ -1,0 +1,74 @@
+#Shewanella oneidensis MR-1
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download S.oneidensis MR-1 protien abundance data at:
+# http://pax-db.org/dao/211586-GPM_201408.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	1	5
+*	UAG	4	7
+*	UAA	35	29
+A	GCU	334	649
+A	GCG	85	806
+A	GCC	56	1094
+A	GCA	174	657
+C	UGU	15	132
+C	UGC	9	120
+D	GAU	113	1337
+D	GAC	118	475
+E	GAG	92	762
+E	GAA	260	1130
+F	UUU	51	853
+F	UUC	98	315
+G	GGU	300	796
+G	GGG	5	300
+G	GGC	160	826
+G	GGA	10	200
+H	CAC	73	217
+H	CAU	41	383
+I	AUU	127	1036
+I	AUA	3	185
+I	AUC	185	672
+K	AAA	309	955
+K	AAG	192	552
+L	CUA	41	310
+L	CUC	15	461
+L	CUG	136	632
+L	CUU	42	474
+L	UUA	118	988
+L	UUG	46	499
+M	AUG	157	691
+N	AAC	149	516
+N	AAU	49	793
+P	CCA	118	370
+P	CCC	5	320
+P	CCU	68	371
+P	CCG	14	259
+Q	CAA	131	1091
+Q	CAG	62	614
+R	AGA	9	93
+R	AGG	0	70
+R	CGA	4	111
+R	CGC	115	505
+R	CGG	3	122
+R	CGU	360	456
+S	AGC	51	608
+S	AGU	22	446
+S	UCA	60	321
+S	UCC	3	222
+S	UCG	11	276
+S	UCU	100	278
+T	ACC	58	751
+T	ACA	41	307
+T	ACG	16	350
+T	ACU	188	436
+V	GUU	287	507
+V	GUG	70	822
+V	GUC	41	426
+V	GUA	140	345
+W	UGG	32	359
+Y	UAC	81	330
+Y	UAU	35	605

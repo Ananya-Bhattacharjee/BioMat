@@ -1,0 +1,84 @@
+#Advenella kashmirensis_WT001
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Advenella kashmirensis WT001(NC_017964.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_35HEGs	CF_LEGs
+*	UGA	6	1914
+*	UAG	1	615
+*	UAA	28	1309
+A	GCU	156	13677
+A	GCG	72	28425
+A	GCC	201	44899
+A	GCA	155	22279
+C	UGU	1	3486
+C	UGC	20	7385
+D	GAU	102	28804
+D	GAC	127	23350
+E	GAG	95	18078
+E	GAA	230	30903
+F	UUU	58	21163
+F	UUC	87	15967
+G	GGU	230	16839
+G	GGG	7	9924
+G	GGC	185	40564
+G	GGA	21	8506
+H	CAC	71	9243
+H	CAU	32	13702
+I	AUU	112	25455
+I	AUA	2	5410
+I	AUC	191	25791
+K	AAA	308	21089
+K	AAG	126	17360
+L	CUA	5	3529
+L	CUC	41	8637
+L	CUG	230	56853
+L	CUU	37	11065
+L	UUA	11	4120
+L	UUG	45	18056
+M	AUG	146	26475
+N	AAC	119	15162
+N	AAU	57	17690
+P	CCA	50	7359
+P	CCC	27	13806
+P	CCU	87	7927
+P	CCG	39	19822
+Q	CAA	57	13829
+Q	CAG	116	30618
+R	AGA	0	2893
+R	AGG	5	3516
+R	CGA	3	4578
+R	CGC	178	25818
+R	CGG	12	10424
+R	CGU	276	12174
+S	AGC	61	15554
+S	AGU	14	6853
+S	UCA	53	6938
+S	UCC	49	11265
+S	UCG	23	12788
+S	UCU	64	6357
+T	ACC	102	23785
+T	ACA	92	9508
+T	ACG	46	15486
+T	ACU	40	6157
+V	GUU	167	13563
+V	GUG	113	28148
+V	GUC	99	19803
+V	GUA	72	10624
+W	UGG	24	13611
+Y	UAC	78	10419
+Y	UAU	36	15497
+

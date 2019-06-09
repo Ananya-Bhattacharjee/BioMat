@@ -1,0 +1,80 @@
+#Escherichia coli K12
+# Format: use the first line for species name (no space between # and 
+# species name). 
+# The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Xuhua Xia
+# 1. download E. coli protien abundance data at:
+# http://pax-db.org/dao/511145-E.coli_whole_organism-integrated_dataset.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 genes are taken as highly expressed genes (HEG), and the 
+# bottom 100 taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 100 LEGs
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_HEGs	CF_LEGs
+*	UGA	2	30
+*	UAG	0	10
+*	UAA	37	61
+A	GCU	330	602
+A	GCG	133	1376
+A	GCC	58	1394
+A	GCA	197	905
+C	UGU	11	241
+C	UGC	17	317
+D	GAU	103	1593
+D	GAC	185	922
+E	GAG	106	1047
+E	GAA	321	1731
+F	UUU	45	1046
+F	UUC	144	744
+G	GGU	336	965
+G	GGG	7	561
+G	GGC	175	1431
+G	GGA	4	393
+H	CAC	83	509
+H	CAU	38	677
+I	AUU	92	1204
+I	AUA	1	282
+I	AUC	275	1078
+K	AAA	401	1525
+K	AAG	154	534
+L	CUA	1	194
+L	CUC	18	511
+L	CUG	366	2234
+L	CUU	22	548
+L	UUA	11	688
+L	UUG	19	626
+M	AUG	172	1198
+N	AAC	195	1036
+N	AAU	29	985
+P	CCA	31	428
+P	CCC	3	327
+P	CCU	36	381
+P	CCG	156	1040
+Q	CAA	42	797
+Q	CAG	175	1497
+R	AGA	3	176
+R	AGG	0	83
+R	CGA	0	206
+R	CGC	160	1080
+R	CGG	3	412
+R	CGU	353	829
+S	AGC	66	921
+S	AGU	14	498
+S	UCA	9	345
+S	UCC	70	372
+S	UCG	3	415
+S	UCU	115	342
+T	ACC	141	1194
+T	ACA	15	420
+T	ACG	14	796
+T	ACU	157	379
+V	GUU	299	700
+V	GUG	72	1131
+V	GUC	45	750
+V	GUA	166	405
+W	UGG	36	789
+Y	UAC	95	679
+Y	UAU	32	828

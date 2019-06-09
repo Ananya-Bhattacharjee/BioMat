@@ -1,0 +1,83 @@
+#Chlamydophila pneumoniae_CWL029
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Chlamydophila pneumoniae CWL029(NC_000922.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_39HEGs	CF_LEGs
+*	UGA	1	158
+*	UAG	8	302
+*	UAA	30	530
+A	GCU	260	10682
+A	GCG	42	2913
+A	GCC	67	3978
+A	GCA	142	6880
+C	UGU	39	3613
+C	UGC	27	2012
+D	GAU	225	11643
+D	GAC	80	4169
+E	GAG	101	8253
+E	GAA	366	14818
+F	UUU	149	10942
+F	UUC	78	5742
+G	GGU	160	4803
+G	GGG	66	4314
+G	GGC	87	3331
+G	GGA	226	9318
+H	CAC	43	2672
+H	CAU	88	5710
+I	AUU	265	12201
+I	AUA	64	4805
+I	AUC	117	7314
+K	AAA	484	14000
+K	AAG	194	7231
+L	CUA	61	5590
+L	CUC	50	5631
+L	CUG	35	3106
+L	CUU	132	9122
+L	UUA	208	10892
+L	UUG	108	5550
+M	AUG	168	6559
+N	AAC	76	4497
+N	AAU	160	8886
+P	CCA	50	3091
+P	CCC	29	3307
+P	CCU	158	8248
+P	CCG	7	1136
+Q	CAA	172	9276
+Q	CAG	74	4878
+R	AGA	149	3691
+R	AGG	28	1544
+R	CGA	70	2331
+R	CGC	44	2427
+R	CGG	16	1095
+R	CGU	195	4678
+S	AGC	45	3085
+S	AGU	77	4126
+S	UCA	68	4109
+S	UCC	49	3893
+S	UCG	25	2232
+S	UCU	196	10765
+T	ACC	53	3625
+T	ACA	120	6047
+T	ACG	24	2704
+T	ACU	136	6140
+V	GUU	222	7097
+V	GUG	73	4051
+V	GUC	91	4537
+V	GUA	157	5745
+W	UGG	42	3566
+Y	UAC	56	3445
+Y	UAU	91	8033

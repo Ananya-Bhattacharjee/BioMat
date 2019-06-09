@@ -1,0 +1,84 @@
+#Campylobacter coli_15-537360
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Campylobacter coli 15-537360(NC_022660.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_40HEGs	CF_LEGs
+*	UGA	2	430
+*	UAG	0	137
+*	UAA	38	983
+A	GCU	288	16200
+A	GCG	61	3144
+A	GCC	10	3559
+A	GCA	250	11110
+C	UGU	26	3974
+C	UGC	12	2067
+D	GAU	264	23898
+D	GAC	28	2250
+E	GAG	76	7750
+E	GAA	434	27455
+F	UUU	165	27390
+F	UUC	39	2405
+G	GGU	296	9496
+G	GGG	21	2998
+G	GGC	82	5027
+G	GGA	135	10195
+H	CAC	43	1684
+H	CAU	58	6513
+I	AUU	269	20217
+I	AUA	50	12788
+I	AUC	153	9964
+K	AAA	682	38199
+K	AAG	78	7469
+L	CUA	38	3720
+L	CUC	5	1750
+L	CUG	1	678
+L	CUU	176	15981
+L	UUA	214	23329
+L	UUG	64	8682
+M	AUG	173	10646
+N	AAC	66	4172
+N	AAU	214	25983
+P	CCA	114	3783
+P	CCC	2	1028
+P	CCU	86	7945
+P	CCG	11	645
+Q	CAA	155	13939
+Q	CAG	8	1451
+R	AGA	290	7759
+R	AGG	7	1450
+R	CGA	2	564
+R	CGC	69	2342
+R	CGG	0	55
+R	CGU	89	2830
+S	AGC	78	7196
+S	AGU	78	10231
+S	UCA	69	4599
+S	UCC	1	1133
+S	UCG	4	1031
+S	UCU	93	7671
+T	ACC	28	3567
+T	ACA	134	6031
+T	ACG	6	1435
+T	ACU	183	8562
+V	GUU	262	10512
+V	GUG	49	5153
+V	GUC	11	1671
+V	GUA	210	8481
+W	UGG	37	3208
+Y	UAC	37	2583
+Y	UAU	151	15540
+

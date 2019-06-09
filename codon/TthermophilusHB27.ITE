@@ -1,0 +1,83 @@
+#Thermus thermophilus_HB27
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Thermus thermophilus HB27(NC_005835.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_6HEGs	CF_LEGs
+*	UGA	2	827
+*	UAG	2	722
+*	UAA	2	377
+A	GCU	7	1429
+A	GCG	62	15290
+A	GCC	93	50254
+A	GCA	0	903
+C	UGU	0	84
+C	UGC	10	2140
+D	GAU	3	858
+D	GAC	101	20186
+E	GAG	173	44786
+E	GAA	8	6025
+F	UUU	26	3783
+F	UUC	35	18377
+G	GGU	21	1092
+G	GGG	83	28132
+G	GGC	78	21949
+G	GGA	2	2927
+H	CAC	53	10443
+H	CAU	0	442
+I	AUU	38	1407
+I	AUA	1	655
+I	AUC	93	13609
+K	AAA	2	1685
+K	AAG	131	19557
+L	CUA	1	1768
+L	CUC	40	43755
+L	CUG	59	24187
+L	CUU	16	9572
+L	UUA	0	618
+L	UUG	26	5597
+M	AUG	55	8599
+N	AAC	42	8912
+N	AAU	6	183
+P	CCA	0	709
+P	CCC	55	28140
+P	CCU	19	2235
+P	CCG	37	6525
+Q	CAA	2	1740
+Q	CAG	60	12683
+R	AGA	1	401
+R	AGG	8	9240
+R	CGA	1	622
+R	CGC	46	17070
+R	CGG	81	21359
+R	CGU	13	798
+S	AGC	12	7925
+S	AGU	3	183
+S	UCA	0	117
+S	UCC	22	8942
+S	UCG	13	2154
+S	UCU	0	388
+T	ACC	54	16136
+T	ACA	0	192
+T	ACG	68	5473
+T	ACU	0	213
+V	GUU	7	1348
+V	GUG	163	29835
+V	GUC	33	16370
+V	GUA	3	714
+W	UGG	13	7624
+Y	UAC	53	16195
+Y	UAU	4	624

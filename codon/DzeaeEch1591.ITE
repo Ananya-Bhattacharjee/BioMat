@@ -1,0 +1,83 @@
+#Dickeya zeae_Ech1591
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Dickeya zeae Ech1591(NC_012912.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_16HEGs	CF_LEGs
+*	UGA	1	1647
+*	UAG	0	394
+*	UAA	15	2004
+A	GCU	139	15624
+A	GCG	91	52449
+A	GCC	77	47843
+A	GCA	73	17165
+C	UGU	8	5288
+C	UGC	7	8591
+D	GAU	63	39391
+D	GAC	119	31533
+E	GAG	76	26554
+E	GAA	189	44822
+F	UUU	17	24706
+F	UUC	93	24699
+G	GGU	122	24189
+G	GGG	4	18573
+G	GGC	109	47871
+G	GGA	2	8073
+H	CAC	44	15400
+H	CAU	20	16502
+I	AUU	43	30037
+I	AUA	0	5864
+I	AUC	157	37290
+K	AAA	179	33800
+K	AAG	55	15425
+L	CUA	1	4813
+L	CUC	3	12350
+L	CUG	194	83331
+L	CUU	4	8940
+L	UUA	3	11652
+L	UUG	18	29332
+M	AUG	94	33815
+N	AAC	78	26993
+N	AAU	19	21037
+P	CCA	6	5976
+P	CCC	1	9983
+P	CCU	8	7726
+P	CCG	99	38149
+Q	CAA	22	21237
+Q	CAG	85	44435
+R	AGA	1	2739
+R	AGG	0	2218
+R	CGA	0	5268
+R	CGC	76	32693
+R	CGG	1	15064
+R	CGU	155	24917
+S	AGC	38	24295
+S	AGU	2	10037
+S	UCA	7	7291
+S	UCC	30	14439
+S	UCG	4	17000
+S	UCU	51	7807
+T	ACC	96	35412
+T	ACA	12	6691
+T	ACG	15	22128
+T	ACU	47	7025
+V	GUU	165	14718
+V	GUG	56	42999
+V	GUC	21	22922
+V	GUA	56	13753
+W	UGG	15	19313
+Y	UAC	58	17835
+Y	UAU	11	20066

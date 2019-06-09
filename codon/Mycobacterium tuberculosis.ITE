@@ -1,0 +1,74 @@
+#Mycobacterium tuberculosis H37Rv
+## This table is contributed by Yulong Wei and Juan Wang
+# 1. download M.tuberculosis H37Rv protien abundance data at:
+# http://pax-db.org/dao/83332-WHOLE_ORGANISM-integrated.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	20	20
+*	UAG	17	16
+*	UAA	3	2
+A	GCU	127	202
+A	GCG	505	824
+A	GCC	814	930
+A	GCA	129	201
+C	UGU	12	43
+C	UGC	32	96
+D	GAU	97	256
+D	GAC	479	533
+E	GAG	417	397
+E	GAA	137	208
+F	UUU	38	95
+F	UUC	296	274
+G	GGU	297	251
+G	GGG	359	293
+G	GGC	958	696
+G	GGA	120	119
+H	CAC	145	248
+H	CAU	30	106
+I	AUU	67	99
+I	AUA	13	47
+I	AUC	390	498
+K	AAA	52	85
+K	AAG	375	188
+L	CUA	26	81
+L	CUC	170	270
+L	CUG	496	694
+L	CUU	44	85
+L	UUA	15	30
+L	UUG	133	280
+M	AUG	180	236
+N	AAC	355	329
+N	AAU	48	74
+P	CCA	34	91
+P	CCC	191	243
+P	CCU	51	49
+P	CCG	311	404
+Q	CAA	73	129
+Q	CAG	298	352
+R	AGA	6	11
+R	AGG	19	49
+R	CGA	39	104
+R	CGC	228	429
+R	CGG	149	383
+R	CGU	78	132
+S	AGC	145	235
+S	AGU	25	48
+S	UCA	30	46
+S	UCC	167	154
+S	UCG	209	277
+S	UCU	14	31
+T	ACC	467	500
+T	ACA	54	71
+T	ACG	134	222
+T	ACU	38	55
+V	GUU	85	114
+V	GUG	335	568
+V	GUC	375	453
+V	GUA	39	56
+W	UGG	112	228
+Y	UAC	158	141
+Y	UAU	39	107

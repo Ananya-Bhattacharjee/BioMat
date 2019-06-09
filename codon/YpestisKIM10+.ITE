@@ -1,0 +1,83 @@
+#Yersinia pestis_KIM10+
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Yersinia pestis KIM10+(NC_004088.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_16HEGs	CF_LEGs
+*	UGA	1	1219
+*	UAG	0	596
+*	UAA	15	2243
+A	GCU	175	24755
+A	GCG	54	30249
+A	GCC	35	34335
+A	GCA	101	26410
+C	UGU	11	7140
+C	UGC	7	6007
+D	GAU	87	46689
+D	GAC	92	17773
+E	GAG	65	25410
+E	GAA	202	43289
+F	UUU	25	28524
+F	UUC	83	19542
+G	GGU	141	33427
+G	GGG	7	20138
+G	GGC	95	29950
+G	GGA	2	7645
+H	CAC	38	10783
+H	CAU	29	17839
+I	AUU	66	39149
+I	AUA	0	9750
+I	AUC	139	29384
+K	AAA	164	40342
+K	AAG	66	14711
+L	CUA	6	10018
+L	CUC	1	11350
+L	CUG	147	45946
+L	CUU	12	11736
+L	UUA	10	27842
+L	UUG	49	30695
+M	AUG	93	32902
+N	AAC	72	20804
+N	AAU	27	30740
+P	CCA	53	15791
+P	CCC	2	9668
+P	CCU	25	12697
+P	CCG	37	16876
+Q	CAA	42	30486
+Q	CAG	57	31080
+R	AGA	3	3837
+R	AGG	0	2404
+R	CGA	1	5039
+R	CGC	66	20954
+R	CGG	2	10021
+R	CGU	161	25408
+S	AGC	29	18101
+S	AGU	6	16452
+S	UCA	22	13575
+S	UCC	15	9219
+S	UCG	3	8827
+S	UCU	61	12363
+T	ACC	60	27586
+T	ACA	13	12074
+T	ACG	11	15179
+T	ACU	82	13297
+V	GUU	179	23853
+V	GUG	34	28688
+V	GUC	29	19771
+V	GUA	60	13976
+W	UGG	15	17228
+Y	UAC	43	12531
+Y	UAU	26	25065

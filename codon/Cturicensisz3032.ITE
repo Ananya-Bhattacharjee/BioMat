@@ -1,0 +1,83 @@
+#Cronobacter turicensis_z3032
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Cronobacter turicensis z3032(NC_013282.2)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_15HEGs	CF_LEGs
+*	UGA	1	1356
+*	UAG	0	259
+*	UAA	14	2298
+A	GCU	171	10406
+A	GCG	75	69436
+A	GCC	44	42070
+A	GCA	76	10552
+C	UGU	4	3463
+C	UGC	9	9765
+D	GAU	53	34669
+D	GAC	113	31789
+E	GAG	72	31930
+E	GAA	173	39490
+F	UUU	18	23464
+F	UUC	87	24874
+G	GGU	111	14139
+G	GGG	2	14323
+G	GGC	97	62085
+G	GGA	1	4597
+H	CAC	46	14818
+H	CAU	13	13626
+I	AUU	34	26517
+I	AUA	0	3992
+I	AUC	147	36554
+K	AAA	177	34767
+K	AAG	55	13886
+L	CUA	0	2128
+L	CUC	5	23562
+L	CUG	191	80743
+L	CUU	7	16186
+L	UUA	3	7438
+L	UUG	5	7892
+M	AUG	89	33353
+N	AAC	90	30476
+N	AAU	7	14116
+P	CCA	4	3892
+P	CCC	0	8196
+P	CCU	9	6627
+P	CCG	88	40158
+Q	CAA	16	8918
+Q	CAG	85	46783
+R	AGA	1	1590
+R	AGG	0	1572
+R	CGA	0	2299
+R	CGC	71	44984
+R	CGG	1	7522
+R	CGU	134	18522
+S	AGC	34	27051
+S	AGU	3	4759
+S	UCA	5	4711
+S	UCC	34	12809
+S	UCG	1	14994
+S	UCU	57	6309
+T	ACC	78	33110
+T	ACA	4	3824
+T	ACG	4	25699
+T	ACU	61	5146
+V	GUU	149	12165
+V	GUG	38	45802
+V	GUC	14	23789
+V	GUA	59	8328
+W	UGG	16	19746
+Y	UAC	50	17304
+Y	UAU	11	17105

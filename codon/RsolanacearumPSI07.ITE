@@ -1,0 +1,83 @@
+#Ralstonia solanacearum_PSI07
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Ralstonia solanacearum PSI07(NC_014311.1) GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_39HEGs	CF_LEGs
+*	UGA	5	2142
+*	UAG	0	496
+*	UAA	34	605
+A	GCU	132	6085
+A	GCG	184	54025
+A	GCC	333	64280
+A	GCA	83	9962
+C	UGU	2	1022
+C	UGC	22	8703
+D	GAU	59	16248
+D	GAC	222	40321
+E	GAG	150	32602
+E	GAA	266	20276
+F	UUU	18	4461
+F	UUC	172	30879
+G	GGU	177	8294
+G	GGG	9	10632
+G	GGC	370	63129
+G	GGA	4	3280
+H	CAC	93	17267
+H	CAU	26	7150
+I	AUU	50	4545
+I	AUA	0	562
+I	AUC	305	40833
+K	AAA	25	3683
+K	AAG	540	27835
+L	CUA	0	1133
+L	CUC	66	19654
+L	CUG	364	75440
+L	CUU	13	3207
+L	UUA	0	307
+L	UUG	16	6745
+M	AUG	182	24169
+N	AAC	187	22299
+N	AAU	30	4838
+P	CCA	2	2570
+P	CCC	41	14881
+P	CCU	9	2292
+P	CCG	200	35948
+Q	CAA	76	5725
+Q	CAG	149	33533
+R	AGA	1	580
+R	AGG	3	2079
+R	CGA	5	2299
+R	CGC	323	50404
+R	CGG	12	13391
+R	CGU	190	6504
+S	AGC	69	15983
+S	AGU	2	1904
+S	UCA	0	1443
+S	UCC	41	10315
+S	UCG	161	21376
+S	UCU	9	1277
+T	ACC	196	28718
+T	ACA	2	2560
+T	ACG	113	23458
+T	ACU	17	1726
+V	GUU	54	3285
+V	GUG	306	45432
+V	GUC	207	27925
+V	GUA	3	2185
+W	UGG	27	14552
+Y	UAC	102	18051
+Y	UAU	27	6664

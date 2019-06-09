@@ -1,0 +1,74 @@
+#Acidithiobacillus ferrooxidans ATCC 23270
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download A.ferrooxidans ATCC 23270 protien abundance data at:
+# http://pax-db.org/dao/243159-WHOLE_ORGANISM-integrated.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	17	34
+*	UAG	4	2
+*	UAA	19	4
+A	GCU	76	118
+A	GCG	191	422
+A	GCC	232	517
+A	GCA	104	183
+C	UGU	20	42
+C	UGC	16	80
+D	GAU	163	353
+D	GAC	125	286
+E	GAG	153	303
+E	GAA	234	305
+F	UUU	88	167
+F	UUC	86	182
+G	GGU	215	193
+G	GGG	72	195
+G	GGC	227	352
+G	GGA	63	143
+H	CAC	50	139
+H	CAU	80	170
+I	AUU	134	201
+I	AUA	25	60
+I	AUC	180	318
+K	AAA	171	175
+K	AAG	264	190
+L	CUA	7	49
+L	CUC	84	254
+L	CUG	202	571
+L	CUU	43	114
+L	UUA	20	45
+L	UUG	116	206
+M	AUG	162	256
+N	AAC	92	124
+N	AAU	93	136
+P	CCA	26	88
+P	CCC	70	191
+P	CCU	40	82
+P	CCG	95	250
+Q	CAA	42	144
+Q	CAG	173	343
+R	AGA	14	34
+R	AGG	13	34
+R	CGA	34	67
+R	CGC	210	305
+R	CGG	118	192
+R	CGU	228	169
+S	AGC	84	180
+S	AGU	53	96
+S	UCA	21	39
+S	UCC	55	136
+S	UCG	42	104
+S	UCU	38	65
+T	ACC	131	237
+T	ACA	23	52
+T	ACG	81	144
+T	ACU	39	62
+V	GUU	123	103
+V	GUG	252	330
+V	GUC	143	225
+V	GUA	77	102
+W	UGG	35	182
+Y	UAC	50	103
+Y	UAU	76	121

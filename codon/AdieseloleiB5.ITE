@@ -1,0 +1,84 @@
+#Alcanivorax dieselolei_B5
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Alcanivorax dieselolei B5(NC_018691.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_41HEGs	CF_LEGs
+*	UGA	9	2650
+*	UAG	0	674
+*	UAA	32	1052
+A	GCU	134	12141
+A	GCG	209	50999
+A	GCC	319	84340
+A	GCA	48	8360
+C	UGU	11	4003
+C	UGC	29	9450
+D	GAU	137	36763
+D	GAC	219	50414
+E	GAG	241	43463
+E	GAA	272	44510
+F	UUU	31	12581
+F	UUC	157	38283
+G	GGU	291	24369
+G	GGG	24	18916
+G	GGC	310	70632
+G	GGA	10	8979
+H	CAC	88	19127
+H	CAU	36	14418
+I	AUU	97	15754
+I	AUA	0	2694
+I	AUC	267	45157
+K	AAA	208	16497
+K	AAG	335	24914
+L	CUA	0	2578
+L	CUC	40	20039
+L	CUG	394	104365
+L	CUU	19	8608
+L	UUA	0	3200
+L	UUG	47	25125
+M	AUG	187	34459
+N	AAC	175	27130
+N	AAU	41	14431
+P	CCA	3	5273
+P	CCC	57	22215
+P	CCU	17	5372
+P	CCG	201	40821
+Q	CAA	41	15588
+Q	CAG	210	43296
+R	AGA	7	2103
+R	AGG	1	2944
+R	CGA	7	4979
+R	CGC	214	46013
+R	CGG	65	30246
+R	CGU	301	20456
+S	AGC	80	25265
+S	AGU	15	8565
+S	UCA	5	3630
+S	UCC	165	25232
+S	UCG	17	12266
+S	UCU	44	3229
+T	ACC	263	49996
+T	ACA	9	3776
+T	ACG	45	14194
+T	ACU	37	5771
+V	GUU	129	9059
+V	GUG	389	65834
+V	GUC	97	24774
+V	GUA	69	7960
+W	UGG	32	22269
+Y	UAC	104	22147
+Y	UAU	44	15423
+

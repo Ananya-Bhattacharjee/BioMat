@@ -1,0 +1,84 @@
+#Aeropyrum pernix_K1
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Aeropyrum pernix K1(NC_000854.2)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_2HEGs	CF_LEGs
+*	UGA	0	393
+*	UAG	1	927
+*	UAA	1	378
+A	GCU	22	12196
+A	GCG	18	10477
+A	GCC	36	18087
+A	GCA	15	7205
+C	UGU	0	906
+C	UGC	0	2401
+D	GAU	9	6967
+D	GAC	51	14573
+E	GAG	84	32035
+E	GAA	8	5518
+F	UUU	3	2768
+F	UUC	35	11634
+G	GGU	16	7682
+G	GGG	14	13007
+G	GGC	42	16782
+G	GGA	15	6073
+H	CAC	18	5262
+H	CAU	3	2104
+I	AUU	5	4092
+I	AUA	75	18484
+I	AUC	18	5326
+K	AAA	5	4214
+K	AAG	86	16081
+L	CUA	17	9973
+L	CUC	36	17209
+L	CUG	25	14811
+L	CUU	10	7565
+L	UUA	0	2012
+L	UUG	3	3409
+M	AUG	29	9695
+N	AAC	36	7604
+N	AAU	3	1897
+P	CCA	11	3552
+P	CCC	21	10283
+P	CCU	12	5358
+P	CCG	27	5851
+Q	CAA	0	1116
+Q	CAG	39	7139
+R	AGA	10	5625
+R	AGG	55	25832
+R	CGA	0	695
+R	CGC	1	2160
+R	CGG	1	2594
+R	CGU	2	1242
+S	AGC	27	12028
+S	AGU	4	2832
+S	UCA	1	2864
+S	UCC	7	5604
+S	UCG	3	4123
+S	UCU	4	3337
+T	ACC	12	6643
+T	ACA	12	4864
+T	ACG	11	5085
+T	ACU	15	4051
+V	GUU	22	11853
+V	GUG	44	15339
+V	GUC	34	11586
+V	GUA	20	7228
+W	UGG	12	6477
+Y	UAC	18	12107
+Y	UAU	11	5389
+

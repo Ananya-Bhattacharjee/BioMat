@@ -1,0 +1,74 @@
+#Bacillus subtilis subsp. subtilis str. 168
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download B.subtilis subsp. subtilis str. 168 protien abundance data at:
+# http://pax-db.org/dao/224308-WHOLE_ORGANISM-integrated.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	0	12
+*	UAG	2	5
+*	UAA	38	23
+A	GCU	249	132
+A	GCG	58	157
+A	GCC	13	136
+A	GCA	114	167
+C	UGU	7	17
+C	UGC	3	21
+D	GAU	104	139
+D	GAC	103	87
+E	GAG	80	103
+E	GAA	289	201
+F	UUU	35	361
+F	UUC	98	148
+G	GGU	204	77
+G	GGG	10	115
+G	GGC	70	203
+G	GGA	138	166
+H	CAC	51	35
+H	CAU	28	91
+I	AUU	130	319
+I	AUA	0	91
+I	AUC	192	268
+K	AAA	454	257
+K	AAG	95	102
+L	CUA	33	56
+L	CUC	6	124
+L	CUG	15	252
+L	CUU	161	182
+L	UUA	93	176
+L	UUG	40	167
+M	AUG	126	250
+N	AAC	170	110
+N	AAU	48	136
+P	CCA	73	46
+P	CCC	2	35
+P	CCU	84	83
+P	CCG	17	146
+Q	CAA	125	114
+Q	CAG	21	114
+R	AGA	37	58
+R	AGG	0	34
+R	CGA	5	27
+R	CGC	132	36
+R	CGG	0	39
+R	CGU	245	33
+S	AGC	32	119
+S	AGU	19	46
+S	UCA	39	128
+S	UCC	7	78
+S	UCG	2	63
+S	UCU	142	102
+T	ACC	6	78
+T	ACA	97	128
+T	ACG	37	94
+T	ACU	145	54
+V	GUU	229	159
+V	GUG	39	146
+V	GUC	37	152
+V	GUA	159	109
+W	UGG	20	87
+Y	UAC	88	92
+Y	UAU	23	183

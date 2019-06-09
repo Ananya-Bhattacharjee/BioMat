@@ -1,0 +1,83 @@
+#Yersinia pestis_biovar_Microtus_91001
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Yersinia pestis biovar Microtus str. 91001(NC_005810.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_16HEGs	CF_LEGs
+*	UGA	1	1206
+*	UAG	0	586
+*	UAA	15	2222
+A	GCU	175	24654
+A	GCG	54	30372
+A	GCC	35	34545
+A	GCA	101	26263
+C	UGU	11	7147
+C	UGC	7	6012
+D	GAU	87	46727
+D	GAC	92	17869
+E	GAG	65	25453
+E	GAA	202	43283
+F	UUU	25	28628
+F	UUC	83	19532
+G	GGU	141	33512
+G	GGG	7	20123
+G	GGC	95	30098
+G	GGA	2	7541
+H	CAC	38	10852
+H	CAU	29	17921
+I	AUU	66	39281
+I	AUA	0	9616
+I	AUC	139	29486
+K	AAA	164	40302
+K	AAG	66	14557
+L	CUA	6	10057
+L	CUC	1	11369
+L	CUG	146	46275
+L	CUU	12	11743
+L	UUA	10	27951
+L	UUG	50	30847
+M	AUG	93	32874
+N	AAC	72	20842
+N	AAU	27	30772
+P	CCA	53	15747
+P	CCC	2	9687
+P	CCU	25	12712
+P	CCG	37	16949
+Q	CAA	42	30650
+Q	CAG	57	31170
+R	AGA	3	3757
+R	AGG	0	2347
+R	CGA	1	4958
+R	CGC	66	21131
+R	CGG	2	10036
+R	CGU	161	25474
+S	AGC	29	18185
+S	AGU	6	16446
+S	UCA	22	13484
+S	UCC	15	9245
+S	UCG	3	8882
+S	UCU	61	12338
+T	ACC	60	27784
+T	ACA	13	12040
+T	ACG	11	15205
+T	ACU	82	13163
+V	GUU	179	23764
+V	GUG	34	28821
+V	GUC	29	19891
+V	GUA	60	13945
+W	UGG	15	17250
+Y	UAC	43	12492
+Y	UAU	26	25093

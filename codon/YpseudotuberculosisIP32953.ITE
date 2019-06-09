@@ -1,0 +1,83 @@
+#Yersinia pseudotuberculosis_IP_32953
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Yersinia pseudotuberculosis IP 32953(NC_006155.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_16HEGs	CF_LEGs
+*	UGA	1	1213
+*	UAG	0	610
+*	UAA	15	2253
+A	GCU	174	25865
+A	GCG	54	31900
+A	GCC	36	36462
+A	GCA	101	27058
+C	UGU	11	7274
+C	UGC	7	5993
+D	GAU	87	49060
+D	GAC	92	18707
+E	GAG	65	26332
+E	GAA	202	44615
+F	UUU	25	30066
+F	UUC	83	19501
+G	GGU	141	34874
+G	GGG	7	20701
+G	GGC	95	31687
+G	GGA	2	7670
+H	CAC	38	11016
+H	CAU	29	18315
+I	AUU	66	41340
+I	AUA	0	9898
+I	AUC	139	30236
+K	AAA	164	41668
+K	AAG	66	14957
+L	CUA	6	10455
+L	CUC	1	11587
+L	CUG	147	47141
+L	CUU	12	12131
+L	UUA	10	29187
+L	UUG	49	32041
+M	AUG	93	33518
+N	AAC	72	21727
+N	AAU	27	32449
+P	CCA	53	16387
+P	CCC	2	9924
+P	CCU	24	13067
+P	CCG	38	17387
+Q	CAA	41	31737
+Q	CAG	58	32028
+R	AGA	3	3786
+R	AGG	0	2207
+R	CGA	1	4896
+R	CGC	67	21837
+R	CGG	2	10445
+R	CGU	160	25984
+S	AGC	29	18937
+S	AGU	6	17088
+S	UCA	22	13937
+S	UCC	15	9531
+S	UCG	3	9154
+S	UCU	61	12844
+T	ACC	60	29297
+T	ACA	13	12431
+T	ACG	11	15823
+T	ACU	82	13843
+V	GUU	179	24636
+V	GUG	34	29967
+V	GUC	29	20645
+V	GUA	60	14569
+W	UGG	15	17711
+Y	UAC	43	12654
+Y	UAU	26	25710

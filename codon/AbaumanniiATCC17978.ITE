@@ -1,0 +1,84 @@
+#Acinetobacter baumannii_ATCC_17978
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Acinetobacter baumannii ATCC 17978(NC_009085.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_29HEGs	CF_LEGs
+*	UGA	3	449
+*	UAG	0	386
+*	UAA	26	2487
+A	GCU	319	27455
+A	GCG	68	11748
+A	GCC	7	11851
+A	GCA	139	30856
+C	UGU	19	6256
+C	UGC	6	2612
+D	GAU	104	34484
+D	GAC	112	14076
+E	GAG	55	14212
+E	GAA	251	42119
+F	UUU	38	29371
+F	UUC	90	11108
+G	GGU	297	33663
+G	GGG	2	6259
+G	GGC	77	14971
+G	GGA	7	9744
+H	CAC	57	5895
+H	CAU	24	16626
+I	AUU	117	47323
+I	AUA	0	5319
+I	AUC	158	11943
+K	AAA	303	41132
+K	AAG	75	11462
+L	CUA	11	8911
+L	CUC	10	6831
+L	CUG	5	6984
+L	CUU	105	18620
+L	UUA	119	40947
+L	UUG	76	16524
+M	AUG	113	22329
+N	AAC	129	14168
+N	AAU	37	28046
+P	CCA	69	16072
+P	CCC	0	2390
+P	CCU	58	13724
+P	CCG	20	6815
+Q	CAA	144	34193
+Q	CAG	27	15328
+R	AGA	2	4103
+R	AGG	0	745
+R	CGA	0	4295
+R	CGC	64	7375
+R	CGG	2	1728
+R	CGU	301	22504
+S	AGC	35	8446
+S	AGU	11	13513
+S	UCA	34	13580
+S	UCC	5	2251
+S	UCG	4	5005
+S	UCU	99	13864
+T	ACC	22	10855
+T	ACA	58	15412
+T	ACG	11	6860
+T	ACU	162	17569
+V	GUU	246	24162
+V	GUG	33	13294
+V	GUC	13	8742
+V	GUA	122	17998
+W	UGG	19	12350
+Y	UAC	64	7505
+Y	UAU	34	23546
+

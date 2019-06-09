@@ -1,0 +1,84 @@
+#Acholeplasma laidlawii_PG-8A
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Acholeplasma laidlawii PG-8A(NC_010163.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_38HEGs	CF_LEGs
+*	UGA	2	251
+*	UAG	2	200
+*	UAA	34	891
+A	GCU	224	8370
+A	GCG	41	1824
+A	GCC	12	1590
+A	GCA	269	13618
+C	UGU	5	1338
+C	UGC	3	239
+D	GAU	182	21863
+D	GAC	86	4995
+E	GAG	43	4410
+E	GAA	383	23840
+F	UUU	103	17153
+F	UUC	85	4515
+G	GGU	302	16556
+G	GGG	25	1779
+G	GGC	47	2686
+G	GGA	109	5599
+H	CAC	45	2626
+H	CAU	60	6698
+I	AUU	244	22363
+I	AUA	37	9275
+I	AUC	141	8392
+K	AAA	545	27084
+K	AAG	120	7540
+L	CUA	70	7216
+L	CUC	10	1714
+L	CUG	5	1176
+L	CUU	57	7459
+L	UUA	351	24617
+L	UUG	14	2489
+M	AUG	139	11304
+N	AAC	148	7767
+N	AAU	136	16924
+P	CCA	144	7168
+P	CCC	1	510
+P	CCU	82	4615
+P	CCG	13	1209
+Q	CAA	207	12496
+Q	CAG	12	1301
+R	AGA	183	8452
+R	AGG	2	665
+R	CGA	3	743
+R	CGC	30	842
+R	CGG	0	60
+R	CGU	197	3877
+S	AGC	24	1468
+S	AGU	40	7970
+S	UCA	129	8177
+S	UCC	22	1791
+S	UCG	5	915
+S	UCU	70	7092
+T	ACC	25	3343
+T	ACA	177	13306
+T	ACG	21	2031
+T	ACU	137	7684
+V	GUU	256	11712
+V	GUG	40	3588
+V	GUC	42	3503
+V	GUA	215	11573
+W	UGG	30	3296
+Y	UAC	65	4678
+Y	UAU	87	15886
+

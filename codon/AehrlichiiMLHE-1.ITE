@@ -1,0 +1,83 @@
+#Alkalilimnicola ehrlichii_MLHE-1 
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Alkalilimnicola ehrlichii MLHE-1 (NC_008340.1) GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_23HEGs	CF_LEGs
+*	UGA	10	1969
+*	UAG	2	424
+*	UAA	11	448
+A	GCU	22	4017
+A	GCG	103	33552
+A	GCC	251	69616
+A	GCA	23	6051
+C	UGU	1	1956
+C	UGC	14	7179
+D	GAU	50	16690
+D	GAC	108	41794
+E	GAG	240	54045
+E	GAA	47	12229
+F	UUU	12	6012
+F	UUC	70	24928
+G	GGU	85	12148
+G	GGG	36	22067
+G	GGC	215	48696
+G	GGA	3	3290
+H	CAC	54	19503
+H	CAU	18	5526
+I	AUU	26	4658
+I	AUA	1	1132
+I	AUC	139	33595
+K	AAA	24	3436
+K	AAG	247	17101
+L	CUA	1	1892
+L	CUC	57	21263
+L	CUG	179	73734
+L	CUU	11	3915
+L	UUA	0	785
+L	UUG	18	9817
+M	AUG	87	21191
+N	AAC	88	17572
+N	AAU	17	4566
+P	CCA	5	2616
+P	CCC	42	21991
+P	CCU	4	2210
+P	CCG	86	27282
+Q	CAA	10	5258
+Q	CAG	132	31971
+R	AGA	4	642
+R	AGG	5	1875
+R	CGA	4	3287
+R	CGC	175	40761
+R	CGG	94	30697
+R	CGU	66	7965
+S	AGC	48	16284
+S	AGU	8	3613
+S	UCA	1	1555
+S	UCC	55	12509
+S	UCG	28	8356
+S	UCU	6	1052
+T	ACC	113	34789
+T	ACA	1	1587
+T	ACG	37	8492
+T	ACU	12	1596
+V	GUU	31	3132
+V	GUG	158	43675
+V	GUC	139	23867
+V	GUA	16	2857
+W	UGG	19	15050
+Y	UAC	67	17682
+Y	UAU	20	5220

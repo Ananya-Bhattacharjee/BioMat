@@ -1,0 +1,83 @@
+#Anaplasma centrale_Israel
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Anaplasma centrale str. Israel(NC_013532.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_41HEGs	CF_LEGs
+*	UGA	11	238
+*	UAG	20	432
+*	UAA	10	212
+A	GCU	215	7248
+A	GCG	190	7638
+A	GCC	154	6536
+A	GCA	71	8909
+C	UGU	70	2698
+C	UGC	54	3456
+D	GAU	221	9864
+D	GAC	140	7404
+E	GAG	297	10991
+E	GAA	122	8737
+F	UUU	148	7842
+F	UUC	93	4863
+G	GGU	281	7151
+G	GGG	190	7155
+G	GGC	148	7279
+G	GGA	82	4572
+H	CAC	76	4335
+H	CAU	68	3237
+I	AUU	119	6131
+I	AUA	190	8375
+I	AUC	68	4479
+K	AAA	153	6986
+K	AAG	430	9544
+L	CUA	34	3922
+L	CUC	65	3938
+L	CUG	186	8211
+L	CUU	116	5328
+L	UUA	40	2622
+L	UUG	132	6759
+M	AUG	188	8333
+N	AAC	113	5714
+N	AAU	112	5150
+P	CCA	30	3055
+P	CCC	74	3128
+P	CCU	88	3002
+P	CCG	63	3137
+Q	CAA	41	4079
+Q	CAG	125	5662
+R	AGA	94	3661
+R	AGG	274	5892
+R	CGA	11	950
+R	CGC	78	3593
+R	CGG	45	2224
+R	CGU	95	2513
+S	AGC	98	6302
+S	AGU	71	4255
+S	UCA	38	3301
+S	UCC	95	4466
+S	UCG	62	2770
+S	UCU	155	5255
+T	ACC	89	4466
+T	ACA	29	4043
+T	ACG	51	3179
+T	ACU	95	4068
+V	GUU	285	8284
+V	GUG	324	10756
+V	GUC	111	4177
+V	GUA	125	6316
+W	UGG	38	2755
+Y	UAC	110	5201
+Y	UAU	76	4540

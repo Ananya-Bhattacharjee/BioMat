@@ -1,0 +1,74 @@
+#Listeria monocytogenes EGD-e
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download L.monocytogenes EGD-e protien abundance data at:
+# http://pax-db.org/dao/169963-GPM_201408.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	0	9
+*	UAG	0	4
+*	UAA	40	28
+A	GCU	250	464
+A	GCG	56	340
+A	GCC	19	165
+A	GCA	186	505
+C	UGU	8	68
+C	UGC	2	29
+D	GAU	161	745
+D	GAC	109	296
+E	GAG	54	211
+E	GAA	395	1225
+F	UUU	62	413
+F	UUC	89	266
+G	GGU	276	520
+G	GGG	13	149
+G	GGC	96	236
+G	GGA	121	349
+H	CAC	46	108
+H	CAU	66	213
+I	AUU	193	889
+I	AUA	12	115
+I	AUC	188	329
+K	AAA	552	1192
+K	AAG	61	139
+L	CUA	68	219
+L	CUC	5	80
+L	CUG	6	73
+L	CUU	134	369
+L	UUA	166	626
+L	UUG	40	193
+M	AUG	125	464
+N	AAC	145	273
+N	AAU	92	499
+P	CCA	114	374
+P	CCC	4	14
+P	CCU	81	134
+P	CCG	20	103
+Q	CAA	170	566
+Q	CAG	2	77
+R	AGA	19	130
+R	AGG	0	13
+R	CGA	8	95
+R	CGC	93	183
+R	CGG	4	42
+R	CGU	320	328
+S	AGC	36	133
+S	AGU	32	245
+S	UCA	49	175
+S	UCC	38	124
+S	UCG	9	91
+S	UCU	115	234
+T	ACC	7	107
+T	ACA	118	439
+T	ACG	16	211
+T	ACU	180	258
+V	GUU	251	506
+V	GUG	66	224
+V	GUC	34	189
+V	GUA	216	433
+W	UGG	26	126
+Y	UAC	77	184
+Y	UAU	67	381

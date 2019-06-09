@@ -1,0 +1,74 @@
+#Salmonella enterica subsp. enterica
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download S.enterica subsp. enterica protien abundance data at:
+# http://pax-db.org/dao/99287-WHOLE_ORGANISM-integrated.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	2	8
+*	UAG	1	3
+*	UAA	36	29
+A	GCU	318	261
+A	GCG	170	940
+A	GCC	112	663
+A	GCA	174	425
+C	UGU	6	75
+C	UGC	21	111
+D	GAU	157	565
+D	GAC	242	414
+E	GAG	100	416
+E	GAA	375	674
+F	UUU	55	473
+F	UUC	117	328
+G	GGU	284	364
+G	GGG	18	233
+G	GGC	272	677
+G	GGA	17	203
+H	CAC	66	195
+H	CAU	35	242
+I	AUU	116	570
+I	AUA	5	97
+I	AUC	284	457
+K	AAA	449	552
+K	AAG	124	177
+L	CUA	7	108
+L	CUC	23	259
+L	CUG	396	1093
+L	CUU	34	212
+L	UUA	30	239
+L	UUG	27	237
+M	AUG	158	543
+N	AAC	217	396
+N	AAU	69	347
+P	CCA	22	135
+P	CCC	5	164
+P	CCU	25	153
+P	CCG	143	481
+Q	CAA	56	250
+Q	CAG	186	643
+R	AGA	9	45
+R	AGG	0	26
+R	CGA	0	85
+R	CGC	105	474
+R	CGG	3	142
+R	CGU	251	311
+S	AGC	77	374
+S	AGU	24	159
+S	UCA	18	178
+S	UCC	91	192
+S	UCG	10	257
+S	UCU	130	137
+T	ACC	217	499
+T	ACA	26	168
+T	ACG	44	404
+T	ACU	140	148
+V	GUU	259	326
+V	GUG	114	475
+V	GUC	66	351
+V	GUA	130	266
+W	UGG	27	314
+Y	UAC	94	238
+Y	UAU	54	307

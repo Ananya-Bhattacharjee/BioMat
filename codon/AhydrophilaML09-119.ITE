@@ -1,0 +1,84 @@
+#Aeromonas hydrophila_ML09-119
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Aeromonas hydrophila ML09-119(NC_021290.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_28HEGs	CF_LEGs
+*	UGA	3	2465
+*	UAG	0	494
+*	UAA	25	1447
+A	GCU	223	10288
+A	GCG	50	36244
+A	GCC	191	92056
+A	GCA	62	10953
+C	UGU	5	3501
+C	UGC	19	12314
+D	GAU	65	32808
+D	GAC	112	39705
+E	GAG	100	57901
+E	GAA	167	24989
+F	UUU	15	14536
+F	UUC	101	36456
+G	GGU	222	20473
+G	GGG	2	22845
+G	GGC	128	63790
+G	GGA	2	5060
+H	CAC	58	23677
+H	CAU	11	9196
+I	AUU	56	10528
+I	AUA	1	3741
+I	AUC	202	57070
+K	AAA	168	13366
+K	AAG	221	41283
+L	CUA	0	2287
+L	CUC	9	37966
+L	CUG	255	108549
+L	CUU	10	6026
+L	UUA	1	1999
+L	UUG	28	13521
+M	AUG	122	36002
+N	AAC	147	33412
+N	AAU	15	9792
+P	CCA	10	4329
+P	CCC	13	25238
+P	CCU	30	4727
+P	CCG	82	31973
+Q	CAA	68	10684
+Q	CAG	91	58279
+R	AGA	2	2236
+R	AGG	0	2802
+R	CGA	2	3008
+R	CGC	115	43722
+R	CGG	3	18888
+R	CGU	238	12817
+S	AGC	36	33311
+S	AGU	7	6109
+S	UCA	2	3175
+S	UCC	95	21527
+S	UCG	3	10879
+S	UCU	60	3911
+T	ACC	134	52646
+T	ACA	5	2961
+T	ACG	3	7691
+T	ACU	67	5080
+V	GUU	187	6095
+V	GUG	69	54741
+V	GUC	48	28618
+V	GUA	87	6941
+W	UGG	20	21069
+Y	UAC	72	22440
+Y	UAU	21	14548
+

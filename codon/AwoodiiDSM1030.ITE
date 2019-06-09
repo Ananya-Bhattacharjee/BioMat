@@ -1,0 +1,83 @@
+#Acetobacterium woodii_DSM_1030
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Acetobacterium woodii DSM 1030 (NC_016894.1) GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_34HEGs	CF_LEGs
+*	UGA	1	669
+*	UAG	12	654
+*	UAA	21	2117
+A	GCU	145	20508
+A	GCG	55	17335
+A	GCC	76	24582
+A	GCA	183	19736
+C	UGU	23	9987
+C	UGC	4	4329
+D	GAU	185	50177
+D	GAC	69	13576
+E	GAG	23	15302
+E	GAA	365	63817
+F	UUU	88	41752
+F	UUC	41	7922
+G	GGU	187	23834
+G	GGG	30	13867
+G	GGC	91	18319
+G	GGA	149	21415
+H	CAC	18	4235
+H	CAU	76	14994
+I	AUU	239	59751
+I	AUA	26	12265
+I	AUC	116	27423
+K	AAA	472	65025
+K	AAG	96	15990
+L	CUA	26	6585
+L	CUC	13	7127
+L	CUG	34	21170
+L	CUU	74	17730
+L	UUA	181	32170
+L	UUG	61	22557
+M	AUG	147	32787
+N	AAC	82	15903
+N	AAU	125	43076
+P	CCA	108	9846
+P	CCC	16	7849
+P	CCU	56	6895
+P	CCG	24	13241
+Q	CAA	100	22430
+Q	CAG	44	17072
+R	AGA	101	7523
+R	AGG	3	1894
+R	CGA	95	8940
+R	CGC	20	6379
+R	CGG	18	9112
+R	CGU	119	8028
+S	AGC	24	9508
+S	AGU	39	15865
+S	UCA	55	14138
+S	UCC	21	7980
+S	UCG	10	10391
+S	UCU	49	7799
+T	ACC	73	23643
+T	ACA	103	14345
+T	ACG	32	13679
+T	ACU	75	11543
+V	GUU	243	31579
+V	GUG	40	15839
+V	GUC	69	14637
+V	GUA	123	13292
+W	UGG	23	9172
+Y	UAC	37	8335
+Y	UAU	87	33610

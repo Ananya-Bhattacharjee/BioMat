@@ -1,0 +1,83 @@
+#Arcobacter butzleri_7h1h
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Arcobacter butzleri 7h1h(NC_021878.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_39HEGs	CF_LEGs
+*	UGA	2	298
+*	UAG	3	312
+*	UAA	35	1548
+A	GCU	322	17124
+A	GCG	23	1190
+A	GCC	4	1080
+A	GCA	272	20052
+C	UGU	41	5291
+C	UGC	10	693
+D	GAU	248	35793
+D	GAC	43	3478
+E	GAG	83	9638
+E	GAA	397	40008
+F	UUU	144	33857
+F	UUC	62	3745
+G	GGU	309	14770
+G	GGG	22	1732
+G	GGC	3	1015
+G	GGA	205	19076
+H	CAC	57	2274
+H	CAU	49	7767
+I	AUU	313	34963
+I	AUA	35	26168
+I	AUC	120	6393
+K	AAA	679	61208
+K	AAG	38	4662
+L	CUA	28	6501
+L	CUC	0	468
+L	CUG	0	496
+L	CUU	81	14368
+L	UUA	350	39779
+L	UUG	5	5968
+M	AUG	197	14728
+N	AAC	100	6427
+N	AAU	197	39598
+P	CCA	140	10742
+P	CCC	0	290
+P	CCU	71	7217
+P	CCG	3	240
+Q	CAA	170	18319
+Q	CAG	7	1141
+R	AGA	428	16377
+R	AGG	2	728
+R	CGA	2	921
+R	CGC	0	38
+R	CGG	0	34
+R	CGU	0	786
+S	AGC	14	2227
+S	AGU	53	14071
+S	UCA	124	15059
+S	UCC	0	250
+S	UCG	3	831
+S	UCU	145	13190
+T	ACC	0	407
+T	ACA	176	18091
+T	ACG	7	1094
+T	ACU	189	15879
+V	GUU	373	23150
+V	GUG	8	1538
+V	GUC	0	594
+V	GUA	175	14511
+W	UGG	35	4853
+Y	UAC	44	3284
+Y	UAU	130	24222

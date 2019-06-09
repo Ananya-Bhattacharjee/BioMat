@@ -1,0 +1,74 @@
+#Deinococcus deserti VCD115
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download D.deserti VCD115 protien abundance data at:
+# http://pax-db.org/dao/546414-DeinococcusDeserti_PRIDE.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	13	23
+*	UAG	0	3
+*	UAA	26	14
+A	GCU	168	346
+A	GCG	138	735
+A	GCC	530	1213
+A	GCA	62	325
+C	UGU	2	33
+C	UGC	22	111
+D	GAU	65	307
+D	GAC	357	946
+E	GAG	206	864
+E	GAA	216	560
+F	UUU	51	282
+F	UUC	234	424
+G	GGU	170	326
+G	GGG	43	374
+G	GGC	567	995
+G	GGA	31	266
+H	CAC	96	396
+H	CAU	11	168
+I	AUU	61	256
+I	AUA	0	31
+I	AUC	365	517
+K	AAA	88	164
+K	AAG	531	400
+L	CUA	0	25
+L	CUC	137	348
+L	CUG	430	1863
+L	CUU	26	223
+L	UUA	0	28
+L	UUG	7	103
+M	AUG	181	396
+N	AAC	375	393
+N	AAU	23	143
+P	CCA	7	137
+P	CCC	206	417
+P	CCU	70	213
+P	CCG	50	557
+Q	CAA	8	73
+Q	CAG	311	805
+R	AGA	1	21
+R	AGG	6	59
+R	CGA	5	68
+R	CGC	401	809
+R	CGG	11	501
+R	CGU	161	299
+S	AGC	301	537
+S	AGU	33	178
+S	UCA	4	80
+S	UCC	59	197
+S	UCG	32	163
+S	UCU	11	84
+T	ACC	401	763
+T	ACA	6	148
+T	ACG	74	351
+T	ACU	41	156
+V	GUU	98	198
+V	GUG	317	868
+V	GUC	254	544
+V	GUA	26	129
+W	UGG	70	253
+Y	UAC	205	393
+Y	UAU	15	129

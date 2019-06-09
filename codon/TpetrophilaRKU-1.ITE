@@ -1,0 +1,83 @@
+#Thermotoga petrophila_RKU-1
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Thermotoga petrophila RKU-1(NC_009486.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_34HEGs	CF_LEGs
+*	UGA	22	1257
+*	UAG	0	155
+*	UAA	12	339
+A	GCU	102	7874
+A	GCG	69	8644
+A	GCC	80	8142
+A	GCA	86	8263
+C	UGU	18	2350
+C	UGC	11	1645
+D	GAU	111	16332
+D	GAC	84	12250
+E	GAG	121	18876
+E	GAA	297	32324
+F	UUU	38	10928
+F	UUC	89	18725
+G	GGU	138	11062
+G	GGG	34	5164
+G	GGC	37	4608
+G	GGA	202	18537
+H	CAC	75	6040
+H	CAU	25	3010
+I	AUU	59	7866
+I	AUA	141	16047
+I	AUC	161	17101
+K	AAA	296	24297
+K	AAG	297	18973
+L	CUA	5	1436
+L	CUC	158	18804
+L	CUG	74	14008
+L	CUU	81	13724
+L	UUA	7	1953
+L	UUG	45	7305
+M	AUG	119	12949
+N	AAC	111	14372
+N	AAU	54	6383
+P	CCA	48	5519
+P	CCC	65	5857
+P	CCU	54	5630
+P	CCG	46	5604
+Q	CAA	11	2807
+Q	CAG	112	8562
+R	AGA	271	16509
+R	AGG	128	9008
+R	CGA	14	1759
+R	CGC	3	1165
+R	CGG	2	974
+R	CGU	9	1634
+S	AGC	38	4952
+S	AGU	22	4536
+S	UCA	20	4134
+S	UCC	49	6840
+S	UCG	14	4445
+S	UCU	35	7034
+T	ACC	47	7122
+T	ACA	71	7335
+T	ACG	45	7156
+T	ACU	46	4287
+V	GUU	167	15444
+V	GUG	125	19263
+V	GUC	84	9055
+V	GUA	55	5616
+W	UGG	39	6263
+Y	UAC	130	14809
+Y	UAU	32	5691

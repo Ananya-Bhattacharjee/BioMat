@@ -1,0 +1,83 @@
+#Anaplasma marginale_Florida
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Anaplasma marginale str. Florida (NC_012026.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_41HEGs	CF_LEGs
+*	UGA	12	208
+*	UAG	24	455
+*	UAA	5	236
+A	GCU	218	7132
+A	GCG	179	7974
+A	GCC	151	6755
+A	GCA	83	8621
+C	UGU	73	2756
+C	UGC	55	3671
+D	GAU	231	9802
+D	GAC	132	7486
+E	GAG	284	10686
+E	GAA	137	9123
+F	UUU	157	8138
+F	UUC	92	4884
+G	GGU	294	6764
+G	GGG	181	7140
+G	GGC	143	7554
+G	GGA	87	4546
+H	CAC	92	4448
+H	CAU	58	3364
+I	AUU	133	6327
+I	AUA	184	8629
+I	AUC	77	4539
+K	AAA	157	7720
+K	AAG	422	9244
+L	CUA	41	4044
+L	CUC	73	4071
+L	CUG	146	8160
+L	CUU	140	5339
+L	UUA	50	2840
+L	UUG	144	7007
+M	AUG	189	8481
+N	AAC	119	5958
+N	AAU	108	5344
+P	CCA	28	3169
+P	CCC	73	3227
+P	CCU	87	3073
+P	CCG	74	3272
+Q	CAA	44	4251
+Q	CAG	126	5802
+R	AGA	111	3725
+R	AGG	247	5606
+R	CGA	13	1004
+R	CGC	83	3713
+R	CGG	47	2273
+R	CGU	94	2477
+S	AGC	86	6466
+S	AGU	87	4170
+S	UCA	34	3404
+S	UCC	87	4336
+S	UCG	71	2816
+S	UCU	155	5430
+T	ACC	86	4604
+T	ACA	46	4065
+T	ACG	56	3153
+T	ACU	97	4086
+V	GUU	282	8143
+V	GUG	303	10420
+V	GUC	101	4292
+V	GUA	141	6499
+W	UGG	45	2887
+Y	UAC	98	5214
+Y	UAU	92	4666

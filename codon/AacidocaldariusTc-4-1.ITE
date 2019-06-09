@@ -1,0 +1,83 @@
+#Alicyclobacillus acidocaldarius_acidocaldarius_Tc-4-1
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Alicyclobacillus acidocaldarius subsp. acidocaldarius Tc-4-1(NC_017167.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_40HEGs	CF_LEGs
+*	UGA	22	2316
+*	UAG	0	380
+*	UAA	18	472
+A	GCU	103	8434
+A	GCG	289	50713
+A	GCC	131	32068
+A	GCA	57	9579
+C	UGU	5	2400
+C	UGC	34	6131
+D	GAU	93	17744
+D	GAC	190	29000
+E	GAG	358	39230
+E	GAA	148	20400
+F	UUU	49	13203
+F	UUC	118	19383
+G	GGU	129	8022
+G	GGG	103	16675
+G	GGC	291	35640
+G	GGA	47	10400
+H	CAC	101	15203
+H	CAU	39	7178
+I	AUU	135	13696
+I	AUA	0	1258
+I	AUC	262	29574
+K	AAA	84	7120
+K	AAG	457	20741
+L	CUA	6	2012
+L	CUC	138	33124
+L	CUG	196	29079
+L	CUU	48	11282
+L	UUA	4	1508
+L	UUG	94	14582
+M	AUG	155	22616
+N	AAC	139	15660
+N	AAU	53	6793
+P	CCA	19	4710
+P	CCC	48	12016
+P	CCU	33	5763
+P	CCG	187	23136
+Q	CAA	45	8968
+Q	CAG	174	23300
+R	AGA	1	2036
+R	AGG	4	4211
+R	CGA	24	8553
+R	CGC	379	31954
+R	CGG	122	18490
+R	CGU	87	5481
+S	AGC	45	11950
+S	AGU	7	3217
+S	UCA	5	2592
+S	UCC	47	10620
+S	UCG	118	16860
+S	UCU	19	3272
+T	ACC	85	13750
+T	ACA	19	4051
+T	ACG	223	24392
+T	ACU	8	2195
+V	GUU	66	6652
+V	GUG	327	41872
+V	GUC	225	27707
+V	GUA	14	3439
+W	UGG	32	14502
+Y	UAC	126	17010
+Y	UAU	51	8756

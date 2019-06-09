@@ -1,0 +1,83 @@
+#Blastococcus saxobsidens_DD2
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Blastococcus saxobsidens DD2(NC_016943.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_38HEGs	CF_LEGs
+*	UGA	29	4081
+*	UAG	3	579
+*	UAA	6	119
+A	GCU	41	6796
+A	GCG	229	74371
+A	GCC	491	115706
+A	GCA	24	9196
+C	UGU	3	734
+C	UGC	23	9819
+D	GAU	12	7223
+D	GAC	349	83173
+E	GAG	410	75387
+E	GAA	15	6989
+F	UUU	1	642
+F	UUC	142	36765
+G	GGU	143	15133
+G	GGG	64	34575
+G	GGC	377	81813
+G	GGA	13	7955
+H	CAC	127	27811
+H	CAU	3	2048
+I	AUU	1	694
+I	AUA	1	331
+I	AUC	302	42648
+K	AAA	1	621
+K	AAG	468	19684
+L	CUA	0	951
+L	CUC	184	53710
+L	CUG	279	94238
+L	CUU	2	1774
+L	UUA	0	129
+L	UUG	7	4460
+M	AUG	138	22186
+N	AAC	166	20218
+N	AAU	1	893
+P	CCA	2	2796
+P	CCC	111	31271
+P	CCU	12	2797
+P	CCG	200	54106
+Q	CAA	0	1579
+Q	CAG	239	39023
+R	AGA	0	663
+R	AGG	3	2928
+R	CGA	9	5153
+R	CGC	346	50550
+R	CGG	154	54983
+R	CGU	78	6932
+S	AGC	89	21433
+S	AGU	6	1612
+S	UCA	2	1619
+S	UCC	88	21930
+S	UCG	101	23923
+S	UCU	5	1021
+T	ACC	302	56394
+T	ACA	0	1598
+T	ACG	124	26744
+T	ACU	9	1518
+V	GUU	6	2365
+V	GUG	196	60484
+V	GUC	415	76218
+V	GUA	2	1685
+W	UGG	30	21234
+Y	UAC	140	24247
+Y	UAU	0	1089

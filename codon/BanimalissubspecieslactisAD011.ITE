@@ -1,0 +1,83 @@
+#Bifidobacterium animalis_lactis_AD011
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Bifidobacterium animalis subsp. lactis AD011(NC_011835.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_40HEGs	CF_LEGs
+*	UGA	28	983
+*	UAG	1	306
+*	UAA	10	198
+A	GCU	138	3106
+A	GCG	89	20371
+A	GCC	377	24707
+A	GCA	136	9008
+C	UGU	2	798
+C	UGC	21	4688
+D	GAU	134	11884
+D	GAC	247	22897
+E	GAG	323	20983
+E	GAA	176	11566
+F	UUU	4	1044
+F	UUC	192	17628
+G	GGU	141	6914
+G	GGG	3	5013
+G	GGC	406	25123
+G	GGA	19	4588
+H	CAC	109	6530
+H	CAU	30	6462
+I	AUU	71	6615
+I	AUA	1	1829
+I	AUC	326	20449
+K	AAA	16	4307
+K	AAG	559	14843
+L	CUA	1	721
+L	CUC	221	18642
+L	CUG	192	18344
+L	CUU	41	3659
+L	UUA	0	286
+L	UUG	11	5761
+M	AUG	167	15009
+N	AAC	223	12918
+N	AAU	23	5777
+P	CCA	35	2685
+P	CCC	23	5958
+P	CCU	39	1847
+P	CCG	217	14676
+Q	CAA	6	3338
+Q	CAG	227	16292
+R	AGA	0	1052
+R	AGG	7	1935
+R	CGA	11	2180
+R	CGC	294	16827
+R	CGG	3	4197
+R	CGU	238	6883
+S	AGC	41	7220
+S	AGU	2	1663
+S	UCA	6	2027
+S	UCC	164	8448
+S	UCG	76	10855
+S	UCU	11	1157
+T	ACC	302	14670
+T	ACA	10	3018
+T	ACG	81	12074
+T	ACU	39	1666
+V	GUU	96	2374
+V	GUG	192	25527
+V	GUC	292	12195
+V	GUA	7	1823
+W	UGG	35	7177
+Y	UAC	115	9666
+Y	UAU	39	4914

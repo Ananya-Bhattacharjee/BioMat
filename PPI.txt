@@ -1,0 +1,15 @@
+S_cerevisiae	   1      1
+S_paradoxus	   0      0
+S_mikatae	   1      1
+S_bayanus	   0      0
+S_castellii	   0      0
+S_kluyveri	   0      0
+C_albicans	   0      1
+S_pombe		   1      1
+F_graminea	   1      1
+N_crassa	   1      1
+M_grisea	   1      1
+A_nidulans	   1      1
+C_neoformans	   1      1
+D_melanogaster	   1      1
+C_elegans	   1      1

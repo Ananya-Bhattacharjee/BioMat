@@ -1,0 +1,83 @@
+#Campylobacter jejuni_jejuni_NCTC_11168=ATCC_700819
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Campylobacter jejuni subsp. jejuni NCTC 11168 = ATCC 700819(NC_002163.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_40HEGs	CF_LEGs
+*	UGA	3	402
+*	UAG	0	148
+*	UAA	37	983
+A	GCU	305	16672
+A	GCG	49	2599
+A	GCC	12	3245
+A	GCA	239	10905
+C	UGU	22	4252
+C	UGC	17	1794
+D	GAU	261	24082
+D	GAC	32	2068
+E	GAG	75	6340
+E	GAA	430	28455
+F	UUU	165	27620
+F	UUC	37	2136
+G	GGU	314	10060
+G	GGG	24	2867
+G	GGC	72	4187
+G	GGA	126	10323
+H	CAC	39	1545
+H	CAU	64	6603
+I	AUU	273	21574
+I	AUA	38	13100
+I	AUC	155	8149
+K	AAA	677	40380
+K	AAG	83	6377
+L	CUA	35	3369
+L	CUC	5	1336
+L	CUG	0	488
+L	CUU	166	15882
+L	UUA	233	24748
+L	UUG	56	7788
+M	AUG	174	10802
+N	AAC	54	4367
+N	AAU	223	26800
+P	CCA	124	4254
+P	CCC	2	656
+P	CCU	74	7747
+P	CCG	15	531
+Q	CAA	151	14069
+Q	CAG	11	1407
+R	AGA	283	7774
+R	AGG	9	1300
+R	CGA	2	419
+R	CGC	60	1862
+R	CGG	0	60
+R	CGU	102	3120
+S	AGC	64	6001
+S	AGU	91	11186
+S	UCA	73	4883
+S	UCC	4	953
+S	UCG	4	767
+S	UCU	88	8028
+T	ACC	19	3087
+T	ACA	129	6293
+T	ACG	9	1258
+T	ACU	195	9267
+V	GUU	279	11299
+V	GUG	57	4844
+V	GUC	11	1236
+V	GUA	197	8408
+W	UGG	37	3195
+Y	UAC	32	2435
+Y	UAU	158	15759

@@ -1,0 +1,83 @@
+#Pseudomonas aeruginosa_PAO1
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Pseudomonas aeruginosa PAO1(NC_002516.2)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_38HEGs	CF_LEGs
+*	UGA	5	4415
+*	UAG	1	630
+*	UAA	32	490
+A	GCU	199	8664
+A	GCG	95	72312
+A	GCC	307	126117
+A	GCA	56	8911
+C	UGU	1	1855
+C	UGC	26	16799
+D	GAU	77	19389
+D	GAC	163	79372
+E	GAG	153	69411
+E	GAA	209	43361
+F	UUU	10	3169
+F	UUC	135	62785
+G	GGU	193	15134
+G	GGG	6	18398
+G	GGC	281	115189
+G	GGA	5	7677
+H	CAC	78	28593
+H	CAU	26	11657
+I	AUU	38	5255
+I	AUA	0	1730
+I	AUC	248	70296
+K	AAA	128	6526
+K	AAG	361	46319
+L	CUA	2	2579
+L	CUC	53	51793
+L	CUG	352	154583
+L	CUU	10	5712
+L	UUA	1	507
+L	UUG	6	16298
+M	AUG	133	37624
+N	AAC	177	42045
+N	AAU	18	6907
+P	CCA	4	3961
+P	CCC	28	24319
+P	CCU	26	3880
+P	CCG	138	61981
+Q	CAA	44	11568
+Q	CAG	168	67242
+R	AGA	1	859
+R	AGG	1	3694
+R	CGA	2	4342
+R	CGC	208	91556
+R	CGG	7	26178
+R	CGU	278	14481
+S	AGC	91	48337
+S	AGU	5	4870
+S	UCA	2	1052
+S	UCC	104	22349
+S	UCG	41	24218
+S	UCU	15	1500
+T	ACC	232	60928
+T	ACA	4	1471
+T	ACG	9	11764
+T	ACU	40	3003
+V	GUU	97	4895
+V	GUG	145	62181
+V	GUC	204	53540
+V	GUA	65	7297
+W	UGG	25	27664
+Y	UAC	111	37355
+Y	UAU	14	9754

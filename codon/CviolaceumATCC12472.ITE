@@ -1,0 +1,83 @@
+#Chromobacterium violaceum_ATCC_12472
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Chromobacterium violaceum ATCC 12472(NC_005085.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_39HEGs	CF_LEGs
+*	UGA	4	2770
+*	UAG	1	568
+*	UAA	34	1028
+A	GCU	229	8355
+A	GCG	99	68050
+A	GCC	333	90646
+A	GCA	68	6773
+C	UGU	2	1470
+C	UGC	30	12900
+D	GAU	79	18129
+D	GAC	193	57671
+E	GAG	136	44336
+E	GAA	276	30424
+F	UUU	18	6517
+F	UUC	176	41357
+G	GGU	176	6062
+G	GGG	4	9466
+G	GGC	356	94734
+G	GGA	4	6581
+H	CAC	99	19686
+H	CAU	22	10772
+I	AUU	41	6866
+I	AUA	0	4856
+I	AUC	311	49660
+K	AAA	100	10670
+K	AAG	449	38985
+L	CUA	0	2157
+L	CUC	49	12162
+L	CUG	376	122683
+L	CUU	10	4202
+L	UUA	1	1354
+L	UUG	12	18061
+M	AUG	184	33369
+N	AAC	191	28882
+N	AAU	24	10986
+P	CCA	4	3364
+P	CCC	15	17487
+P	CCU	18	4057
+P	CCG	196	44144
+Q	CAA	86	11780
+Q	CAG	134	49327
+R	AGA	3	1769
+R	AGG	1	4844
+R	CGA	3	3048
+R	CGC	275	60393
+R	CGG	4	19856
+R	CGU	231	5570
+S	AGC	61	32625
+S	AGU	4	2457
+S	UCA	0	1916
+S	UCC	151	20661
+S	UCG	46	18420
+S	UCU	31	2521
+T	ACC	221	38039
+T	ACA	4	2111
+T	ACG	23	15828
+T	ACU	53	3083
+V	GUU	172	4823
+V	GUG	233	56207
+V	GUC	120	29201
+V	GUA	71	3771
+W	UGG	25	20482
+Y	UAC	117	25192
+Y	UAU	19	9362

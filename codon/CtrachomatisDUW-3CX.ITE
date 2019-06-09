@@ -1,0 +1,83 @@
+#Chlamydia trachomatis_D/UW-3/CX
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Chlamydia trachomatis D/UW-3/CX(NC_000117.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_2HEGs	CF_LEGs
+*	UGA	0	128
+*	UAG	0	267
+*	UAA	2	490
+A	GCU	44	11165
+A	GCG	9	2937
+A	GCC	8	3194
+A	GCA	15	6075
+C	UGU	5	3160
+C	UGC	5	1881
+D	GAU	30	10804
+D	GAC	14	3248
+E	GAG	47	7365
+E	GAA	53	13111
+F	UUU	17	9524
+F	UUC	19	5467
+G	GGU	24	3810
+G	GGG	13	4633
+G	GGC	8	2679
+G	GGA	32	8548
+H	CAC	9	2083
+H	CAU	8	5068
+I	AUU	45	10813
+I	AUA	1	3509
+I	AUC	19	6171
+K	AAA	43	12450
+K	AAG	22	5407
+L	CUA	6	4643
+L	CUC	6	3796
+L	CUG	9	3107
+L	CUU	19	7093
+L	UUA	17	10086
+L	UUG	19	6157
+M	AUG	29	6251
+N	AAC	14	3337
+N	AAU	19	7535
+P	CCA	10	2991
+P	CCC	1	1788
+P	CCU	23	7512
+P	CCG	1	1283
+Q	CAA	22	8443
+Q	CAG	15	4568
+R	AGA	15	3492
+R	AGG	2	790
+R	CGA	14	2955
+R	CGC	2	2402
+R	CGG	1	1318
+R	CGU	14	4056
+S	AGC	10	2628
+S	AGU	11	3242
+S	UCA	6	2959
+S	UCC	11	3802
+S	UCG	3	2114
+S	UCU	25	10455
+T	ACC	9	2817
+T	ACA	13	5244
+T	ACG	11	2558
+T	ACU	20	5269
+V	GUU	40	7471
+V	GUG	16	4020
+V	GUC	14	3214
+V	GUA	17	5249
+W	UGG	6	2968
+Y	UAC	7	3092
+Y	UAU	9	6438

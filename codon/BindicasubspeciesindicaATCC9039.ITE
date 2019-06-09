@@ -1,0 +1,83 @@
+#Beijerinckia indica_indica_ATCC_9039
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Beijerinckia indica subsp. indica ATCC 9039(NC_010581.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_33HEGs	CF_LEGs
+*	UGA	15	2121
+*	UAG	0	498
+*	UAA	18	917
+A	GCU	137	19074
+A	GCG	185	45139
+A	GCC	270	57382
+A	GCA	34	12421
+C	UGU	8	2974
+C	UGC	13	7156
+D	GAU	161	39828
+D	GAC	68	22186
+E	GAG	143	29776
+E	GAA	183	34992
+F	UUU	29	15482
+F	UUC	105	30276
+G	GGU	131	17655
+G	GGG	35	12888
+G	GGC	278	50383
+G	GGA	34	10854
+H	CAC	31	6981
+H	CAU	71	19451
+I	AUU	111	18989
+I	AUA	3	3404
+I	AUC	196	42641
+K	AAA	117	17274
+K	AAG	325	23776
+L	CUA	1	2667
+L	CUC	118	39760
+L	CUG	128	35069
+L	CUU	59	19480
+L	UUA	1	3214
+L	UUG	78	21613
+M	AUG	117	24878
+N	AAC	60	10718
+N	AAU	93	21141
+P	CCA	7	7878
+P	CCC	63	18307
+P	CCU	21	8994
+P	CCG	138	26303
+Q	CAA	49	14907
+Q	CAG	121	23412
+R	AGA	5	2641
+R	AGG	11	3864
+R	CGA	5	4841
+R	CGC	227	32520
+R	CGG	71	17022
+R	CGU	132	14091
+S	AGC	35	15979
+S	AGU	6	5200
+S	UCA	5	5300
+S	UCC	61	16063
+S	UCG	97	16833
+S	UCU	26	5312
+T	ACC	118	24154
+T	ACA	22	9221
+T	ACG	80	22554
+T	ACU	28	6095
+V	GUU	74	12452
+V	GUG	130	23836
+V	GUC	216	37740
+V	GUA	8	3014
+W	UGG	25	14443
+Y	UAC	17	5878
+Y	UAU	92	20672

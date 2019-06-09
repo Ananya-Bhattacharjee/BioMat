@@ -1,0 +1,74 @@
+#Campylobacter jejuni subsp. jejuni NCTC 11168
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download C.jejuni subsp. jejuni NCTC 11168 protien abundance data at:
+# http://pax-db.org/dao/192222-WHOLE_ORGANISM-integrated.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	4	14
+*	UAG	0	4
+*	UAA	36	22
+A	GCU	264	662
+A	GCG	46	87
+A	GCC	11	142
+A	GCA	205	390
+C	UGU	16	154
+C	UGC	15	60
+D	GAU	224	1082
+D	GAC	30	80
+E	GAG	74	293
+E	GAA	355	1241
+F	UUU	140	1269
+F	UUC	33	77
+G	GGU	259	333
+G	GGG	16	112
+G	GGC	59	155
+G	GGA	119	399
+H	CAC	30	58
+H	CAU	53	328
+I	AUU	248	953
+I	AUA	49	609
+I	AUC	133	333
+K	AAA	676	1772
+K	AAG	78	336
+L	CUA	42	137
+L	CUC	4	65
+L	CUG	0	29
+L	CUU	134	675
+L	UUA	221	1159
+L	UUG	48	340
+M	AUG	134	409
+N	AAC	53	198
+N	AAU	211	1297
+P	CCA	104	156
+P	CCC	1	36
+P	CCU	62	303
+P	CCG	12	21
+Q	CAA	131	672
+Q	CAG	10	75
+R	AGA	263	346
+R	AGG	10	64
+R	CGA	3	18
+R	CGC	56	65
+R	CGG	0	5
+R	CGU	83	121
+S	AGC	64	229
+S	AGU	80	489
+S	UCA	56	176
+S	UCC	5	40
+S	UCG	2	30
+S	UCU	78	368
+T	ACC	21	135
+T	ACA	107	266
+T	ACG	8	42
+T	ACU	152	391
+V	GUU	235	407
+V	GUG	61	176
+V	GUC	11	40
+V	GUA	195	293
+W	UGG	31	127
+Y	UAC	28	102
+Y	UAU	130	736

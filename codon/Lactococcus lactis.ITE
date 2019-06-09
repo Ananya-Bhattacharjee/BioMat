@@ -1,0 +1,74 @@
+#Lactococcus lactis subsp. lactis Il1403
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download L.lactis subsp. lactis Il1403 protien abundance data at:
+# http://pax-db.org/dao/272623-WHOLE_ORGANISM-integrated.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	0	31
+*	UAG	0	0
+*	UAA	40	0
+A	GCU	358	348
+A	GCG	36	87
+A	GCC	52	107
+A	GCA	245	237
+C	UGU	8	34
+C	UGC	2	8
+D	GAU	213	436
+D	GAC	180	130
+E	GAG	20	159
+E	GAA	487	660
+F	UUU	65	507
+F	UUC	141	119
+G	GGU	357	263
+G	GGG	16	83
+G	GGC	50	69
+G	GGA	115	249
+H	CAC	70	33
+H	CAU	26	147
+I	AUU	146	703
+I	AUA	1	111
+I	AUC	266	141
+K	AAA	568	658
+K	AAG	34	142
+L	CUA	13	101
+L	CUC	72	77
+L	CUG	7	80
+L	CUU	228	291
+L	UUA	35	506
+L	UUG	128	277
+M	AUG	163	306
+N	AAC	188	81
+N	AAU	90	490
+P	CCA	135	153
+P	CCC	2	22
+P	CCU	71	155
+P	CCG	5	25
+Q	CAA	177	352
+Q	CAG	2	95
+R	AGA	11	104
+R	AGG	0	19
+R	CGA	3	78
+R	CGC	59	36
+R	CGG	1	26
+R	CGU	237	124
+S	AGC	21	54
+S	AGU	19	185
+S	UCA	172	244
+S	UCC	0	40
+S	UCG	2	32
+S	UCU	107	222
+T	ACC	10	61
+T	ACA	160	214
+T	ACG	8	65
+T	ACU	216	209
+V	GUU	366	428
+V	GUG	37	111
+V	GUC	52	155
+V	GUA	143	141
+W	UGG	34	97
+Y	UAC	98	65
+Y	UAU	35	309

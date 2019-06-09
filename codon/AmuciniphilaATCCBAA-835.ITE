@@ -1,0 +1,84 @@
+#Akkermansia muciniphila_ATCC_BAA-835
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Akkermansia muciniphila ATCC BAA-835(NC_010655.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_6HEGs	CF_LEGs
+*	UGA	1	836
+*	UAG	0	292
+*	UAA	5	1004
+A	GCU	24	10571
+A	GCG	6	18284
+A	GCC	41	36639
+A	GCA	0	7219
+C	UGU	1	2210
+C	UGC	8	8646
+D	GAU	11	16191
+D	GAC	23	23170
+E	GAG	2	13670
+E	GAA	43	35519
+F	UUU	9	12457
+F	UUC	17	18179
+G	GGU	35	6116
+G	GGG	2	13421
+G	GGC	59	26960
+G	GGA	4	14997
+H	CAC	12	7314
+H	CAU	6	8672
+I	AUU	27	17021
+I	AUA	0	3661
+I	AUC	28	20521
+K	AAA	21	18773
+K	AAG	68	17875
+L	CUA	1	860
+L	CUC	16	11647
+L	CUG	16	42342
+L	CUU	17	11384
+L	UUA	1	1913
+L	UUG	8	8232
+M	AUG	23	21880
+N	AAC	28	16057
+N	AAU	14	11954
+P	CCA	2	1605
+P	CCC	17	16509
+P	CCU	4	6537
+P	CCG	23	14623
+Q	CAA	5	5201
+Q	CAG	27	19501
+R	AGA	2	3008
+R	AGG	0	6760
+R	CGA	2	1054
+R	CGC	54	20025
+R	CGG	1	10728
+R	CGU	41	6493
+S	AGC	8	10773
+S	AGU	1	2336
+S	UCA	2	2167
+S	UCC	36	26437
+S	UCG	1	2059
+S	UCU	7	4716
+T	ACC	28	15887
+T	ACA	1	3920
+T	ACG	10	15996
+T	ACU	9	4318
+V	GUU	25	9507
+V	GUG	27	22122
+V	GUC	25	13419
+V	GUA	14	6414
+W	UGG	8	11168
+Y	UAC	14	12713
+Y	UAU	7	10104
+

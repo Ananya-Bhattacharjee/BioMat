@@ -1,0 +1,136 @@
+:Base DAMBE.hlp
+:Title DAMBE Help
+1 Overview
+2 What is DAMBE=Welcome
+2 Main features=Main_features
+1 Main Menu
+2 File
+3 Open=Open
+3 Read Sequences from GenBank=Read_Sequences_from_GenBank
+3 Read file from networked computer=Read_file_from_networked_computer
+3 Save display buffer=Save_display_buffer
+3 Save As (Converting sequence format)=Save_As_Converting_sequence_format_
+3 Save a subset of sequences=Save_a_subset_of_sequences
+3 Saving sequences to networked computer=Saving_sequences_to_networked_computer
+2 Edit
+3 Edit Overview=Edit_Overview
+3 Undo=Undo
+3 Cut=Cut
+3 Copy=Copy
+3 Copy to EXCEL=Copy_to_EXCEL
+3 Paste=Paste
+3 Delete=Delete
+3 Clear buffer=Clear_buffer
+3 Select All=Select_All
+3 Find=Find
+3 Find next=Find_next
+2 Sequences
+3 Align sequences using ClustalW=Align_sequences_using_ClustalW
+3 Align nuc. seq. against aligned aa. seq.=Align_nuc_seq_against_aligned_aa_seq_
+3 Sequences Overview=Sequences_Overview
+3 View Sequences=View_Sequences
+3 Get Rid of Segment=Get_Rid_of_Segment
+3 Delete sequences in buffer=Delete_sequences_in_buffer
+3 Delete duplicate sequences=Delete_duplicate_sequences
+3 Work on Codon Sequences=Work_on_Nucleotide_Sequences
+3 Work on AA Sequences=Work_on_AA_Sequences
+3 Work on codon position 1=Work_on_codon_position_1
+3 Work on codon position 2=Work_on_codon_position_2
+3 Work on codon position 3=Work_on_codon_position_3
+3 Work on codon position 1 and 2=Work_on_codon_position_1_and_2
+3 Restore sequences=Restore_sequences
+3 Change seq. type=Change_seq_type
+3 Get Complementary Sequences=Get_Complementary_Sequences
+2 Seq. Analysis
+3 Nucleotide Frequency=Nucleotide_Frequency
+3 Codon frequency=Codon_frequency
+3 Amino acid frequency=Amino_acid_frequency
+3 Nucleotide difference
+4 Simple output=Simple_output
+4 Detailed output=Detailed_output
+3 Codon difference
+4 Nonsynonymous codon substitution=Nonsynonymous_codon_substitution
+4 Summary output=Summary_output
+4 Matrix output=Matrix_output
+4 One-step nonsyn codon substitution=One_step_nonsyn_codon_substitution
+4 s and v to i-fold=s_and_v_to_i_fold
+3 Amino acid difference
+4 Amino acid difference=Amino_acid_difference
+3 Fit probability distributions to substitution data
+4 Fit discrete distributions to substitutions=Fit_discrete_distributions_to_substitutions
+4 Fit gamma distribution to substitutions=Fit_gamma_distribution_to_substitutions
+3 Substitution saturation
+3 Expected codon substitution pattern
+4 Unadjusted for codon frequencies=Unadjusted_for_codon_frequencies
+4 Adjusted for codon frequencies=Adjusted_for_codon_frequencies
+4 AA distance vs Num. Site different=AA_distance_vs_Num_Site_different
+3 DNA methylation
+4 Background of DNA methylation=Background_of_DNA_methylation
+4 Index of DNA methylation=Index_of_DNA_methylation
+2 Graphics
+3 Plot amino acid properties along sequences=Plot_amino_acid_properties_along_sequences
+3 Transition and transversion versus divergence=Transition_and_transversion_versus_divergence
+3 Variable substitution rate over sites=Variable_substitution_rate_over_sites
+2 Phylogenetics
+3 View tree file=View_tree_file
+3 Paste tree into tree display panel=Paste_tree_into_tree_display_panel
+3 Generate user trees=Generate_user_trees
+3 Distance methods
+4 Nucleotide sequences=Nucleotide_sequences
+4 Amino acid sequences=Amino_acid_sequences
+4 Codon-based sequences=Codon_based_sequences
+4 Genetic distances implemented=Genetic_distances_implemented
+4 Distance test of alternative phylogenetic hypothesis
+5 Rationale of the distance test=Rationale_of_the_distance_test
+5 Perform a distance test=Perform_a_distance_test
+3 Maximum parsimony
+4 Maximum parsimony method=Maximum_parsimony_method
+4 Preamble to MP test=Preamble_to_MP_test
+4 Perform the MP test=Perform_the_MP_test
+3 Maximum likelihood
+4 ML Preamble=ML_Preamble
+4 Maximum likelihood method=Maximum_likelihood_method
+4 Interpret output (ML)=Interpret_output_ML_
+4 Reconstructing ancestral sequences=Reconstructing_ancestral_sequences
+4 ML test of alternative phylogenetic hypotheses
+5 Preamble to the ML test=Preamble_to_the_ML_test
+5 Perform the ML test=Perform_the_ML_test
+3 Test molecular clock
+4 Preamble to testing the clock=Preamble_to_testing_the_clock
+4 Perform a likelihood ratio test=Perform_a_likelihood_ratio_test
+2 Internet
+3 Read molecular sequences from GenBank=Read_Sequences_from_GenBank
+3 Get Medline references=Get_Medline_references
+3 To Xuhua Xia's home page=To_Xuhua_Xia_s_home_page
+2 Tools
+3 Calculator=Calculator
+3 File Viewer=File_Viewer
+2 Help
+3 Acknowledgement=Acknowledgement
+3 The DAMBE book=The_DAMBE_book
+1 Tree Window's Menu
+2 Save tree for future viewing=Save_tree_for_future_viewing
+2 Copy tree as BMP file=Copy_tree_as_BMP_file
+2 Copy tree in PHYLIP format=Copy_tree_in_PHYLIP_format
+2 Paste NH tree=Paste_NH_tree
+2 Toggle internal node label=Toggle_internal_node_label
+2 Toggle Branch Length Scaling=Toggle_Branch_Length_Scaling
+2 ReRoot the tree=ReRoot_the_tree
+2 Print tree=Print_tree
+1 Graphic Window's Menu
+2 DAMBE Graph
+3 DAMBE graphics
+4 Save file in bitmap format=Save_file_in_bitmap_format
+4 Save file in metafile format=Save_file_in_metafile_format
+3 Edit
+4 Copy file in bitmap format=Save_file_in_bitmap_format
+4 Copy file in metafile format=Save_file_in_metafile_format
+4 Bar width (Graph)=Bar_width_Graph_
+4 Set number of digits after decimal on X=Set_number_of_digits_after_decimal_on_X
+4 Axis label=X_axis_label
+4 Axis position=X_axis_position
+3 Graph type
+3 Statistics
+2 DAMBE Chart
+3 3D rotation=3D_rotation
+3 Copy to EXCEL=Copy_to_EXCEL

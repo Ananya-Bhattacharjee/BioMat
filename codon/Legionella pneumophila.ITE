@@ -1,0 +1,74 @@
+#Legionella pneumophila subsp. pneumophila
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download L.pneumophila subsp. pneumophila protien abundance data at:
+# http://pax-db.org/dao/272624-GPM_201408.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	6	13
+*	UAG	1	11
+*	UAA	33	16
+A	GCU	217	426
+A	GCG	44	172
+A	GCC	66	317
+A	GCA	179	381
+C	UGU	32	121
+C	UGC	18	81
+D	GAU	231	768
+D	GAC	55	234
+E	GAG	90	336
+E	GAA	291	811
+F	UUU	124	564
+F	UUC	39	135
+G	GGU	259	338
+G	GGG	37	173
+G	GGC	77	246
+G	GGA	119	321
+H	CAC	33	121
+H	CAU	93	352
+I	AUU	246	705
+I	AUA	93	324
+I	AUC	59	289
+K	AAA	428	958
+K	AAG	185	278
+L	CUA	41	126
+L	CUC	15	137
+L	CUG	53	280
+L	CUU	83	271
+L	UUA	173	664
+L	UUG	95	395
+M	AUG	171	404
+N	AAC	79	221
+N	AAU	164	613
+P	CCA	93	227
+P	CCC	19	148
+P	CCU	78	298
+P	CCG	15	87
+Q	CAA	152	604
+Q	CAG	51	215
+R	AGA	150	225
+R	AGG	10	96
+R	CGA	75	123
+R	CGC	57	105
+R	CGG	6	34
+R	CGU	167	162
+S	AGC	51	162
+S	AGU	89	231
+S	UCA	101	187
+S	UCC	34	161
+S	UCG	12	76
+S	UCU	95	267
+T	ACC	45	223
+T	ACA	113	237
+T	ACG	17	107
+T	ACU	148	299
+V	GUU	236	354
+V	GUG	66	203
+V	GUC	52	174
+V	GUA	191	275
+W	UGG	31	144
+Y	UAC	42	163
+Y	UAU	104	447

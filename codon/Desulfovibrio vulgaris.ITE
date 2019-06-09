@@ -1,0 +1,74 @@
+#Desulfovibrio vulgaris str. Hildenborough
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download D.vulgaris str. Hildenborough protien abundance data at:
+# http://pax-db.org/dao/882-WHOLE_ORGANISM-integrated.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	0	21
+*	UAG	21	15
+*	UAA	19	4
+A	GCU	119	110
+A	GCG	81	471
+A	GCC	330	991
+A	GCA	37	269
+C	UGU	4	44
+C	UGC	44	152
+D	GAU	64	193
+D	GAC	207	763
+E	GAG	145	599
+E	GAA	276	489
+F	UUU	11	68
+F	UUC	183	444
+G	GGU	194	223
+G	GGG	35	316
+G	GGC	288	622
+G	GGA	11	144
+H	CAC	77	205
+H	CAU	38	158
+I	AUU	41	66
+I	AUA	4	84
+I	AUC	318	583
+K	AAA	46	66
+K	AAG	528	412
+L	CUA	0	16
+L	CUC	196	641
+L	CUG	196	594
+L	CUU	96	323
+L	UUA	0	5
+L	UUG	21	106
+M	AUG	150	421
+N	AAC	175	307
+N	AAU	21	71
+P	CCA	0	38
+P	CCC	143	374
+P	CCU	50	80
+P	CCG	60	260
+Q	CAA	5	79
+Q	CAG	167	414
+R	AGA	19	46
+R	AGG	17	117
+R	CGA	5	63
+R	CGC	272	614
+R	CGG	23	195
+R	CGU	191	278
+S	AGC	83	188
+S	AGU	9	59
+S	UCA	3	41
+S	UCC	108	219
+S	UCG	35	231
+S	UCU	21	43
+T	ACC	224	468
+T	ACA	5	92
+T	ACG	49	296
+T	ACU	25	34
+V	GUU	77	66
+V	GUG	200	663
+V	GUC	248	555
+V	GUA	23	78
+W	UGG	38	147
+Y	UAC	113	240
+Y	UAU	20	108

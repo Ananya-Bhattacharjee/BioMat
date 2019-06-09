@@ -1,0 +1,83 @@
+#Bordetella bronchiseptica_MO149
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Bordetella bronchiseptica MO149(NC_018829.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_38HEGs	CF_LEGs
+*	UGA	11	3013
+*	UAG	2	947
+*	UAA	25	624
+A	GCU	129	4261
+A	GCG	172	84840
+A	GCC	465	118552
+A	GCA	20	5976
+C	UGU	1	1186
+C	UGC	31	13157
+D	GAU	78	18394
+D	GAC	231	63455
+E	GAG	191	45240
+E	GAA	278	30327
+F	UUU	23	5707
+F	UUC	187	44339
+G	GGU	134	5177
+G	GGG	25	16157
+G	GGC	453	108105
+G	GGA	16	5364
+H	CAC	102	22466
+H	CAU	28	11063
+I	AUU	62	5802
+I	AUA	1	2300
+I	AUC	340	58374
+K	AAA	78	5309
+K	AAG	467	33199
+L	CUA	3	840
+L	CUC	79	19356
+L	CUG	376	132162
+L	CUU	13	3097
+L	UUA	1	299
+L	UUG	24	11141
+M	AUG	201	37159
+N	AAC	182	28860
+N	AAU	33	7728
+P	CCA	2	1868
+P	CCC	123	31829
+P	CCU	17	2977
+P	CCG	149	47494
+Q	CAA	70	8871
+Q	CAG	182	52985
+R	AGA	0	535
+R	AGG	4	2699
+R	CGA	3	1576
+R	CGC	372	83765
+R	CGG	18	20345
+R	CGU	195	5902
+S	AGC	81	27620
+S	AGU	4	1588
+S	UCA	4	884
+S	UCC	60	14746
+S	UCG	185	29664
+S	UCU	5	984
+T	ACC	232	42756
+T	ACA	2	1440
+T	ACG	102	27835
+T	ACU	18	1479
+V	GUU	95	3172
+V	GUG	260	67582
+V	GUC	257	42526
+V	GUA	16	3801
+W	UGG	37	21470
+Y	UAC	124	26869
+Y	UAU	32	10587

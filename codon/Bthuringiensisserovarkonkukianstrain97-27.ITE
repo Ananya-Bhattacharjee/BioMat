@@ -1,0 +1,84 @@
+#Bacillus thuringiensis_konkukian_97-27
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Bacillus thuringiensis serovar konkukian str. 97-27(NC_005957.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_40HEGs	CF_LEGs
+*	UGA	0	765
+*	UAG	2	790
+*	UAA	38	3522
+A	GCU	364	29998
+A	GCG	46	18942
+A	GCC	2	5875
+A	GCA	217	42512
+C	UGU	11	9080
+C	UGC	8	3058
+D	GAU	150	54481
+D	GAC	132	12542
+E	GAG	128	26822
+E	GAA	404	82305
+F	UUU	33	48095
+F	UUC	152	20533
+G	GGU	363	35801
+G	GGG	7	13881
+G	GGC	87	12146
+G	GGA	109	35665
+H	CAC	71	6898
+H	CAU	50	24067
+I	AUU	156	73902
+I	AUA	2	25298
+I	AUC	254	19130
+K	AAA	500	81322
+K	AAG	117	26015
+L	CUA	47	15350
+L	CUC	0	6209
+L	CUG	6	4774
+L	CUU	173	26122
+L	UUA	244	72396
+L	UUG	8	13862
+M	AUG	185	40523
+N	AAC	195	18978
+N	AAU	59	48271
+P	CCA	140	23730
+P	CCC	2	1568
+P	CCU	92	13281
+P	CCG	8	11020
+Q	CAA	185	43950
+Q	CAG	17	9827
+R	AGA	22	13518
+R	AGG	0	3541
+R	CGA	4	7865
+R	CGC	97	6886
+R	CGG	0	1997
+R	CGU	389	19831
+S	AGC	32	8330
+S	AGU	22	21018
+S	UCA	37	21227
+S	UCC	3	4687
+S	UCG	2	6730
+S	UCU	165	22385
+T	ACC	1	3812
+T	ACA	154	40311
+T	ACG	24	19879
+T	ACU	218	17997
+V	GUU	278	37144
+V	GUG	37	15695
+V	GUC	11	8320
+V	GUA	271	44721
+W	UGG	30	14725
+Y	UAC	111	13450
+Y	UAU	39	40875
+

@@ -1,0 +1,83 @@
+#Bartonella vinsonii_berkhoffii_Winnie
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Bartonella vinsonii subsp. berkhoffii str. Winnie(NC_020301.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_39HEGs	CF_LEGs
+*	UGA	8	403
+*	UAG	8	186
+*	UAA	23	806
+A	GCU	313	14059
+A	GCG	93	5228
+A	GCC	54	4780
+A	GCA	208	13775
+C	UGU	30	3438
+C	UGC	3	1275
+D	GAU	284	19381
+D	GAC	28	3363
+E	GAG	162	6700
+E	GAA	277	20875
+F	UUU	172	17085
+F	UUC	25	3164
+G	GGU	310	12033
+G	GGG	90	4940
+G	GGC	60	4544
+G	GGA	90	9653
+H	CAC	25	2174
+H	CAU	106	8721
+I	AUU	320	20810
+I	AUA	37	5875
+I	AUC	69	6255
+K	AAA	327	20402
+K	AAG	217	6540
+L	CUA	15	2167
+L	CUC	36	4840
+L	CUG	20	2670
+L	CUU	183	14387
+L	UUA	78	11770
+L	UUG	122	9349
+M	AUG	178	11000
+N	AAC	41	3917
+N	AAU	194	14572
+P	CCA	73	5818
+P	CCC	26	2720
+P	CCU	107	7123
+P	CCG	47	1864
+Q	CAA	111	13228
+Q	CAG	111	4757
+R	AGA	22	2772
+R	AGG	11	955
+R	CGA	25	2458
+R	CGC	109	5015
+R	CGG	45	2132
+R	CGU	390	10358
+S	AGC	21	3323
+S	AGU	44	5211
+S	UCA	90	6311
+S	UCC	20	2702
+S	UCG	48	2075
+S	UCU	149	9289
+T	ACC	38	3916
+T	ACA	110	10751
+T	ACG	58	3985
+T	ACU	87	5391
+V	GUU	357	14923
+V	GUG	99	5491
+V	GUC	50	3765
+V	GUA	63	5048
+W	UGG	37	4781
+Y	UAC	25	1984
+Y	UAU	118	10453

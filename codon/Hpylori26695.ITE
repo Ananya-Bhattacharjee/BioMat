@@ -1,0 +1,83 @@
+#Helicobacter pylori_26695
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Helicobacter pylori 26695(NC_000915.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_37HEGs	CF_LEGs
+*	UGA	6	383
+*	UAG	6	230
+*	UAA	25	795
+A	GCU	193	12696
+A	GCG	126	9658
+A	GCC	71	6630
+A	GCA	67	3442
+C	UGU	12	1722
+C	UGC	22	3413
+D	GAU	160	16282
+D	GAC	75	6081
+E	GAG	103	8613
+E	GAA	330	23710
+F	UUU	133	20083
+F	UUC	48	5359
+G	GGU	116	4400
+G	GGG	112	10226
+G	GGC	149	9569
+G	GGA	44	2873
+H	CAC	48	3102
+H	CAU	90	6892
+I	AUU	205	16717
+I	AUA	15	4303
+I	AUC	169	12848
+K	AAA	513	32192
+K	AAG	183	9512
+L	CUA	28	3758
+L	CUC	42	4590
+L	CUG	15	2051
+L	CUU	75	7770
+L	UUA	145	20741
+L	UUG	139	14179
+M	AUG	161	10493
+N	AAC	98	11803
+N	AAU	133	15308
+P	CCA	36	2241
+P	CCC	25	4118
+P	CCU	87	7586
+P	CCG	26	1528
+Q	CAA	134	14809
+Q	CAG	31	2586
+R	AGA	134	4162
+R	AGG	93	3966
+R	CGA	12	1119
+R	CGC	92	3962
+R	CGG	4	488
+R	CGU	53	2279
+S	AGC	127	12785
+S	AGU	37	4573
+S	UCA	33	2787
+S	UCC	20	2649
+S	UCG	16	1819
+S	UCU	73	7495
+T	ACC	95	6529
+T	ACA	38	3166
+T	ACG	49	4616
+T	ACU	91	6204
+V	GUU	108	7246
+V	GUG	244	12935
+V	GUC	57	3648
+V	GUA	76	2678
+W	UGG	30	3296
+Y	UAC	53	5260
+Y	UAU	114	11989

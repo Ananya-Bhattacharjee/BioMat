@@ -1,0 +1,84 @@
+#Campylobacter curvus_525.92
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Campylobacter curvus 525.92(NC_009715.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_41HEGs	CF_LEGs
+*	UGA	4	660
+*	UAG	2	347
+*	UAA	35	886
+A	GCU	243	10140
+A	GCG	127	14959
+A	GCC	80	11352
+A	GCA	176	9980
+C	UGU	10	1670
+C	UGC	40	4709
+D	GAU	191	16805
+D	GAC	109	14593
+E	GAG	271	21873
+E	GAA	254	14632
+F	UUU	143	23400
+F	UUC	73	7680
+G	GGU	206	6555
+G	GGG	16	4485
+G	GGC	207	19601
+G	GGA	101	6462
+H	CAC	54	4506
+H	CAU	53	4186
+I	AUU	73	7459
+I	AUA	125	16583
+I	AUC	275	20678
+K	AAA	565	30223
+K	AAG	183	15681
+L	CUA	96	10656
+L	CUC	45	7171
+L	CUG	16	7208
+L	CUU	208	14011
+L	UUA	71	8954
+L	UUG	68	7417
+M	AUG	173	13740
+N	AAC	129	13884
+N	AAU	144	15395
+P	CCA	77	3933
+P	CCC	7	2055
+P	CCU	86	4739
+P	CCG	65	5990
+Q	CAA	141	10295
+Q	CAG	42	5887
+R	AGA	190	5306
+R	AGG	41	4001
+R	CGA	7	2008
+R	CGC	120	7007
+R	CGG	2	685
+R	CGU	93	2520
+S	AGC	120	16946
+S	AGU	42	4290
+S	UCA	68	4355
+S	UCC	10	2228
+S	UCG	31	5556
+S	UCU	57	3568
+T	ACC	60	5853
+T	ACA	95	4186
+T	ACG	62	9775
+T	ACU	124	4492
+V	GUU	196	5282
+V	GUG	61	10982
+V	GUC	171	11794
+V	GUA	140	7495
+W	UGG	35	4072
+Y	UAC	65	8989
+Y	UAU	119	10594
+

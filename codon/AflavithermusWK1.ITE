@@ -1,0 +1,83 @@
+#Anoxybacillus flavithermus_WK1
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Anoxybacillus flavithermus WK1 (NC_011567.1) GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_39HEGs	CF_LEGs
+*	UGA	0	702
+*	UAG	0	457
+*	UAA	39	1628
+A	GCU	153	12345
+A	GCG	165	22403
+A	GCC	16	7859
+A	GCA	222	19007
+C	UGU	18	4640
+C	UGC	10	2659
+D	GAU	136	27122
+D	GAC	125	12442
+E	GAG	115	14527
+E	GAA	387	46859
+F	UUU	69	29070
+F	UUC	99	8427
+G	GGU	295	13715
+G	GGG	18	10162
+G	GGC	103	10991
+G	GGA	117	18629
+H	CAC	53	5284
+H	CAU	68	16320
+I	AUU	242	39056
+I	AUA	4	6375
+I	AUC	187	15548
+K	AAA	529	43658
+K	AAG	106	10772
+L	CUA	16	6270
+L	CUC	15	8338
+L	CUG	2	3803
+L	CUU	142	16313
+L	UUA	233	28385
+L	UUG	60	15516
+M	AUG	176	23799
+N	AAC	179	13969
+N	AAU	68	15824
+P	CCA	146	11220
+P	CCC	0	1292
+P	CCU	61	5513
+P	CCG	36	12099
+Q	CAA	180	29758
+Q	CAG	11	6330
+R	AGA	15	3631
+R	AGG	2	1383
+R	CGA	9	7762
+R	CGC	170	11846
+R	CGG	3	4026
+R	CGU	310	12830
+S	AGC	52	7550
+S	AGU	7	5815
+S	UCA	56	8386
+S	UCC	8	3737
+S	UCG	14	9010
+S	UCU	102	6854
+T	ACC	5	3733
+T	ACA	206	18410
+T	ACG	65	19598
+T	ACU	71	3748
+V	GUU	246	18872
+V	GUG	88	16384
+V	GUC	46	15006
+V	GUA	177	13704
+W	UGG	33	9064
+Y	UAC	100	9508
+Y	UAU	66	20782

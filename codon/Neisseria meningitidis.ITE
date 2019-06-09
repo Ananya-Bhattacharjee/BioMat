@@ -1,0 +1,74 @@
+#Neisseria meningitidis MC58
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download N.meningitidis MC58 protien abundance data at:
+# http://pax-db.org/dao/122586-GPM_201408.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	4	20
+*	UAG	2	1
+*	UAA	34	19
+A	GCU	219	249
+A	GCG	78	844
+A	GCC	165	1201
+A	GCA	190	534
+C	UGU	9	45
+C	UGC	13	176
+D	GAU	136	636
+D	GAC	113	914
+E	GAG	89	335
+E	GAA	321	1473
+F	UUU	73	383
+F	UUC	111	506
+G	GGU	308	500
+G	GGG	4	156
+G	GGC	178	1385
+G	GGA	16	229
+H	CAC	58	343
+H	CAU	49	259
+I	AUU	184	598
+I	AUA	8	102
+I	AUC	157	939
+K	AAA	484	1342
+K	AAG	63	286
+L	CUA	1	30
+L	CUC	8	396
+L	CUG	173	934
+L	CUU	11	230
+L	UUA	30	154
+L	UUG	234	848
+M	AUG	146	604
+N	AAC	133	806
+N	AAU	100	475
+P	CCA	30	42
+P	CCC	35	342
+P	CCU	92	183
+P	CCG	59	499
+Q	CAA	189	658
+Q	CAG	38	483
+R	AGA	12	42
+R	AGG	1	56
+R	CGA	11	47
+R	CGC	213	852
+R	CGG	5	143
+R	CGU	259	293
+S	AGC	57	516
+S	AGU	25	134
+S	UCA	38	126
+S	UCC	64	399
+S	UCG	9	224
+S	UCU	108	138
+T	ACC	144	846
+T	ACA	31	152
+T	ACG	14	349
+T	ACU	99	172
+V	GUU	245	402
+V	GUG	81	508
+V	GUC	94	596
+V	GUA	162	288
+W	UGG	31	206
+Y	UAC	79	437
+Y	UAU	45	284

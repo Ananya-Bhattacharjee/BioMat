@@ -1,0 +1,74 @@
+#Bacillus anthracis str. Sterne 
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download B.anthracis str. Sterne protien abundance data at:
+# http://pax-db.org/dao/260799-GPM_201408.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+AA	Codon	CF_HEG	CF_LEG
+*	UGA	0	7
+*	UAG	2	4
+*	UAA	38	29
+A	GCU	293	395
+A	GCG	43	325
+A	GCC	3	71
+A	GCA	176	623
+C	UGU	6	120
+C	UGC	4	44
+D	GAU	125	894
+D	GAC	101	190
+E	GAG	103	436
+E	GAA	333	1176
+F	UUU	35	624
+F	UUC	112	271
+G	GGU	306	494
+G	GGG	5	223
+G	GGC	77	163
+G	GGA	91	580
+H	CAC	49	95
+H	CAU	54	379
+I	AUU	150	898
+I	AUA	3	303
+I	AUC	195	177
+K	AAA	459	1055
+K	AAG	124	336
+L	CUA	39	161
+L	CUC	1	64
+L	CUG	6	81
+L	CUU	144	348
+L	UUA	217	875
+L	UUG	10	158
+M	AUG	145	491
+N	AAC	167	255
+N	AAU	71	909
+P	CCA	115	440
+P	CCC	1	18
+P	CCU	80	218
+P	CCG	11	239
+Q	CAA	167	660
+Q	CAG	12	177
+R	AGA	21	209
+R	AGG	0	42
+R	CGA	6	107
+R	CGC	82	91
+R	CGG	0	28
+R	CGU	340	311
+S	AGC	34	114
+S	AGU	20	335
+S	UCA	36	326
+S	UCC	3	50
+S	UCG	3	86
+S	UCU	131	276
+T	ACC	3	48
+T	ACA	119	720
+T	ACG	26	440
+T	ACU	183	246
+V	GUU	272	550
+V	GUG	47	270
+V	GUC	10	118
+V	GUA	236	757
+W	UGG	27	239
+Y	UAC	86	180
+Y	UAU	33	683

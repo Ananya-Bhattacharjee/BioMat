@@ -1,0 +1,83 @@
+#Bartonella quintana_Toulouse
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Bartonella quintana str. Toulouse(NC_005955.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_41HEGs	CF_LEGs
+*	UGA	6	314
+*	UAG	10	129
+*	UAA	25	658
+A	GCU	325	12008
+A	GCG	129	4135
+A	GCC	45	4005
+A	GCA	216	11498
+C	UGU	33	2864
+C	UGC	6	1224
+D	GAU	326	15733
+D	GAC	36	2819
+E	GAG	183	5270
+E	GAA	301	16794
+F	UUU	198	14249
+F	UUC	33	2815
+G	GGU	368	9996
+G	GGG	85	3970
+G	GGC	68	3905
+G	GGA	102	7652
+H	CAC	36	1918
+H	CAU	115	7008
+I	AUU	375	17537
+I	AUA	44	4933
+I	AUC	88	5799
+K	AAA	356	16422
+K	AAG	225	5322
+L	CUA	21	1991
+L	CUC	29	3966
+L	CUG	22	2432
+L	CUU	218	11935
+L	UUA	88	9687
+L	UUG	132	7820
+M	AUG	188	9158
+N	AAC	52	3499
+N	AAU	207	12127
+P	CCA	91	5025
+P	CCC	17	2094
+P	CCU	122	6048
+P	CCG	64	1663
+Q	CAA	132	10597
+Q	CAG	115	4394
+R	AGA	29	2076
+R	AGG	21	831
+R	CGA	21	2167
+R	CGC	104	4235
+R	CGG	43	1963
+R	CGU	433	8673
+S	AGC	23	2643
+S	AGU	48	4247
+S	UCA	93	5467
+S	UCC	26	2250
+S	UCG	57	2069
+S	UCU	155	7366
+T	ACC	52	3115
+T	ACA	110	8672
+T	ACG	85	3094
+T	ACU	94	4637
+V	GUU	409	12575
+V	GUG	106	4323
+V	GUC	60	3213
+V	GUA	69	4266
+W	UGG	37	3977
+Y	UAC	25	1801
+Y	UAU	143	8419

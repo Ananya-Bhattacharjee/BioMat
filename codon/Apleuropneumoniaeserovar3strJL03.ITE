@@ -1,0 +1,84 @@
+#Actinobacillus pleuropneumoniae_serovar3_JL03
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Actinobacillus pleuropneumoniae serovar 3 str JL03(NC_010278.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_37HEGs	CF_LEGs
+*	UGA	1	130
+*	UAG	0	307
+*	UAA	36	1562
+A	GCU	211	9631
+A	GCG	121	20028
+A	GCC	9	9405
+A	GCA	280	15913
+C	UGU	16	3793
+C	UGC	9	2515
+D	GAU	127	22604
+D	GAC	80	8329
+E	GAG	62	8039
+E	GAA	293	32811
+F	UUU	38	18206
+F	UUC	108	10705
+G	GGU	343	20043
+G	GGG	3	3686
+G	GGC	91	13136
+G	GGA	8	5173
+H	CAC	72	4880
+H	CAU	37	8194
+I	AUU	115	27494
+I	AUA	1	2640
+I	AUC	205	13197
+K	AAA	430	34203
+K	AAG	58	5156
+L	CUA	18	4225
+L	CUC	6	3931
+L	CUG	10	5355
+L	CUU	52	9309
+L	UUA	280	33317
+L	UUG	20	10927
+M	AUG	128	15126
+N	AAC	142	10380
+N	AAU	61	19068
+P	CCA	76	2699
+P	CCC	1	1273
+P	CCU	59	4770
+P	CCG	54	14968
+Q	CAA	155	24415
+Q	CAG	25	6247
+R	AGA	11	2614
+R	AGG	0	337
+R	CGA	2	3272
+R	CGC	72	5753
+R	CGG	0	947
+R	CGU	369	14974
+S	AGC	44	7067
+S	AGU	20	6814
+S	UCA	95	6115
+S	UCC	4	4156
+S	UCG	6	6857
+S	UCU	82	5565
+T	ACC	43	11811
+T	ACA	81	5336
+T	ACG	14	8215
+T	ACU	144	7193
+V	GUU	256	10589
+V	GUG	58	12374
+V	GUC	8	6723
+V	GUA	188	13060
+W	UGG	29	7379
+Y	UAC	69	5511
+Y	UAU	38	14726
+

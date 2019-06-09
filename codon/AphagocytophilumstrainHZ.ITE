@@ -1,0 +1,83 @@
+#Anaplasma phagocytophilum_HZ 
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Anaplasma phagocytophilum str. HZ (NC_007797.1) GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_39HEGs	CF_LEGs
+*	UGA	8	254
+*	UAG	21	482
+*	UAA	10	440
+A	GCU	308	10149
+A	GCG	157	5057
+A	GCC	40	2753
+A	GCA	53	7377
+C	UGU	70	3818
+C	UGC	26	2346
+D	GAU	236	12991
+D	GAC	60	4362
+E	GAG	205	9360
+E	GAA	137	10967
+F	UUU	157	9549
+F	UUC	67	3872
+G	GGU	299	8506
+G	GGG	133	4757
+G	GGC	66	3505
+G	GGA	85	5955
+H	CAC	43	2534
+H	CAU	78	4789
+I	AUU	165	7820
+I	AUA	158	10764
+I	AUC	34	3653
+K	AAA	128	8537
+K	AAG	442	10005
+L	CUA	34	4609
+L	CUC	36	2661
+L	CUG	66	4281
+L	CUU	116	6137
+L	UUA	98	6528
+L	UUG	162	7269
+M	AUG	174	8362
+N	AAC	63	4177
+N	AAU	153	8551
+P	CCA	25	2696
+P	CCC	11	1328
+P	CCU	121	4922
+P	CCG	39	1896
+Q	CAA	42	4408
+Q	CAG	109	4669
+R	AGA	111	4656
+R	AGG	200	4400
+R	CGA	7	1075
+R	CGC	35	1903
+R	CGG	33	1275
+R	CGU	123	3333
+S	AGC	41	4072
+S	AGU	116	6293
+S	UCA	52	4258
+S	UCC	33	2347
+S	UCG	55	2491
+S	UCU	189	7778
+T	ACC	26	2197
+T	ACA	38	4452
+T	ACG	47	2724
+T	ACU	122	5883
+V	GUU	296	9028
+V	GUG	209	6854
+V	GUC	57	2483
+V	GUA	141	8683
+W	UGG	32	2448
+Y	UAC	62	3871
+Y	UAU	111	7023

@@ -1,0 +1,74 @@
+#Bacteroides thetaiotaomicron VPI-5482
+# This table is contributed by Yulong Wei and Juan Wang
+# 1. download B.thetaiotaomicron VPI-5482 protien abundance data at:
+# http://pax-db.org/dao/226186-GPM_201408.txt
+# 2. Rank the genes by protein abundance in descending order
+# 3. The first 40 ribosome genes are taken as highly expressed genes (HEG), and the 
+# bottom 40 genes taken as lowly expressed genes (LEG)
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the 40 LEGs
+#AA	Codon	CF_HEG	CF_LEG
+*	UGA	2	8
+*	UAG	1	5
+*	UAA	37	27
+A	GCU	369	580
+A	GCG	22	249
+A	GCC	40	436
+A	GCA	181	514
+C	UGU	21	103
+C	UGC	17	100
+D	GAU	154	1081
+D	GAC	118	589
+E	GAG	69	497
+E	GAA	375	1310
+F	UUU	77	673
+F	UUC	116	612
+G	GGU	331	715
+G	GGG	11	198
+G	GGC	58	369
+G	GGA	113	817
+H	CAC	66	108
+H	CAU	35	304
+I	AUU	215	800
+I	AUA	31	446
+I	AUC	199	649
+K	AAA	435	1247
+K	AAG	292	741
+L	CUA	4	121
+L	CUC	21	200
+L	CUG	73	797
+L	CUU	106	369
+L	UUA	66	405
+L	UUG	186	591
+M	AUG	157	737
+N	AAC	174	570
+N	AAU	129	1278
+P	CCA	42	112
+P	CCC	17	188
+P	CCU	89	333
+P	CCG	73	373
+Q	CAA	91	414
+Q	CAG	96	638
+R	AGA	158	200
+R	AGG	1	52
+R	CGA	3	91
+R	CGC	38	217
+R	CGG	1	162
+R	CGU	204	531
+S	AGC	38	309
+S	AGU	52	420
+S	UCA	86	277
+S	UCC	12	307
+S	UCG	11	256
+S	UCU	136	464
+T	ACC	32	399
+T	ACA	93	521
+T	ACG	18	355
+T	ACU	180	477
+V	GUU	233	414
+V	GUG	58	485
+V	GUC	13	288
+V	GUA	233	654
+W	UGG	35	393
+Y	UAC	65	369
+Y	UAU	96	1049

@@ -1,0 +1,83 @@
+#Alkaliphilus metalliredigens_QYMF
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Alkaliphilus metalliredigens QYMF (NC_009633.1) GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_35HEGs	CF_LEGs
+*	UGA	0	636
+*	UAG	9	1344
+*	UAA	26	2622
+A	GCU	149	25890
+A	GCG	45	7159
+A	GCC	32	19302
+A	GCA	178	33057
+C	UGU	18	9041
+C	UGC	7	3461
+D	GAU	155	54202
+D	GAC	59	16385
+E	GAG	82	32176
+E	GAA	290	73746
+F	UUU	85	44093
+F	UUC	47	11768
+G	GGU	165	26499
+G	GGG	25	16658
+G	GGC	41	12261
+G	GGA	189	38696
+H	CAC	26	5843
+H	CAU	66	19773
+I	AUU	189	64318
+I	AUA	41	32617
+I	AUC	117	25307
+K	AAA	343	62525
+K	AAG	235	37146
+L	CUA	53	21359
+L	CUC	4	6510
+L	CUG	14	11017
+L	CUU	72	20385
+L	UUA	178	47934
+L	UUG	42	20906
+M	AUG	140	39893
+N	AAC	79	17436
+N	AAU	116	48044
+P	CCA	89	16313
+P	CCC	4	7933
+P	CCU	68	15536
+P	CCG	15	3502
+Q	CAA	136	32037
+Q	CAG	18	15251
+R	AGA	273	24611
+R	AGG	9	9198
+R	CGA	31	8083
+R	CGC	5	2467
+R	CGG	2	3530
+R	CGU	39	6684
+S	AGC	16	9996
+S	AGU	39	21391
+S	UCA	64	16465
+S	UCC	9	9550
+S	UCG	4	3776
+S	UCU	71	17568
+T	ACC	22	16423
+T	ACA	148	29646
+T	ACG	14	7451
+T	ACU	89	17103
+V	GUU	151	28857
+V	GUG	52	22201
+V	GUC	35	11385
+V	GUA	182	30928
+W	UGG	19	10657
+Y	UAC	38	11391
+Y	UAU	78	38561

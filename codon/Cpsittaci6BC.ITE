@@ -1,0 +1,84 @@
+#Chlamydia psittaci_6BC
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Chlamydia psittaci 6BC(NC_015470.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_34HEGs	CF_LEGs
+*	UGA	0	123
+*	UAG	10	245
+*	UAA	24	565
+A	GCU	262	10897
+A	GCG	30	2775
+A	GCC	53	3293
+A	GCA	114	6606
+C	UGU	35	3741
+C	UGC	25	1730
+D	GAU	177	12479
+D	GAC	72	3724
+E	GAG	102	6583
+E	GAA	293	15471
+F	UUU	114	10544
+F	UUC	60	5369
+G	GGU	186	5946
+G	GGG	62	3893
+G	GGC	90	3017
+G	GGA	143	8235
+H	CAC	39	2560
+H	CAU	71	5869
+I	AUU	223	12319
+I	AUA	59	5986
+I	AUC	102	6357
+K	AAA	420	14787
+K	AAG	195	6156
+L	CUA	67	5084
+L	CUC	26	3928
+L	CUG	23	2522
+L	CUU	99	7805
+L	UUA	162	13142
+L	UUG	101	5355
+M	AUG	149	6618
+N	AAC	66	4698
+N	AAU	141	9383
+P	CCA	56	3021
+P	CCC	17	2559
+P	CCU	134	8013
+P	CCG	11	1344
+Q	CAA	143	9640
+Q	CAG	58	3983
+R	AGA	128	3787
+R	AGG	26	1206
+R	CGA	43	1916
+R	CGC	48	2201
+R	CGG	8	854
+R	CGU	163	5064
+S	AGC	47	2679
+S	AGU	62	4299
+S	UCA	56	4399
+S	UCC	39	3605
+S	UCG	17	2024
+S	UCU	156	10993
+T	ACC	48	3255
+T	ACA	112	6674
+T	ACG	27	2597
+T	ACU	116	5896
+V	GUU	242	7787
+V	GUG	67	3681
+V	GUC	64	3214
+V	GUA	137	6250
+W	UGG	35	3287
+Y	UAC	53	3630
+Y	UAU	74	7798
+

@@ -1,0 +1,83 @@
+#Haemophilus influenzae_Rd_KW20
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Haemophilus influenzae Rd KW20(NC_000907.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_40HEGs	CF_LEGs
+*	UGA	1	146
+*	UAG	0	217
+*	UAA	39	1209
+A	GCU	234	10648
+A	GCG	114	8634
+A	GCC	22	5522
+A	GCA	366	16603
+C	UGU	24	3451
+C	UGC	8	1773
+D	GAU	205	21479
+D	GAC	96	3766
+E	GAG	76	5275
+E	GAA	416	27363
+F	UUU	65	16231
+F	UUC	137	6091
+G	GGU	455	14337
+G	GGG	4	3640
+G	GGC	99	9960
+G	GGA	22	5524
+H	CAC	104	3507
+H	CAU	44	6761
+I	AUU	175	25604
+I	AUA	2	2947
+I	AUC	240	7073
+K	AAA	495	28164
+K	AAG	64	3294
+L	CUA	30	3378
+L	CUC	7	2683
+L	CUG	9	2251
+L	CUU	79	10209
+L	UUA	318	25191
+L	UUG	50	9267
+M	AUG	176	12046
+N	AAC	149	6057
+N	AAU	87	18416
+P	CCA	154	8433
+P	CCC	0	1478
+P	CCU	66	6237
+P	CCG	28	2513
+Q	CAA	223	19623
+Q	CAG	22	3789
+R	AGA	12	1804
+R	AGG	0	220
+R	CGA	6	2680
+R	CGC	83	5089
+R	CGG	1	583
+R	CGU	437	11841
+S	AGC	44	4312
+S	AGU	32	6072
+S	UCA	92	6282
+S	UCC	5	2218
+S	UCG	3	2078
+S	UCU	127	8407
+T	ACC	45	5771
+T	ACA	95	7903
+T	ACG	11	4466
+T	ACU	232	8016
+V	GUU	291	10324
+V	GUG	80	10579
+V	GUC	18	3319
+V	GUA	252	9408
+W	UGG	34	5679
+Y	UAC	79	3428
+Y	UAU	72	12302

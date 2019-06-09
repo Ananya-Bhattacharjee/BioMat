@@ -1,0 +1,83 @@
+#Aromatoleum aromaticum_EbN1
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Aromatoleum aromaticum EbN1(NC_006513.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_42HEGs	CF_LEGs
+*	UGA	18	2991
+*	UAG	1	528
+*	UAA	23	537
+A	GCU	94	9959
+A	GCG	378	76824
+A	GCC	332	56724
+A	GCA	82	16377
+C	UGU	5	2253
+C	UGC	53	12372
+D	GAU	111	19281
+D	GAC	259	51837
+E	GAG	255	40624
+E	GAA	278	35369
+F	UUU	30	7392
+F	UUC	202	39424
+G	GGU	164	11042
+G	GGG	70	17456
+G	GGC	442	67599
+G	GGA	32	9410
+H	CAC	113	20869
+H	CAU	41	10415
+I	AUU	58	7279
+I	AUA	2	1749
+I	AUC	364	49954
+K	AAA	97	9844
+K	AAG	503	29345
+L	CUA	3	1747
+L	CUC	180	47380
+L	CUG	322	68464
+L	CUU	48	8188
+L	UUA	1	778
+L	UUG	37	10009
+M	AUG	225	28433
+N	AAC	181	24596
+N	AAU	54	7271
+P	CCA	5	3771
+P	CCC	67	16471
+P	CCU	12	4772
+P	CCG	245	43468
+Q	CAA	36	6860
+Q	CAG	238	36252
+R	AGA	3	1768
+R	AGG	9	4140
+R	CGA	10	5989
+R	CGC	378	60519
+R	CGG	88	21336
+R	CGU	164	10693
+S	AGC	85	21554
+S	AGU	12	3560
+S	UCA	4	2826
+S	UCC	76	11683
+S	UCG	167	25697
+S	UCU	16	2032
+T	ACC	189	25779
+T	ACA	9	3548
+T	ACG	169	28743
+T	ACU	29	4955
+V	GUU	66	6652
+V	GUG	277	40167
+V	GUC	357	46851
+V	GUA	27	3961
+W	UGG	34	17879
+Y	UAC	107	20472
+Y	UAU	50	8445

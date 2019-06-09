@@ -1,0 +1,83 @@
+#Rhodospirillum rubrum_ATCC_11170
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Shivapriya Chithambaram
+# 1. download Rhodospirillum rubrum ATCC 11170(NC_007643.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_31HEGs	CF_LEGs
+*	UGA	10	2068
+*	UAG	4	662
+*	UAA	17	1026
+A	GCU	44	6459
+A	GCG	111	44153
+A	GCC	357	116321
+A	GCA	10	2396
+C	UGU	7	2050
+C	UGC	22	9606
+D	GAU	110	36272
+D	GAC	142	37542
+E	GAG	203	40400
+E	GAA	126	28593
+F	UUU	12	9719
+F	UUC	120	33566
+G	GGU	98	10056
+G	GGG	28	22582
+G	GGC	300	74439
+G	GGA	21	8569
+H	CAC	62	11380
+H	CAU	37	13622
+I	AUU	40	6312
+I	AUA	1	958
+I	AUC	232	52697
+K	AAA	24	7963
+K	AAG	398	27207
+L	CUA	1	1959
+L	CUC	87	20378
+L	CUG	220	81745
+L	CUU	50	17949
+L	UUA	0	1111
+L	UUG	35	19814
+M	AUG	134	28257
+N	AAC	108	15375
+N	AAU	35	10557
+P	CCA	0	2522
+P	CCC	94	32883
+P	CCU	6	2961
+P	CCG	117	34152
+Q	CAA	6	8349
+Q	CAG	175	27503
+R	AGA	0	885
+R	AGG	4	2323
+R	CGA	4	2993
+R	CGC	279	57030
+R	CGG	52	25464
+R	CGU	125	7434
+S	AGC	55	21404
+S	AGU	2	2521
+S	UCA	2	1466
+S	UCC	78	12797
+S	UCG	72	24609
+S	UCU	7	1854
+T	ACC	181	47903
+T	ACA	4	1507
+T	ACG	54	16168
+T	ACU	7	1678
+V	GUU	75	12780
+V	GUG	144	37949
+V	GUC	184	43665
+V	GUA	7	1441
+W	UGG	31	16042
+Y	UAC	72	8530
+Y	UAU	34	15990

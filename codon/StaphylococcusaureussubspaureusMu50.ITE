@@ -1,0 +1,84 @@
+#Staphylococcus aureus_aureus_Mu50
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Staphylococcus aureus subsp. aureus Mu50 (NC_002758.2)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_40HEGs	CF_LEGs
+*	UGA	0	313
+*	UAG	0	406
+*	UAA	40	1935
+A	GCU	262	15914
+A	GCG	31	7497
+A	GCC	6	3631
+A	GCA	198	23796
+C	UGU	12	4044
+C	UGC	4	1023
+D	GAU	142	36414
+D	GAC	136	10076
+E	GAG	48	8469
+E	GAA	432	43300
+F	UUU	52	26226
+F	UUC	104	9566
+G	GGU	348	25661
+G	GGG	2	3472
+G	GGC	51	7353
+G	GGA	109	11245
+H	CAC	61	3596
+H	CAU	48	14829
+I	AUU	173	41856
+I	AUA	9	14897
+I	AUC	202	11706
+K	AAA	572	48599
+K	AAG	41	11400
+L	CUA	15	6886
+L	CUC	1	1710
+L	CUG	0	1919
+L	CUU	45	8603
+L	UUA	342	42815
+L	UUG	14	10898
+M	AUG	141	20580
+N	AAC	163	10728
+N	AAU	98	34574
+P	CCA	139	12852
+P	CCC	0	825
+P	CCU	69	8586
+P	CCG	7	3178
+Q	CAA	187	29130
+Q	CAG	2	4092
+R	AGA	66	9254
+R	AGG	0	1202
+R	CGA	5	3949
+R	CGC	36	2567
+R	CGG	0	388
+R	CGU	355	10419
+S	AGC	24	4174
+S	AGU	36	13550
+S	UCA	159	16319
+S	UCC	1	1398
+S	UCG	1	3131
+S	UCU	81	10327
+T	ACC	1	2244
+T	ACA	139	22915
+T	ACG	16	7614
+T	ACU	195	13330
+V	GUU	251	21694
+V	GUG	22	7635
+V	GUC	7	5981
+V	GUA	262	17952
+W	UGG	25	5958
+Y	UAC	80	6813
+Y	UAU	73	24509
+

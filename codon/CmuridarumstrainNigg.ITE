@@ -1,0 +1,84 @@
+#Chlamydia muridarum_Nigg
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Chlamydia muridarum str. Nigg(NC_002620.2)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All - CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_40HEGs	CF_LEGs
+*	UGA	1	132
+*	UAG	13	234
+*	UAA	26	498
+A	GCU	323	10751
+A	GCG	63	2617
+A	GCC	66	3180
+A	GCA	112	5886
+C	UGU	46	3247
+C	UGC	29	1889
+D	GAU	229	11120
+D	GAC	66	3137
+E	GAG	184	7105
+E	GAA	284	13372
+F	UUU	135	10482
+F	UUC	90	5039
+G	GGU	151	3361
+G	GGG	120	5002
+G	GGC	74	2464
+G	GGA	226	8876
+H	CAC	48	1984
+H	CAU	84	5163
+I	AUU	261	11975
+I	AUA	34	3918
+I	AUC	104	5365
+K	AAA	428	13247
+K	AAG	234	5258
+L	CUA	38	4312
+L	CUC	39	3276
+L	CUG	35	2570
+L	CUU	115	8204
+L	UUA	168	10779
+L	UUG	186	6393
+M	AUG	172	6201
+N	AAC	81	3415
+N	AAU	151	8114
+P	CCA	65	3174
+P	CCC	12	2337
+P	CCU	161	7025
+P	CCG	10	1107
+Q	CAA	142	8815
+Q	CAG	99	4398
+R	AGA	195	3308
+R	AGG	20	1058
+R	CGA	79	3103
+R	CGC	46	2203
+R	CGG	24	1290
+R	CGU	155	3791
+S	AGC	58	2554
+S	AGU	55	3293
+S	UCA	44	3216
+S	UCC	51	3987
+S	UCG	27	1945
+S	UCU	200	11030
+T	ACC	36	2834
+T	ACA	101	5231
+T	ACG	47	2351
+T	ACU	137	5522
+V	GUU	314	8350
+V	GUG	84	3762
+V	GUC	77	2893
+V	GUA	137	5020
+W	UGG	41	3091
+Y	UAC	51	2887
+Y	UAU	81	6861
+

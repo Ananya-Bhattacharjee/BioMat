@@ -1,0 +1,83 @@
+#Bdellovibrio bacteriovorus_Tiberius
+# Format: use the first line for species name. The following lines starting with
+# a '#' are for you to add details of how you compiled the data.
+# This table is contributed by Ramanandan Prabhakaran
+# 1. download Bdellovibrio bacteriovorus str. Tiberius(NC_019567.1)GenBank file in DAMBE
+# 2. compile codon frequencies for all genes (CF_All) 
+# 3. compile codon frequencies for highly expressed genes (HEG) (CF_40HEGs)
+# 40 HEGs - fusA,rplA,rplB,rplC,rplD,rplE,rplF,rplI,rplJ,rplK,rplL,rplM,rplN,rplO,rplP,rplQ,rplR,rplS,rplT,rpsB,rpsC,rpsD,rpsE,rpsF,rpsG,rpsH,rpsI,rpsJ,rpsK,rpsL,rpsM,rpsN,rpsO,rpsP,rpsQ,rpsS,rpsT,tuf
+# 40 HEGs list is taken from this research article  http://www.biomedcentral.com/1471-2105/13/62 
+# 4. to obtain codon usage of lowly expressed genes (LEG) as
+# CF_LEG = CF_All – CF_40HEGs
+# CF_All: codon frequency of all genes in bacteria
+# CF_HEG: codon frequency of the 40 HEGs
+# CF_LEG: codon frequency of the LEGs
+# In some bacterial genomes, not all 40 HEGs are present. 
+# Hence indicate that particular number instead of 40 in header. For example, CF_34HEGs.
+# Please share your personal compilation with others by sending the file to
+# me. I will include the file in the next DAMBE release.
+#AA	Codon	CF_33HEGs	CF_LEGs
+*	UGA	0	714
+*	UAG	9	1039
+*	UAA	24	1952
+A	GCU	333	23769
+A	GCG	96	26586
+A	GCC	40	34018
+A	GCA	145	16098
+C	UGU	10	4932
+C	UGC	21	6489
+D	GAU	146	33229
+D	GAC	121	28760
+E	GAG	136	20081
+E	GAA	249	54439
+F	UUU	29	23017
+F	UUC	155	30295
+G	GGU	261	28382
+G	GGG	21	11951
+G	GGC	127	32099
+G	GGA	36	13779
+H	CAC	73	12953
+H	CAU	31	9452
+I	AUU	74	25471
+I	AUA	0	2131
+I	AUC	261	39355
+K	AAA	452	49781
+K	AAG	169	28006
+L	CUA	18	3312
+L	CUC	15	3430
+L	CUG	60	53759
+L	CUU	147	20943
+L	UUA	4	5039
+L	UUG	161	28571
+M	AUG	142	30916
+N	AAC	130	27198
+N	AAU	67	22840
+P	CCA	88	9630
+P	CCC	5	8132
+P	CCU	72	10540
+P	CCG	32	21187
+Q	CAA	103	16742
+Q	CAG	51	30595
+R	AGA	65	5328
+R	AGG	0	1354
+R	CGA	1	3468
+R	CGC	88	23798
+R	CGG	1	3324
+R	CGU	180	18570
+S	AGC	35	15981
+S	AGU	12	9604
+S	UCA	15	8275
+S	UCC	77	22900
+S	UCG	5	9789
+S	UCU	132	16512
+T	ACC	23	24873
+T	ACA	70	10867
+T	ACG	19	14457
+T	ACU	202	16760
+V	GUU	290	22851
+V	GUG	60	38313
+V	GUC	28	17267
+V	GUA	109	6168
+W	UGG	34	14462
+Y	UAC	83	16495
+Y	UAU	30	20586
