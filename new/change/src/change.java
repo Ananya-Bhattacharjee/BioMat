@@ -16,7 +16,8 @@ public class change {
 
         {
             try {
-                File file = new File("F:\\Dambe\\new\\1.fasta");
+
+                File file = new File("F:\\Dambe\\new\\scales\\2up1.fasta");
                 BufferedReader reader = new BufferedReader(new FileReader(file));
                 String line = "", oldtext = "";
                 while ((line = reader.readLine()) != null) {
@@ -30,7 +31,7 @@ public class change {
 
 
                 //System.out.println(oldtext);
-                FileWriter writer = new FileWriter("F:\\Dambe\\new\\edited36.fasta");
+                FileWriter writer = new FileWriter("F:\\Dambe\\new\\scales\\scale2up\\edited36.fasta");
                 //writer.write(replacedtext);
                 int i=0;
                 char []old=oldtext.toCharArray();
@@ -40,113 +41,126 @@ public class change {
                     if(oldtext.charAt(i)=='M' && oldtext.charAt(i+1)=='O' && oldtext.charAt(i+2)=='N'){
 
 
-                        //System.out.println(oldtext.substring(i+5,i+1505));
-                        for(int j=i+5;j<(i+754);j++)
+                        System.out.println(oldtext.substring(i+5,i+1635));
+                        for(int j=i+5;j<(i+820);j++)
                         {
-                            old[j]='-';
+
+                            if(Character.isLetter(old[j]))
+                                old[j]='-';
                         }
                     }
                     if(oldtext.charAt(i)=='M' && oldtext.charAt(i+1)=='A' && oldtext.charAt(i+2)=='C'){
 
 
-                        //System.out.println(oldtext.substring(i+5,i+1505));
-                        for(int j=i+754;j<(i+1505);j++)
+                        //System.out.println(oldtext.substring(i+5,i+1635));
+                        for(int j=i+820;j<(i+1635);j++)
                         {
-                            old[j]='-';
+                            if(Character.isLetter(old[j]))
+                                old[j]='-';
                         }
                     }
 
                     if(oldtext.charAt(i)=='B' && oldtext.charAt(i+1)=='O' && oldtext.charAt(i+2)=='S'){
 
 
-                        //System.out.println(oldtext.substring(i+5,i+1505));
-                        for(int j=i+5;j<(i+754);j++)
+                        //System.out.println(oldtext.substring(i+5,i+1635));
+                        for(int j=i+5;j<(i+820);j++)
                         {
-                            old[j]='-';
+                            if(Character.isLetter(old[j]))
+                                old[j]='-';
                         }
                     }
                     if(oldtext.charAt(i)=='S' && oldtext.charAt(i+1)=='U' && oldtext.charAt(i+2)=='S'){
 
 
-                        //System.out.println(oldtext.substring(i+5,i+1505));
-                        for(int j=i+5;j<(i+754);j++)
+                        //System.out.println(oldtext.substring(i+5,i+1635));
+                        for(int j=i+5;j<(i+820);j++)
                         {
-                            old[j]='-';
+                            if(Character.isLetter(old[j]))
+                                old[j]='-';
                         }
                     }
                     if(oldtext.charAt(i)=='V' && oldtext.charAt(i+1)=='I' && oldtext.charAt(i+2)=='C'){
 
 
-                        //System.out.println(oldtext.substring(i+5,i+1505));
-                        for(int j=i+754;j<(i+1505);j++)
+                        //System.out.println(oldtext.substring(i+5,i+1635));
+                        for(int j=i+820;j<(i+1635);j++)
                         {
-                            old[j]='-';
+                            if(Character.isLetter(old[j]))
+                                old[j]='-';
                         }
                     }
 
                     if(oldtext.charAt(i)=='C' && oldtext.charAt(i+1)=='A' && oldtext.charAt(i+2)=='N'){
 
 
-                        //System.out.println(oldtext.substring(i+5,i+1505));
-                        for(int j=i+5;j<(i+754);j++)
+                        //System.out.println(oldtext.substring(i+5,i+1635));
+                        for(int j=i+5;j<(i+820);j++)
                         {
-                            old[j]='-';
+                            if(Character.isLetter(old[j]))
+                                old[j]='-';
                         }
                     }
                     if(oldtext.charAt(i)=='T' && oldtext.charAt(i+1)=='U' && oldtext.charAt(i+2)=='P'){
 
 
-                        //System.out.println(oldtext.substring(i+5,i+1505));
-                        for(int j=i+754;j<(i+1505);j++)
+                        //System.out.println(oldtext.substring(i+5,i+1635));
+                        for(int j=i+820;j<(i+1635);j++)
                         {
-                            old[j]='-';
+                            if(Character.isLetter(old[j]))
+                                old[j]='-';
                         }
                     }
                     if(oldtext.charAt(i)=='S' && oldtext.charAt(i+1)=='P' && oldtext.charAt(i+2)=='E'){
 
 
-                        //System.out.println(oldtext.substring(i+5,i+1505));
-                        for(int j=i+754;j<(i+1505);j++)
+                        //System.out.println(oldtext.substring(i+5,i+1635));
+                        for(int j=i+820;j<(i+1635);j++)
                         {
-                            old[j]='-';
+                            if(Character.isLetter(old[j]))
+                                old[j]='-';
                         }
                     }
 
                     if(oldtext.charAt(i)=='D' && oldtext.charAt(i+1)=='I' && oldtext.charAt(i+2)=='P'){
 
 
-                        //System.out.println(oldtext.substring(i+5,i+1505));
-                        for(int j=i+5;j<(i+754);j++)
+                        //System.out.println(oldtext.substring(i+5,i+1635));
+                        for(int j=i+5;j<(i+820);j++)
                         {
-                            old[j]='-';
+                            if(Character.isLetter(old[j]))
+                                old[j]='-';
                         }
                     }
                     if(oldtext.charAt(i)=='O' && oldtext.charAt(i+1)=='R' && oldtext.charAt(i+2)=='Y'){
 
 
-                        //System.out.println(oldtext.substring(i+5,i+1505));
-                        for(int j=i+5;j<(i+754);j++)
+                        //System.out.println(oldtext.substring(i+5,i+1635));
+                        for(int j=i+5;j<(i+820);j++)
                         {
-                            old[j]='-';
+                            if(Character.isLetter(old[j]))
+                                old[j]='-';
                         }
                     }
                     if(oldtext.charAt(i)=='D' && oldtext.charAt(i+1)=='A' && oldtext.charAt(i+2)=='S'){
 
 
-                        //System.out.println(oldtext.substring(i+5,i+1505));
-                        for(int j=i+754;j<(i+1505);j++)
+                        //System.out.println(oldtext.substring(i+5,i+1635));
+                        for(int j=i+820;j<(i+1635);j++)
                         {
-                            old[j]='-';
+                            if(Character.isLetter(old[j]))
+                                old[j]='-';
                         }
                     }
 
                     if(oldtext.charAt(i)=='P' && oldtext.charAt(i+1)=='R' && oldtext.charAt(i+2)=='O'){
 
 
-                        //System.out.println(oldtext.substring(i+5,i+1505));
-                        for(int j=i+754;j<(i+1505);j++)
+                        //System.out.println(oldtext.substring(i+5,i+1635));
+                        for(int j=i+820;j<(i+1635);j++)
                         {
-                            old[j]='-';
+                            if(Character.isLetter(old[j]))
+                                old[j]='-';
                         }
                     }
 

@@ -124,7 +124,7 @@ class Autoencoder:
             model.train_on_batch(batch_data, batch_data)
         return model.predict(input_with_mask)
 
-    def train(self, batch_size=256, train_epochs=100):
+    def train(self, batch_size=256, train_epochs=1000):
         missing_mask = self._create_missing_mask()
         self.fill(missing_mask)
         self.model = self._create_model()
@@ -167,68 +167,68 @@ def is_number(s):
     except ValueError:
         return False
 
+for ii in range(1,11):
+    R = np.zeros(shape=(37, 37))
 
-R = np.zeros(shape=(37, 37))
+    i=0
+    j=0
 
-i=0
-j=0
-
-for word in read_words(r'F:\Dambe\new\logdet\logdetEdited342.dis'):
-    if(is_number(word)):
-        if(i==0):
-            continue
-        #print((word))
-        R[i-1][j]=(float)(word)
-        R[j][i-1]=R[i-1][j]
-        j=j+1
-    else:
-        #print(word.__len__())
-        if(word.__len__()>1):
-            i=i+1
-            j=0
-        else:
-
-            R[i-1][j]=np.NAN
-            R[j][i-1]=np.NAN
+    for word in read_words('F:\Dambe\mammals\scale2up\\'+ str(ii)+'edited36.dis'):
+        if(is_number(word)):
+            if(i==0):
+                continue
+            #print((word))
+            R[i-1][j]=(float)(word)
+            R[j][i-1]=R[i-1][j]
             j=j+1
+        else:
+            #print(word.__len__())
+            if(word.__len__()>1):
+                i=i+1
+                j=0
+            else:
+
+                R[i-1][j]=np.NAN
+                R[j][i-1]=np.NAN
+                j=j+1
 
 
-R_missing=R
+    R_missing=R
 
-df=pd.DataFrame(R)
-#print(df)
-#df = df.drop(['sroot'], axis=1)
-'''prob_missing = 0.1
-df_incomplete = df.copy()
-ix = [(row, col) for row in range(df.shape[0]) for col in range(df.shape[1])]
-for row, col in random.sample(ix, int(round(prob_missing * len(ix)))):
-    df_incomplete.iat[row, col] = np.nan
-    df_incomplete.iat[col, row] = np.nan
-'''
-df_incomplete = df.copy()
+    df=pd.DataFrame(R)
+    #print(df)
+    #df = df.drop(['sroot'], axis=1)
+    '''prob_missing = 0.1
+    df_incomplete = df.copy()
+    ix = [(row, col) for row in range(df.shape[0]) for col in range(df.shape[1])]
+    for row, col in random.sample(ix, int(round(prob_missing * len(ix)))):
+        df_incomplete.iat[row, col] = np.nan
+        df_incomplete.iat[col, row] = np.nan
+    '''
+    df_incomplete = df.copy()
 
-print(df_incomplete)
+    print(df_incomplete)
 
-missing_encoded = pd.get_dummies(df_incomplete)
-print(missing_encoded)
+    missing_encoded = pd.get_dummies(df_incomplete)
+    print(missing_encoded)
 
-imputer = Autoencoder(missing_encoded.values)
-complete_encoded = imputer.train(train_epochs=10000, batch_size=37)
+    imputer = Autoencoder(missing_encoded.values)
+    complete_encoded = imputer.train(train_epochs=10000, batch_size=37)
 
-printed = ""
-i = 0
-j = 0
+    printed = ""
+    i = 0
+    j = 0
 
-f = open(r'F:\Dambe\new\logdet\edited342forEncoder.dis', "w+")
+    f = open("F:\Dambe\mammals\scale2up\\"+ str(ii)+"edited36encoder.dis", "w+")
 
-for i in range(len(complete_encoded)):
-    for j in range(len(complete_encoded[0])):
-        if (j < i):
-            printed = printed + " " + str(round((complete_encoded[i][j]+complete_encoded[j][i])/2, 5))
-    printed = printed + "\n"
+    for i in range(len(complete_encoded)):
+        for j in range(len(complete_encoded[0])):
+            if (j < i):
+                printed = printed + " " + str(round((complete_encoded[i][j]+complete_encoded[j][i])/2, 5))
+        printed = printed + "\n"
 
-f.write(printed)
-f.close
+    f.write(printed)
+    f.close
 
 #prob_missing = 0.1
 #ix = [(row, col) for row in range(R.shape[0]) for col in range(R.shape[1])]

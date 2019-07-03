@@ -44,70 +44,72 @@ def is_number(s):
         return False
 if __name__ == "__main__":
 
-    import numpy
-    R = numpy.zeros(shape=(37, 37))
+    for ii in range(1,11):
+        import numpy
 
-    i=0
-    j=0
-    missing=0
+        R = numpy.zeros(shape=(37, 37))
 
-    for word in read_words('logdet\logdetEdited342.dis'):
-        if(is_number(word)):
-            if(i==0):
-                continue
-            #print((word))
-            R[i-1][j]=(float)(word)
-            j=j+1
-        else:
-            #print(word.__len__())
-            if(word.__len__()>1):
-                i=i+1
-                j=0
-            else:
+        i = 0
+        j = 0
+        missing = 0
 
-                R[i-1][j]=-1
-                missing=missing+1
+        for word in read_words('F:\Dambe\mammals\scale2up\\'+ str(ii)+'edited100.dis'):
+            if(is_number(word)):
+                if(i==0):
+                    continue
+                #print((word))
+                R[i-1][j]=(float)(word)
                 j=j+1
-    print missing
-    print R
-
-    N = len(R)
-    M = len(R[0])
-    K = 37
-
-    P = numpy.random.rand(N,K)
-    Q = numpy.random.rand(M,K)
-
-    nP, nQ = mat_factorization(R, P, Q, K)
-
-    nR = numpy.dot(nP, nQ.T)
-
-    print nR
-    Result = numpy.zeros(shape=(37, 37))
-
-
-    for i in range(len(R)):
-        for j in range(len(R[0])):
-            if(R[i][j]==-1):
-                Result[i][j]=nR[i][j]
             else:
-                Result[i][j]=R[i][j]
+                #print(word.__len__())
+                if(word.__len__()>1):
+                    i=i+1
+                    j=0
+                else:
 
-    printed=""
-    i=0
-    j=0
+                    R[i-1][j]=-1
+                    missing=missing+1
+                    j=j+1
+        print missing
+        print R
+
+        N = len(R)
+        M = len(R[0])
+        K = 37
+
+        P = numpy.random.rand(N,K)
+        Q = numpy.random.rand(M,K)
+
+        nP, nQ = mat_factorization(R, P, Q, K)
+
+        nR = numpy.dot(nP, nQ.T)
+
+        print nR
+        Result = numpy.zeros(shape=(37, 37))
 
 
-    f=open("logdet\edited342matfact.dis","w+")
+        for i in range(len(R)):
+            for j in range(len(R[0])):
+                if(R[i][j]==-1):
+                    Result[i][j]=nR[i][j]
+                else:
+                    Result[i][j]=R[i][j]
 
-    for i in range(len(Result)):
-        for j in range(len(Result[0])):
-            if(j<i):
-                printed=printed+" "+str(round(Result[i][j],5))
-        printed=printed+"\n"
+        printed=""
+        i=0
+        j=0
 
-    f.write(printed)
-    f.close
+
+        f=open("F:\Dambe\mammals\scale2up\\"+str(ii)+"edited100matfactK37.dis","w+")
+
+        for i in range(len(Result)):
+            for j in range(len(Result[0])):
+                if(j<i):
+                    printed=printed+" "+str(round(Result[i][j],5))
+            printed=printed+"\n"
+
+        f.write(printed)
+        f.close
 
 '''    
     for word in read_words('realDisEdit50.dis'):

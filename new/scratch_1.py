@@ -21,5 +21,9 @@ except Exception as e:
 try:
     rf, rf_max, x1, x2, x3, x4, x5 = t1.robinson_foulds(t2, unrooted_trees=True)
     print(rf)
+    #f = open("F:\Dambe\mammals\scale2up\\results.txt ", "w+")
+    #f.write(t1+" "+t2+" "+rf)
+
+
 except Exception as e:
     print('Error when computing the Robinson-Foulds distances:\n' + str(e), file=sys.stderr)
