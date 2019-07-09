@@ -17,7 +17,7 @@ public class change100 {
         {
             try {
                 for(int ii=1;ii<11;ii++) {
-                    File file = new File("F:\\Dambe\\mammals\\scale2up\\"+ String.valueOf(ii)+".fasta");
+                    File file = new File("F:\\Dambe\\mammals\\scale2uplogdet\\"+ String.valueOf(ii)+".fasta");
                     BufferedReader reader = new BufferedReader(new FileReader(file));
                     String line = "", oldtext = "";
                     while ((line = reader.readLine()) != null) {
@@ -29,7 +29,7 @@ public class change100 {
 
 
                     //System.out.println(oldtext);
-                    FileWriter writer = new FileWriter("F:\\Dambe\\mammals\\scale2up\\"+ String.valueOf(ii)+"edited100.fasta");
+                    FileWriter writer = new FileWriter("F:\\Dambe\\mammals\\scale2uplogdet\\"+ String.valueOf(ii)+"edited100.fasta");
                     //writer.write(replacedtext);
                     int i = 0;
                     char[] old = oldtext.toCharArray();
@@ -235,7 +235,7 @@ public class change100 {
 
 
                     writer.close();
-                    writer = new FileWriter("F:\\Dambe\\mammals\\scale2up\\"+ String.valueOf(ii)+"edited100.dis");
+                    writer = new FileWriter("F:\\Dambe\\mammals\\scale2uplogdet\\"+ String.valueOf(ii)+"edited100.dis");
                     writer.write("37");
                     writer.close();
 

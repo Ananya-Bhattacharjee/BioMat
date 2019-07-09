@@ -173,7 +173,7 @@ for ii in range(1,11):
     i=0
     j=0
 
-    for word in read_words('F:\Dambe\mammals\scale2up\\'+ str(ii)+'edited36.dis'):
+    for word in read_words('F:\Dambe\mammals\\scale2uplogdet\\'+ str(ii)+'edited36.dis'):
         if(is_number(word)):
             if(i==0):
                 continue
@@ -219,7 +219,7 @@ for ii in range(1,11):
     i = 0
     j = 0
 
-    f = open("F:\Dambe\mammals\scale2up\\"+ str(ii)+"edited36encoder.dis", "w+")
+    f = open("F:\Dambe\mammals\\scale2uplogdet\\"+ str(ii)+"edited36encoder.dis", "w+")
 
     for i in range(len(complete_encoded)):
         for j in range(len(complete_encoded[0])):
