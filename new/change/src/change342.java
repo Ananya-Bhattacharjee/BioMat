@@ -17,7 +17,7 @@ public class change342 {
         {
             try {
                 for(int ii=1;ii<11;ii++) {
-                    File file = new File("F:\\Dambe\\mammals\\noscalelogdet\\"+ String.valueOf(ii)+".fasta");
+                    File file = new File("F:\\Dambe\\mammals\\scale2uplogdet\\"+ String.valueOf(ii)+".fasta");
                     BufferedReader reader = new BufferedReader(new FileReader(file));
                     String line = "", oldtext = "";
                     while ((line = reader.readLine()) != null) {
@@ -29,7 +29,7 @@ public class change342 {
 
 
                     //System.out.println(oldtext);
-                    FileWriter writer = new FileWriter("F:\\Dambe\\mammals\\noscalelogdet\\"+ String.valueOf(ii)+"edited342.fasta");
+                    FileWriter writer = new FileWriter("F:\\Dambe\\mammals\\scale2uplogdet\\"+ String.valueOf(ii)+"edited342.fasta");
                     //writer.write(replacedtext);
                     int i = 0;
                     char[] old = oldtext.toCharArray();
@@ -38,8 +38,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'M' && oldtext.charAt(i + 1) == 'O' && oldtext.charAt(i + 2) == 'N') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -47,8 +47,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'M' && oldtext.charAt(i + 1) == 'A' && oldtext.charAt(i + 2) == 'C') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -56,8 +56,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'T' && oldtext.charAt(i + 1) == 'U' && oldtext.charAt(i + 2) == 'R') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -66,8 +66,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'B' && oldtext.charAt(i + 1) == 'O' && oldtext.charAt(i + 2) == 'S') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -75,8 +75,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'S' && oldtext.charAt(i + 1) == 'U' && oldtext.charAt(i + 2) == 'S') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -84,8 +84,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'V' && oldtext.charAt(i + 1) == 'I' && oldtext.charAt(i + 2) == 'C') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -94,8 +94,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'C' && oldtext.charAt(i + 1) == 'A' && oldtext.charAt(i + 2) == 'N') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -103,8 +103,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'E' && oldtext.charAt(i + 1) == 'Q' && oldtext.charAt(i + 2) == 'U') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -112,8 +112,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'P' && oldtext.charAt(i + 1) == 'T' && oldtext.charAt(i + 2) == 'E') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -121,8 +121,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'S' && oldtext.charAt(i + 1) == 'O' && oldtext.charAt(i + 2) == 'R') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -130,8 +130,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'M' && oldtext.charAt(i + 1) == 'U' && oldtext.charAt(i + 2) == 'S') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -139,8 +139,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'C' && oldtext.charAt(i + 1) == 'A' && oldtext.charAt(i + 2) == 'L') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -150,8 +150,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'T' && oldtext.charAt(i + 1) == 'U' && oldtext.charAt(i + 2) == 'P') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -159,8 +159,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'S' && oldtext.charAt(i + 1) == 'P' && oldtext.charAt(i + 2) == 'E') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -169,8 +169,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'D' && oldtext.charAt(i + 1) == 'I' && oldtext.charAt(i + 2) == 'P') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -178,8 +178,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'O' && oldtext.charAt(i + 1) == 'R' && oldtext.charAt(i + 2) == 'Y') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -187,8 +187,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'D' && oldtext.charAt(i + 1) == 'A' && oldtext.charAt(i + 2) == 'S') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -197,8 +197,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'P' && oldtext.charAt(i + 1) == 'R' && oldtext.charAt(i + 2) == 'O') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -207,8 +207,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'O' && oldtext.charAt(i + 1) == 'R' && oldtext.charAt(i + 2) == 'N') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -216,8 +216,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'G' && oldtext.charAt(i + 1) == 'A' && oldtext.charAt(i + 2) == 'L') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -227,8 +227,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'F' && oldtext.charAt(i + 1) == 'E' && oldtext.charAt(i + 2) == 'L') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -236,8 +236,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'H' && oldtext.charAt(i + 1) == 'O' && oldtext.charAt(i + 2) == 'M') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -245,8 +245,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'G' && oldtext.charAt(i + 1) == 'O' && oldtext.charAt(i + 2) == 'R') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -254,8 +254,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'C' && oldtext.charAt(i + 1) == 'H' && oldtext.charAt(i + 2) == 'O') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -263,8 +263,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'L' && oldtext.charAt(i + 1) == 'O' && oldtext.charAt(i + 2) == 'X') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -273,8 +273,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'M' && oldtext.charAt(i + 1) == 'Y' && oldtext.charAt(i + 2) == 'O') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -283,8 +283,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'C' && oldtext.charAt(i + 1) == 'A' && oldtext.charAt(i + 2) == 'V') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -293,8 +293,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'P' && oldtext.charAt(i + 1) == 'O' && oldtext.charAt(i + 2) == 'N') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -303,8 +303,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'O' && oldtext.charAt(i + 1) == 'T' && oldtext.charAt(i + 2) == 'O') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -313,8 +313,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'O' && oldtext.charAt(i + 1) == 'C' && oldtext.charAt(i + 2) == 'H') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -325,8 +325,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'E' && oldtext.charAt(i + 1) == 'R' && oldtext.charAt(i + 2) == 'I') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -334,8 +334,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'R' && oldtext.charAt(i + 1) == 'A' && oldtext.charAt(i + 2) == 'T') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -343,8 +343,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'N' && oldtext.charAt(i + 1) == 'E' && oldtext.charAt(i + 2) == 'W') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -352,8 +352,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'M' && oldtext.charAt(i + 1) == 'I' && oldtext.charAt(i + 2) == 'C') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 5; j < (i + 755); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 5; j < (i + 820); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -362,8 +362,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'T' && oldtext.charAt(i + 1) == 'A' && oldtext.charAt(i + 2) == 'R') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -372,8 +372,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'P' && oldtext.charAt(i + 1) == 'A' && oldtext.charAt(i + 2) == 'N') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -382,8 +382,8 @@ public class change342 {
                         if (oldtext.charAt(i) == 'E' && oldtext.charAt(i + 1) == 'C' && oldtext.charAt(i + 2) == 'H') {
 
 
-                            //System.out.println(oldtext.substring(i+5,i+1505));
-                            for (int j = i + 755; j < (i + 1505); j++) {
+                            //System.out.println(oldtext.substring(i+5,i+1635));
+                            for (int j = i + 820; j < (i + 1635); j++) {
                                 if (Character.isLetter(old[j]))
                                     old[j] = '-';
                             }
@@ -401,7 +401,7 @@ public class change342 {
 
 
                     writer.close();
-                    writer = new FileWriter("F:\\Dambe\\mammals\\noscalelogdet\\"+ String.valueOf(ii)+"edited342.dis");
+                    writer = new FileWriter("F:\\Dambe\\mammals\\scale2uplogdet\\"+ String.valueOf(ii)+"edited342.dis");
                     writer.write("37");
                     writer.close();
 

@@ -10,7 +10,7 @@ public class writeReal {
         while ((line = reader.readLine()) != null) {
 
             //System.out.println(line);
-            FileWriter writer = new FileWriter("F:\\Dambe\\mammals\\noscale\\"+String.valueOf(i+1)+"real.DND");
+            FileWriter writer = new FileWriter("F:\\Dambe\\mammals\\noscalelogdet\\"+String.valueOf(i+1)+"real.DND");
             writer.write(line);
 
 
