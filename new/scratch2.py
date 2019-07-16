@@ -53,7 +53,7 @@ if __name__ == "__main__":
         j = 0
         missing = 0
 
-        for word in read_words('F:\Dambe\mammals\\scale2downlogdet\\'+ str(ii)+'edited225.dis'):
+        for word in read_words('F:\Dambe\mammals\\scale2downlogdet\\'+ str(ii)+'edited342.dis'):
             if(is_number(word)):
                 if(i==0):
                     continue
@@ -100,7 +100,7 @@ if __name__ == "__main__":
         j=0
 
 
-        f=open("F:\Dambe\mammals\\scale2downlogdet\\"+str(ii)+"edited225matfactK37.dis","w+")
+        f=open("F:\Dambe\mammals\\scale2downlogdet\\"+str(ii)+"edited342matfactK37.dis","w+")
 
         for i in range(len(Result)):
             for j in range(len(Result[0])):
