@@ -167,13 +167,13 @@ def is_number(s):
     except ValueError:
         return False
 
-for ii in range(1,11):
-    R = np.zeros(shape=(37, 37))
+for ii in range(100,150,10):
+    R = np.zeros(shape=(24, 24))
 
     i=0
     j=0
 
-    for word in read_words('F:\Dambe\mammals\\scale2downlogdet\\'+ str(ii)+'edited342.dis'):
+    for word in read_words('F:\Dambe\Cyt\\missing'+ str(ii)+'.dis'):
         if(is_number(word)):
             if(i==0):
                 continue
@@ -213,13 +213,13 @@ for ii in range(1,11):
     print(missing_encoded)
 
     imputer = Autoencoder(missing_encoded.values)
-    complete_encoded = imputer.train(train_epochs=10000, batch_size=37)
+    complete_encoded = imputer.train(train_epochs=10000, batch_size=24)
 
     printed = ""
     i = 0
     j = 0
 
-    f = open("F:\Dambe\mammals\\scale2downlogdet\\"+ str(ii)+"edited342encoder.dis", "w+")
+    f = open("F:\Dambe\Cyt\missing"+ str(ii)+"encoder.dis", "w+")
 
     for i in range(len(complete_encoded)):
         for j in range(len(complete_encoded[0])):

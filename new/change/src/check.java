@@ -16,9 +16,11 @@ public class check {
 
         {
             try {
-                for(int ii=1;ii<11;ii++) {
-                    File file = new File("F:\\Dambe\\mammals\\scale2downlogdet\\"+String.valueOf(ii)+"edited342.dis");
+                for(int ii=10;ii<30;ii+=10) {
+//                    File file = new File("F:\\Dambe\\mammals\\scale2downlogdet\\"+String.valueOf(ii)+"edited342.dis");
+                    File file = new File("F:\\Dambe\\Cyt\\missing"+String.valueOf(ii)+".dis");
                     BufferedReader reader = new BufferedReader(new FileReader(file));
+
                     String line = "", oldtext = "";
                     while ((line = reader.readLine()) != null) {
                         oldtext += line + "\r\n";
@@ -49,7 +51,9 @@ public class check {
                     }
 
                     System.out.println(count);
-                    FileWriter writer = new FileWriter("F:\\Dambe\\mammals\\scale2downlogdet\\"+String.valueOf(ii)+"edited342.dis");
+//                    FileWriter writer = new FileWriter("F:\\Dambe\\mammals\\scale2downlogdet\\"+String.valueOf(ii)+"edited342.dis");
+                    FileWriter writer = new FileWriter("F:\\Dambe\\Cyt\\missing"+String.valueOf(ii)+".dis");
+
                     writer.write(old);
 
 

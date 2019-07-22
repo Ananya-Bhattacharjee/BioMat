@@ -44,16 +44,16 @@ def is_number(s):
         return False
 if __name__ == "__main__":
 
-    for ii in range(1,11):
+    for ii in range(130,140,10):
         import numpy
 
-        R = numpy.zeros(shape=(37, 37))
+        R = numpy.zeros(shape=(24, 24))
 
         i = 0
         j = 0
         missing = 0
 
-        for word in read_words('F:\Dambe\mammals\\scale2downlogdet\\'+ str(ii)+'edited342.dis'):
+        for word in read_words('F:\Dambe\Cyt\\missing'+ str(ii)+'.dis'):
             if(is_number(word)):
                 if(i==0):
                     continue
@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
         N = len(R)
         M = len(R[0])
-        K = 37
+        K = 24
 
         P = numpy.random.rand(N,K)
         Q = numpy.random.rand(M,K)
@@ -85,7 +85,7 @@ if __name__ == "__main__":
         nR = numpy.dot(nP, nQ.T)
 
         print nR
-        Result = numpy.zeros(shape=(37, 37))
+        Result = numpy.zeros(shape=(24, 24))
 
 
         for i in range(len(R)):
@@ -100,7 +100,7 @@ if __name__ == "__main__":
         j=0
 
 
-        f=open("F:\Dambe\mammals\\scale2downlogdet\\"+str(ii)+"edited342matfactK37.dis","w+")
+        f=open("F:\Dambe\Cyt\\missing"+str(ii)+"matfactK24.dis","w+")
 
         for i in range(len(Result)):
             for j in range(len(Result[0])):
