@@ -1,7 +1,7 @@
 def mat_factorization(R, P, Q, K, steps=10000, alpha=0.002, beta=0.02):
     Q = Q.T
     for step in xrange(steps):
-        print step
+        #print step
         for i in xrange(len(R)):
             for j in xrange(len(R[i])):
                 if R[i][j] >= 0 and i>=j:
@@ -28,7 +28,7 @@ def read_words(filename):
     with open(filename) as inp:
         print(filename)
         while True:
-            buf = inp.read(1024)
+            buf = inp.read(10240)
             if not buf:
                 break
             words = (last+buf).split()
@@ -44,72 +44,70 @@ def is_number(s):
         return False
 if __name__ == "__main__":
 
-    for ii in range(4,24,4):
-        import numpy
+    import numpy
+    R = numpy.zeros(shape=(9, 9))
 
-        R = numpy.zeros(shape=(9, 9))
+    i=0
+    j=0
+    missing=0
 
-        i = 0
-        j = 0
-        missing = 0
-
-        for word in read_words('F:\Dambe\Baculovirus\\missing'+ str(ii)+'.dis'):
-            if(is_number(word)):
-                if(i==0):
-                    continue
-                #print((word))
-                R[i-1][j]=(float)(word)
-                j=j+1
+    for word in read_words('realDisEdit24.dis'):
+        if(is_number(word)):
+            if(i==0):
+                continue
+            #print((word))
+            R[i-1][j]=(float)(word)
+            j=j+1
+        else:
+            #print(word.__len__())
+            if(word.__len__()>1):
+                i=i+1
+                j=0
             else:
-                #print(word.__len__())
-                if(word.__len__()>1):
-                    i=i+1
-                    j=0
-                else:
 
-                    R[i-1][j]=-1
-                    missing=missing+1
-                    j=j+1
-        print missing
-        print R
+                R[i-1][j]=-1
+                missing=missing+1
+                j=j+1
+    print missing
+    print R
 
-        N = len(R)
-        M = len(R[0])
-        K = 9
+    N = len(R)
+    M = len(R[0])
+    K = 9
 
-        P = numpy.random.rand(N,K)
-        Q = numpy.random.rand(M,K)
+    P = numpy.random.rand(N,K)
+    Q = numpy.random.rand(M,K)
 
-        nP, nQ = mat_factorization(R, P, Q, K)
+    nP, nQ = mat_factorization(R, P, Q, K)
 
-        nR = numpy.dot(nP, nQ.T)
+    nR = numpy.dot(nP, nQ.T)
 
-        print nR
-        Result = numpy.zeros(shape=(9, 9))
+    print nR
+    Result = numpy.zeros(shape=(9, 9))
 
 
-        for i in range(len(R)):
-            for j in range(len(R[0])):
-                if(R[i][j]==-1):
-                    Result[i][j]=nR[i][j]
-                else:
-                    Result[i][j]=R[i][j]
+    for i in range(len(R)):
+        for j in range(len(R[0])):
+            if(R[i][j]==-1):
+                Result[i][j]=nR[i][j]
+            else:
+                Result[i][j]=R[i][j]
 
-        printed=""
-        i=0
-        j=0
+    printed=""
+    i=0
+    j=0
 
 
-        f=open("F:\Dambe\Baculovirus\\missing"+str(ii)+"matfactK9.dis","w+")
+    f=open("edited24forDambe.dis","w+")
 
-        for i in range(len(Result)):
-            for j in range(len(Result[0])):
-                if(j<i):
-                    printed=printed+" "+str(round(Result[i][j],5))
-            printed=printed+"\n"
+    for i in range(len(Result)):
+        for j in range(len(Result[0])):
+            if(j<i):
+                printed=printed+" "+str(round(Result[i][j],5))
+        printed=printed+"\n"
 
-        f.write(printed)
-        f.close
+    f.write(printed)
+    f.close
 
 '''    
     for word in read_words('realDisEdit50.dis'):
@@ -119,7 +117,7 @@ if __name__ == "__main__":
             printed=printed+"\n"+word
             i=i+1
         elif(word!="."):
-            if(float(word)>9):
+            if(float(word)>10):
                 printed=printed+"\n"+word
             else:
                 if(i==len(R)):
@@ -133,7 +131,7 @@ if __name__ == "__main__":
                     j=j+1
                 j=0
 
-    f=open("edited96forDambe.dis","w+")
+    f=open("edited76forDambe.dis","w+")
 
     f.write(printed)
     f.close

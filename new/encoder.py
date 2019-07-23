@@ -39,9 +39,9 @@ def masked_mae(X_true, X_pred, mask):
 class Autoencoder:
 
     def __init__(self, data,
-                 recurrent_weight=0.75,
+                 recurrent_weight=0.95,
                  optimizer="adam",
-                 dropout_probability=0.75,
+                 dropout_probability=0.95,
                  hidden_activation="relu",
                  output_activation="sigmoid",
                  init="glorot_normal",
@@ -124,7 +124,7 @@ class Autoencoder:
             model.train_on_batch(batch_data, batch_data)
         return model.predict(input_with_mask)
 
-    def train(self, batch_size=256, train_epochs=1000):
+    def train(self, batch_size=256, train_epochs=900):
         missing_mask = self._create_missing_mask()
         self.fill(missing_mask)
         self.model = self._create_model()
@@ -152,7 +152,7 @@ def read_words(filename):
     with open(filename) as inp:
         print(filename)
         while True:
-            buf = inp.read(10240)
+            buf = inp.read(990)
             if not buf:
                 break
             words = (last+buf).split()
@@ -167,13 +167,13 @@ def is_number(s):
     except ValueError:
         return False
 
-for ii in range(100,150,10):
-    R = np.zeros(shape=(24, 24))
+for ii in range(4,24,4):
+    R = np.zeros(shape=(9, 9))
 
     i=0
     j=0
 
-    for word in read_words('F:\Dambe\Cyt\\missing'+ str(ii)+'.dis'):
+    for word in read_words('F:\Dambe\Baculovirus\\missing'+ str(ii)+'.dis'):
         if(is_number(word)):
             if(i==0):
                 continue
@@ -213,13 +213,13 @@ for ii in range(100,150,10):
     print(missing_encoded)
 
     imputer = Autoencoder(missing_encoded.values)
-    complete_encoded = imputer.train(train_epochs=10000, batch_size=24)
+    complete_encoded = imputer.train(train_epochs=10000, batch_size=9)
 
     printed = ""
     i = 0
     j = 0
 
-    f = open("F:\Dambe\Cyt\missing"+ str(ii)+"encoder.dis", "w+")
+    f = open("F:\Dambe\Baculovirus\\missing"+ str(ii)+"encoder.dis", "w+")
 
     for i in range(len(complete_encoded)):
         for j in range(len(complete_encoded[0])):
