@@ -1,0 +1,141 @@
+
+This a basic manual for the Lasso approach as described in 
+
+``Reconstructing (Super)trees from data sets with missing distances: 
+Not all is lost''
+
+by G. Kettleborough, J. Dicks, I. N. Roberts and K. T. Huber.
+
+The program comes with an example file and has been tested successfully
+ on Windows 7 Enterprise  (Service Pack 1). 
+Given a (partial or complete) distance D on some set X of taxa, it aims 
+to find a subset L' of cords of the set of cords of X induced by D and
+an equidistant Y-tree (T,w) that is strongly lassoed by it such that Y 
+and L' are as large as possible, Y is is the union of the elements in
+the cords of L' and, for all cords xy \in L' we have that D(x,y) equals 
+the distance between x and y induced by (T,w)
+
+Lasso can display the found tree either on the computer screen, save 
+it in a .tex file (in standard or polar form), or in Newick format which 
+can be read by other phylogenetic tree reconstruction tools such as PHYLIP
+and MEGA or display tools such as FigTree.
+
+The folder containing the Lasso software is called lasso-win32.zip. This
+folder contains the files: 
+
+1) lasso.exe 
+2) paradoxus-part.csv  
+3) basic-manual.txt   
+
+where lasso.exe is an executable file that will run the Lasso method, 
+paradoxus-part.csv contains the yeast dataset analysed within the 
+manuscript named above (with missing values) and basic-manual.txt is this
+file.
+
+The input to Lasso is a (partial or complete) distance matrix in the form 
+of a .CSV file with a header where the symbol ? represents a missing value 
+(see the included paradoxus-part.csv file for an example).
+
+TO RUN LASSO:
+Currently, the Lasso software runs from the DOS command line. Assuming that 
+the user is in the folder that contains "lasso.exe", the first step is to 
+execute lasso which is done by typing
+
+lasso input_matrix > output
+
+where input_matrix is the partial distance matrix and output is the file that 
+contains the generated tree. For the above example file, this would be
+ 
+lasso paradoxus-part.csv > output
+
+Lasso enables four different types of output:
+
+1) lasso input_matrix > output.nwk
+
+will produce an equidistant tree in Newick format. This tree can then be used
+as input to a tree drawing tool for further viewing and manipulation. 
+
+
+2) lasso -p input_matrix 
+
+will produce an on-screen depiction of the output tree
+
+
+3) lasso -t input_matrix > output_standard.tex
+
+will produce a LaTeX compatible output file that can be used to draw the tree
+in standard format (as for Figure 5 in the manuscript named above).
+
+
+4) lasso -T input_matrix > output_polar.tex
+
+will produce a LaTeX compatible output file that can be used to draw the tree
+in polar format (as for Figure 6 in the manuscript named above).
+
+To use the LaTeX compatible files, you will first need to ensure 
+you have latex installed on your computer and that your version includes
+the TikZ package (included by default in most distributions). 
+If this is the case then copy the text below, starting 
+with "\documentclass[a4paper,10pt]{article}" and ending with "\end{document}" 
+into a separate file called result.tex. In result.tex make sure that the lines
+\input{output_standard.tex} and \input{output_polar.tex} use the file 
+names in which you saved your standard and polar trees, respectively. 
+This resulting trees you can then cut out and paste into your
+document.
+
+------------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{tikz}
+
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{tikzpicture}[xscale=50,yscale=0.5]
+  \input{output_standard.tex}
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=5]
+  \input{output_polar.tex}
+\end{tikzpicture}
+
+\end{document}
+
+------------------------------
+
+
+If you would like to include a drawing of the generated Lasso tree in
+your document and that document is already using latex then 
+you only have to add  \usepackage{tikz} and \usetikzlibrary{calc} 
+to the preamble of your document and then either
+
+\begin{tikzpicture}[xscale=50,yscale=0.5]
+  \input{output_standard.tex}
+\end{tikzpicture}
+
+or
+
+\begin{tikzpicture}[scale=5]
+  \input{output_polar.tex}
+\end{tikzpicture}
+depending on the tree you would like to draw.
+
+In both cases for including the Lasso tree inyour document, note the 
+scale parameters for tikzpicture.  You will most likely need to play
+around with these to make the picture  look nice in your document. If you need
+to change the size of the labels, use scalefont, e.g.:
+
+{\scalefont{0.3}
+\begin{tikzpicture}[scale=22]
+  \input{tree-polar.tex}
+\end{tikzpicture}
+}
+
+
+
+
+
+

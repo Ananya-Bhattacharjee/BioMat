@@ -44,20 +44,21 @@ def is_number(s):
         return False
 if __name__ == "__main__":
 
-    for ii in range(4,24,4):
+    for ii in range(5,8):
         import numpy
 
-        R = numpy.zeros(shape=(9, 9))
+        R = numpy.zeros(shape=(37, 37))
 
         i = 0
         j = 0
         missing = 0
+        filename='F:\Dambe\mammals\scale2down\\'+ str(ii)+'edited12.dis'
 
-        for word in read_words('F:\Dambe\Baculovirus\\missing'+ str(ii)+'.dis'):
+        for word in read_words(filename):
             if(is_number(word)):
                 if(i==0):
                     continue
-                #print((word))
+                #print(i-1, R[i-1][0])
                 R[i-1][j]=(float)(word)
                 j=j+1
             else:
@@ -75,7 +76,7 @@ if __name__ == "__main__":
 
         N = len(R)
         M = len(R[0])
-        K = 9
+        K = 37
 
         P = numpy.random.rand(N,K)
         Q = numpy.random.rand(M,K)
@@ -85,7 +86,7 @@ if __name__ == "__main__":
         nR = numpy.dot(nP, nQ.T)
 
         print nR
-        Result = numpy.zeros(shape=(9, 9))
+        Result = numpy.zeros(shape=(37, 37))
 
 
         for i in range(len(R)):
@@ -99,14 +100,32 @@ if __name__ == "__main__":
         i=0
         j=0
 
+        f = open(filename[:-4] + "MatfactK37.dis", "w+")
+        printed = ""
 
-        f=open("F:\Dambe\Baculovirus\\missing"+str(ii)+"matfactK9.dis","w+")
+        i = 0
+        j = 0
+        for word in read_words(filename):
+            if (is_number(word)):
+                if (i == 0):
+                    printed = printed + word
+                    continue
+                # print((word))
+                R[i - 1][j] = (float)(word)
+                printed = printed + " " + word
+                j = j + 1
+            else:
+                # print(word.__len__())
+                if (word.__len__() > 1):
+                    printed = printed + "\n" + word
+                    i = i + 1
+                    j = 0
+                else:
 
-        for i in range(len(Result)):
-            for j in range(len(Result[0])):
-                if(j<i):
-                    printed=printed+" "+str(round(Result[i][j],5))
-            printed=printed+"\n"
+                    R[i - 1][j] = -1
+                    printed = printed + " " + str(round(Result[i - 1][j], 5))
+                    missing = missing + 1
+                    j = j + 1
 
         f.write(printed)
         f.close
@@ -119,7 +138,7 @@ if __name__ == "__main__":
             printed=printed+"\n"+word
             i=i+1
         elif(word!="."):
-            if(float(word)>9):
+            if(float(word)>37):
                 printed=printed+"\n"+word
             else:
                 if(i==len(R)):
@@ -133,7 +152,7 @@ if __name__ == "__main__":
                     j=j+1
                 j=0
 
-    f=open("edited96forDambe.dis","w+")
+    f=open("edited376forDambe.dis","w+")
 
     f.write(printed)
     f.close

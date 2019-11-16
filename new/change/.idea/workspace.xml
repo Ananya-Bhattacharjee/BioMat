@@ -12,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="change.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="change.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/change.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -24,8 +24,17 @@
       <file leaf-file-name="changeCopy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/changeCopy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2567">
-              <caret line="151" selection-start-line="151" selection-end-line="151" />
+            <state relative-caret-position="532">
+              <caret line="151" selection-start-line="151" selection-end-line="152" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="change12.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/change12.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="114" column="75" lean-forward="true" selection-start-line="114" selection-start-column="75" selection-end-line="114" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -72,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="check.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/check.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+            <state relative-caret-position="148">
+              <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,11 +157,12 @@
         <option value="$PROJECT_DIR$/src/change225.java" />
         <option value="$PROJECT_DIR$/src/change342.java" />
         <option value="$PROJECT_DIR$/src/writeReal.java" />
+        <option value="$PROJECT_DIR$/src/change12.java" />
         <option value="$PROJECT_DIR$/src/check.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="width" value="1367" />
     <option name="height" value="728" />
   </component>
@@ -161,6 +171,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,9 +189,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,8 +219,8 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="change100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="change100" />
+    <configuration name="change12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="change12" />
       <module name="change" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -274,18 +284,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.check" />
-      <item itemvalue="Application.change100" />
       <item itemvalue="Application.change225" />
       <item itemvalue="Application.writeReal" />
       <item itemvalue="Application.change342" />
+      <item itemvalue="Application.change12" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.check" />
+        <item itemvalue="Application.change12" />
         <item itemvalue="Application.writeReal" />
         <item itemvalue="Application.change342" />
         <item itemvalue="Application.change225" />
-        <item itemvalue="Application.change100" />
       </list>
     </recent_temporary>
   </component>
@@ -303,8 +313,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1367" height="728" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1367" height="728" extended-state="1" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -319,7 +328,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24944486" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24944486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -338,16 +347,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/check.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="101" selection-start-line="19" selection-start-column="101" selection-end-line="19" selection-end-column="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cut500.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7106">
@@ -712,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/changeCopy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2567">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/change100.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3893">
@@ -753,20 +745,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/check.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/change.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="32" column="28" selection-end-line="189" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/changeCopy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="151" selection-start-line="151" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/change12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="114" column="75" lean-forward="true" selection-start-line="114" selection-start-column="75" selection-end-line="114" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/check.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
