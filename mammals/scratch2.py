@@ -43,17 +43,18 @@ def is_number(s):
     except ValueError:
         return False
 if __name__ == "__main__":
+    ff = open(r'F:\Dambe\NewAverages\Baculovirus\missing4\matfactAll.dis', "a+")
 
-    for ii in range(1,11):
+    for ii in range(0,10):
         import numpy
 
-        R = numpy.zeros(shape=(37, 37))
+        R = numpy.zeros(shape=(9, 9))
 
         i = 0
         j = 0
         missing = 0
 
-        for word in read_words('F:\Dambe\mammals\scale2downlogdet\\'+ str(ii)+'edited12.dis'):
+        for word in read_words('F:\Dambe\NewAverages\Baculovirus\missing4\\missing4'+ str(ii)+'.dis'):
             if(is_number(word)):
                 if(i==0):
                     continue
@@ -75,7 +76,7 @@ if __name__ == "__main__":
 
         N = len(R)
         M = len(R[0])
-        K = 37
+        K = 9
 
         P = numpy.random.rand(N,K)
         Q = numpy.random.rand(M,K)
@@ -85,7 +86,7 @@ if __name__ == "__main__":
         nR = numpy.dot(nP, nQ.T)
 
         print nR
-        Result = numpy.zeros(shape=(37, 37))
+        Result = numpy.zeros(shape=(9, 9))
 
 
         for i in range(len(R)):
@@ -95,21 +96,36 @@ if __name__ == "__main__":
                 else:
                     Result[i][j]=R[i][j]
 
-        printed=""
+        printed="9"+"\n"
         i=0
         j=0
 
 
-        f=open("F:\Dambe\mammals\scale2downlogdet\\"+str(ii)+"edited12matfact37.dis","w+")
+        f=open("F:\Dambe\NewAverages\Baculovirus\missing4\\missing4"+str(ii)+"matfact.dis","w+")
+        list = ["AcMNPV",
+                "BmNPV",
+                "OpMNPV",
+                "LdMNPV",
+                "SeMNPV",
+                "HaSNPV",
+                "PxGV",
+                "XcGV",
+                "CpGV"
+                ]
+        listL = 0
 
         for i in range(len(Result)):
+            printed = printed + list[listL] + ""
+            listL = listL + 1
             for j in range(len(Result[0])):
                 if(j<i):
                     printed=printed+" "+str(round(Result[i][j],5))
             printed=printed+"\n"
 
         f.write(printed)
+        ff.write(printed)
         f.close
+ff.close
 
 '''    
     for word in read_words('realDisEdit50.dis'):
