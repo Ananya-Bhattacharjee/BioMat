@@ -28,14 +28,14 @@ wb = Workbook()
 
 import numpy
 
-R = numpy.zeros(shape=(24, 24))
+R = numpy.zeros(shape=(201, 201))
 
 i = 0
 j = 0
 missing = 0
 name=0
 sheet1 = wb.add_sheet('Sheet 1')
-for word in read_words('missing30.dis'):
+for word in read_words('1edited5625ld.dis'):
     if (is_number(word)):
         if (i == 0):
             continue

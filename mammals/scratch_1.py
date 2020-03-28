@@ -20,6 +20,6 @@ except Exception as e:
 
 try:
     rf, rf_max, x1, x2, x3, x4, x5 = t1.robinson_foulds(t2, unrooted_trees=True)
-    print(rf, rf_max, "\n",x1,"\n",x2,"\n",x3,"\n",x4,"\n",x5)
+    print(rf, rf_max)
 except Exception as e:
     print('Error when computing the Robinson-Foulds distances:\n' + str(e), file=sys.stderr)
