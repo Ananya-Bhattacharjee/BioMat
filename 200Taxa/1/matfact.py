@@ -88,6 +88,8 @@ if __name__ == "__main__":
                 missing=missing+1
                 j=j+1
     print (missing)
+    print(R)
+    print(R[200][61])
 
     N = len(R)
     M = len(R[0])
