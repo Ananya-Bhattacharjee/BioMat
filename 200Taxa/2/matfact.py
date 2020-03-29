@@ -78,6 +78,7 @@ if __name__ == "__main__":
             #print(word.__len__())
             if(word.__len__()>1):
                 i=i+1
+                print(j)
                 j=0
                 print(word+" ")
                 print(i)
