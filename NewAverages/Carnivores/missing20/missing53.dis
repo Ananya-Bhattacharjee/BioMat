@@ -1,0 +1,11 @@
+10
+U.arctos      
+U.maritimus   0.028
+U.americanus  . 0.038
+U.ursinus     0.050 0.061 .
+U.thibetanus  . 0.056 . 0.052
+U.malayanus   . 0.050 . 0.061 .
+T.ornatus     0.086 . 0.093 0.092 0.091 .
+A.melanolewa  . . 0.154 0.150 . 0.166 0.150
+A.fulgens     . 0.211 . 0.196 . 0.199 . 0.176
+P.lotor       . . 0.193 0.184 0.177 . 0.191 0.164 .
