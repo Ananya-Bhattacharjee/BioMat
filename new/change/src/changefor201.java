@@ -16,7 +16,7 @@ public class changefor201 {
         {
             try {
 
-                File file = new File("F:\\Dambe\\200Taxa\\2\\2.fasta");
+                File file = new File("F:\\Dambe\\200Taxa\\3\\3.fasta");
                 BufferedReader reader = new BufferedReader(new FileReader(file));
                 String line = "", oldtext = "";
                 while ((line = reader.readLine()) != null) {
@@ -30,7 +30,7 @@ public class changefor201 {
 
 
                 //System.out.println(oldtext);
-                FileWriter writer = new FileWriter("F:\\Dambe\\200Taxa\\2\\2edited400.fasta");
+                FileWriter writer = new FileWriter("F:\\Dambe\\200Taxa\\3\\3edited400.fasta");
                 //writer.write(replacedtext);
                 int i=0;
                 char []old=oldtext.toCharArray();
@@ -59,7 +59,7 @@ public class changefor201 {
 
 
                         //System.out.println(oldtext.substring(i,i+6));
-                        for(int j=x+481;j<(x+963);j++)
+                        for(int j=x+467;j<(x+935);j++)
                         {
 
                             if(Character.isLetter(old[j]))
@@ -77,7 +77,7 @@ public class changefor201 {
 
 
                         //System.out.println(oldtext.substring(i,i+6));
-                        for(int j=x;j<(x+481);j++)
+                        for(int j=x;j<(x+467);j++)
                         {
 
                             if(Character.isLetter(old[j]))
