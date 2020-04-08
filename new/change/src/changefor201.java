@@ -16,7 +16,7 @@ public class changefor201 {
         {
             try {
 
-                File file = new File("F:\\Dambe\\200Taxa\\9\\9.fasta");
+                File file = new File("F:\\Dambe\\200Taxa\\10\\10.fasta");
                 BufferedReader reader = new BufferedReader(new FileReader(file));
                 String line = "", oldtext = "";
                 while ((line = reader.readLine()) != null) {
@@ -30,7 +30,7 @@ public class changefor201 {
 
 
                 //System.out.println(oldtext);
-                FileWriter writer = new FileWriter("F:\\Dambe\\200Taxa\\9\\9edited2500.fasta");
+                FileWriter writer = new FileWriter("F:\\Dambe\\200Taxa\\10\\10edited10100.fasta");
                 //writer.write(replacedtext);
                 int i=0;
                 char []old=oldtext.toCharArray();
@@ -55,7 +55,7 @@ public class changefor201 {
                 while(i<oldtext.length())
                 {
                     //System.out.println(i);
-                    if(oldtext.charAt(i)=='n' && cut1<=49 && cut2==0){
+                    if(oldtext.charAt(i)=='n' && cut1<=99 && cut2==0){
 
                         int x=0;
                         if((int)(oldtext.charAt(i+5))==13) x=i+6;
@@ -65,7 +65,7 @@ public class changefor201 {
 
 
                         //System.out.println(oldtext.substring(i,i+6));
-                        for(int j=x+380;j<(x+761);j++)
+                        for(int j=x+227;j<(x+455);j++)
                         {
 
                             if(Character.isLetter(old[j]))
@@ -73,7 +73,7 @@ public class changefor201 {
                         }
                         cut1++;
                     }
-                    else if(oldtext.charAt(i)=='n' && cut1>49 && cut2<=49){
+                    else if(oldtext.charAt(i)=='n' && cut1>99 && cut2<=100){
 
                         int x=0;
                         if((int)(oldtext.charAt(i+5))==13) x=i+6;
@@ -83,7 +83,7 @@ public class changefor201 {
 
 
                         //System.out.println(oldtext.substring(i,i+6));
-                        for(int j=x;j<(x+380);j++)
+                        for(int j=x;j<(x+227);j++)
                         {
 
                             if(Character.isLetter(old[j]))
