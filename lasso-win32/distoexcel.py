@@ -35,7 +35,7 @@ j = 0
 missing = 0
 name=0
 sheet1 = wb.add_sheet('Sheet 1')
-for word in read_words('3edited5625ld.dis'):
+for word in read_words('5edited400ld.dis'):
     if (is_number(word)):
         if (i == 0):
             continue
