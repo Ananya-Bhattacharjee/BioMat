@@ -24,51 +24,55 @@ def is_number(s):
 from xlwt import Workbook
 
 # Workbook is created
-wb = Workbook()
-
 import numpy
 
-R = numpy.zeros(shape=(9, 9))
 
-i = 0
-j = 0
-missing = 0
-name=0
-sheet1 = wb.add_sheet('Sheet 1')
-for word in read_words('missing44.dis'):
-    if (is_number(word)):
-        if (i == 0):
-            continue
-        # print((word))
-        R[i - 1][j] = (float)(word)
-        R[j][i - 1] = (float)(word)
+for ii in range(0,5):
+    wb = Workbook()
 
-        j = j + 1
-    else:
-        # print(word.__len__())
-        if (word.__len__() > 1):
-            i = i + 1
-            j = 0
-            sheet1.write(0, name, word)
-            name=name+1
-        else:
+    R = numpy.zeros(shape=(10, 10))
 
-            R[i - 1][j] = -1
-            R[j][i-1] = -1
-            missing = missing + 1
+    i = 0
+    j = 0
+    missing = 0
+    name = 0
+    sheet1 = wb.add_sheet('Sheet '+str(ii))
+
+    for word in read_words('missing5'+str(ii)+'.dis'):
+
+        if (is_number(word)):
+            if (i == 0):
+                continue
+            # print((word))
+            R[i - 1][j] = (float)(word)
+            R[j][i - 1] = (float)(word)
+
             j = j + 1
-
-print (missing)
-print (R)
-
-for i in range(len(R)):
-    for j in range(len(R)):
-        if(R[i][j]!=-1):
-            sheet1.write(i+1,j,(R[i][j]))
         else:
-            sheet1.write(i+1,j,'?')
+            # print(word.__len__())
+            if (word.__len__() > 1):
+                i = i + 1
+                j = 0
+                sheet1.write(0, name, word)
+                name=name+1
+            else:
 
-wb.save('xlwtexample.xls')
+                R[i - 1][j] = -1
+                R[j][i-1] = -1
+                missing = missing + 1
+                j = j + 1
+
+    print (missing)
+    print (R)
+
+    for i in range(len(R)):
+        for j in range(len(R)):
+            if(R[i][j]!=-1):
+                sheet1.write(i+1,j,(R[i][j]))
+            else:
+                sheet1.write(i+1,j,'?')
+
+    wb.save('xlwtexample'+str(ii)+'.xls')
 
 
 '''''
