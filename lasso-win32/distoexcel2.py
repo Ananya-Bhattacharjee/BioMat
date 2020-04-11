@@ -30,7 +30,7 @@ import numpy
 for ii in range(0,5):
     wb = Workbook()
 
-    R = numpy.zeros(shape=(10, 10))
+    R = numpy.zeros(shape=(7, 7))
 
     i = 0
     j = 0
@@ -38,7 +38,7 @@ for ii in range(0,5):
     name = 0
     sheet1 = wb.add_sheet('Sheet '+str(ii))
 
-    for word in read_words('missing5'+str(ii)+'.dis'):
+    for word in read_words('missing2'+str(ii)+'.dis'):
 
         if (is_number(word)):
             if (i == 0):

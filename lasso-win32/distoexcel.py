@@ -35,7 +35,7 @@ j = 0
 missing = 0
 name=0
 sheet1 = wb.add_sheet('Sheet 1')
-for word in read_words('5edited5625TN.dis'):
+for word in read_words('5edited5625ld.dis'):
     if (is_number(word)):
         if (i == 0):
             continue
@@ -69,6 +69,7 @@ for i in range(len(R)):
             sheet1.write(i+1,j,'?')
 
 wb.save('xlwtexample.xls')
+
 
 
 '''''
